@@ -1,0 +1,297 @@
+fileFormatVersion: 2
+guid: 4cc9d24b5bdadba47bf107c9a8892a73
+timeCreated: 1460855116
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: continue buttons_0
+    21300002: continue buttons_1
+    21300004: continue buttons_2
+    21300006: continue buttons_3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: continue buttons_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 278
+        width: 590
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 57, y: -137}
+        - {x: 81, y: -121}
+        - {x: 89, y: -129}
+        - {x: 102, y: -139}
+        - {x: 180, y: -139}
+        - {x: 181, y: -138}
+        - {x: 183, y: -139}
+        - {x: 294, y: -139}
+        - {x: 295, y: -138}
+        - {x: 295, y: -41}
+        - {x: 292, y: -34}
+        - {x: 288, y: -27}
+        - {x: 295, y: -14}
+        - {x: 295, y: 81}
+        - {x: 294, y: 87}
+        - {x: 292, y: 89}
+        - {x: 281, y: 91}
+        - {x: 274, y: 95}
+        - {x: 263, y: 100}
+        - {x: 257, y: 101}
+        - {x: 254, y: 107}
+        - {x: 252, y: 117}
+        - {x: 249, y: 121}
+        - {x: 244, y: 125}
+        - {x: 237, y: 127}
+        - {x: 216, y: 127}
+        - {x: 199, y: 139}
+        - {x: 183, y: 139}
+        - {x: 175, y: 133}
+        - {x: 163, y: 110}
+        - {x: 155, y: 106}
+        - {x: 146, y: 102}
+        - {x: 133, y: 95}
+        - {x: 125, y: 90}
+        - {x: 64, y: 90}
+        - {x: 39, y: 84}
+        - {x: 24, y: 85}
+        - {x: -1, y: 90}
+        - {x: -195, y: 90}
+        - {x: -210, y: 91}
+        - {x: -210, y: 89}
+        - {x: -242, y: 89}
+        - {x: -265, y: 90}
+        - {x: -295, y: 90}
+        - {x: -295, y: -139}
+        - {x: -157, y: -139}
+        - {x: -146, y: -133}
+        - {x: -138, y: -139}
+        - {x: 53, y: -139}
+    - name: continue buttons_1
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 278
+        width: 590
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 57, y: -137}
+        - {x: 81, y: -121}
+        - {x: 89, y: -129}
+        - {x: 102, y: -139}
+        - {x: 180, y: -139}
+        - {x: 181, y: -138}
+        - {x: 183, y: -139}
+        - {x: 294, y: -139}
+        - {x: 295, y: -138}
+        - {x: 295, y: -41}
+        - {x: 292, y: -34}
+        - {x: 288, y: -27}
+        - {x: 295, y: -14}
+        - {x: 295, y: 81}
+        - {x: 294, y: 87}
+        - {x: 292, y: 89}
+        - {x: 281, y: 91}
+        - {x: 274, y: 95}
+        - {x: 263, y: 100}
+        - {x: 257, y: 101}
+        - {x: 254, y: 107}
+        - {x: 252, y: 117}
+        - {x: 249, y: 121}
+        - {x: 244, y: 125}
+        - {x: 237, y: 127}
+        - {x: 216, y: 127}
+        - {x: 199, y: 139}
+        - {x: 183, y: 139}
+        - {x: 175, y: 133}
+        - {x: 163, y: 110}
+        - {x: 155, y: 106}
+        - {x: 146, y: 102}
+        - {x: 133, y: 95}
+        - {x: 125, y: 90}
+        - {x: 64, y: 90}
+        - {x: 39, y: 84}
+        - {x: 24, y: 85}
+        - {x: -1, y: 90}
+        - {x: -195, y: 90}
+        - {x: -210, y: 91}
+        - {x: -210, y: 89}
+        - {x: -242, y: 89}
+        - {x: -265, y: 90}
+        - {x: -295, y: 90}
+        - {x: -295, y: -139}
+        - {x: -157, y: -139}
+        - {x: -146, y: -133}
+        - {x: -138, y: -139}
+        - {x: 53, y: -139}
+    - name: continue buttons_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 590
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 78, y: -113}
+        - {x: 103, y: -133}
+        - {x: 173, y: -133}
+        - {x: 176, y: -130}
+        - {x: 179, y: -124}
+        - {x: 186, y: -133}
+        - {x: 287, y: -133}
+        - {x: 289, y: -131}
+        - {x: 289, y: -38}
+        - {x: 284, y: -27}
+        - {x: 281, y: -22}
+        - {x: 289, y: -7}
+        - {x: 289, y: 37}
+        - {x: 295, y: 45}
+        - {x: 295, y: 73}
+        - {x: 289, y: 88}
+        - {x: 286, y: 91}
+        - {x: 263, y: 101}
+        - {x: 245, y: 128}
+        - {x: 216, y: 128}
+        - {x: 201, y: 139}
+        - {x: 181, y: 139}
+        - {x: 173, y: 130}
+        - {x: 163, y: 111}
+        - {x: 146, y: 103}
+        - {x: 133, y: 96}
+        - {x: 125, y: 91}
+        - {x: 64, y: 91}
+        - {x: 39, y: 85}
+        - {x: 24, y: 86}
+        - {x: -1, y: 91}
+        - {x: -209, y: 91}
+        - {x: -242, y: 90}
+        - {x: -265, y: 91}
+        - {x: -295, y: 91}
+        - {x: -295, y: 1}
+        - {x: -294, y: 0}
+        - {x: -291, y: 0}
+        - {x: -295, y: -2}
+        - {x: -295, y: -132}
+        - {x: -294, y: -133}
+        - {x: -164, y: -133}
+        - {x: -146, y: -122}
+        - {x: -135, y: -133}
+        - {x: 45, y: -133}
+    - name: continue buttons_3
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 0
+        width: 590
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -135, y: -139}
+        - {x: 52, y: -139}
+        - {x: 68, y: -128}
+        - {x: 102, y: -139}
+        - {x: 179, y: -139}
+        - {x: 181, y: -137}
+        - {x: 185, y: -139}
+        - {x: 293, y: -139}
+        - {x: 295, y: -137}
+        - {x: 295, y: -40}
+        - {x: 292, y: -33}
+        - {x: 288, y: -26}
+        - {x: 295, y: -13}
+        - {x: 295, y: 82}
+        - {x: 294, y: 88}
+        - {x: 292, y: 90}
+        - {x: 281, y: 92}
+        - {x: 274, y: 96}
+        - {x: 263, y: 101}
+        - {x: 253, y: 108}
+        - {x: 253, y: 112}
+        - {x: 249, y: 122}
+        - {x: 244, y: 126}
+        - {x: 237, y: 128}
+        - {x: 216, y: 128}
+        - {x: 209, y: 133}
+        - {x: 200, y: 139}
+        - {x: 181, y: 139}
+        - {x: 173, y: 130}
+        - {x: 163, y: 111}
+        - {x: 155, y: 107}
+        - {x: 146, y: 103}
+        - {x: 133, y: 96}
+        - {x: 125, y: 91}
+        - {x: 64, y: 91}
+        - {x: 39, y: 85}
+        - {x: 24, y: 86}
+        - {x: -1, y: 91}
+        - {x: -195, y: 91}
+        - {x: -210, y: 92}
+        - {x: -210, y: 90}
+        - {x: -242, y: 90}
+        - {x: -265, y: 91}
+        - {x: -295, y: 91}
+        - {x: -295, y: -139}
+        - {x: -159, y: -139}
+        - {x: -157, y: -138}
+        - {x: -141, y: -129}
+        - {x: -138, y: -135}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
