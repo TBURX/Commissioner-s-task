@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using Assets.GameScripts.MainPerson;
+using UnityStandardAssets.ImageEffects;
 
 public class MenuController : MonoBehaviour {
 
@@ -19,10 +20,13 @@ public class MenuController : MonoBehaviour {
 
     public PonyController ponyController = new PonyController();
 
+    private Blur blur;
+
     // Use this for initialization
     void Start ()
     {
         fullscreenToggle.isOn = Screen.fullScreen;
+        blur = camera.GetComponent<Blur>();
     }
 	
 	// Update is called once per frame
@@ -42,6 +46,7 @@ public class MenuController : MonoBehaviour {
             if (mainMenu.activeInHierarchy)
             {
                 mainMenu.SetActive(false);
+                blur.enabled = false;
                 if( playerGui != null) playerGui.SetActive(true);
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
@@ -69,6 +74,7 @@ public class MenuController : MonoBehaviour {
                     controlsMenu.SetActive(false);
                 }
                 mainMenu.SetActive(true);
+                blur.enabled = true;
                 if (playerGui != null) playerGui.SetActive(false);
                 Cursor.lockState=CursorLockMode.Confined;
                 Cursor.visible = true;
@@ -81,6 +87,7 @@ public class MenuController : MonoBehaviour {
     public void CloseMenu()
     {
         mainMenu.SetActive(false);
+        blur.enabled = false;
         if (playerGui != null) playerGui.SetActive(true);
         newGameMenu.SetActive(false);
         optionsMenu.SetActive(false);
