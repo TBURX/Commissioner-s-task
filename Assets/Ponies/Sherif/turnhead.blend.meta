@@ -1,0 +1,1064 @@
+fileFormatVersion: 2
+guid: 48a7472dbbeb5c14a91b3cd3e186b94c
+timeCreated: 1455547873
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: amin_l_knee01
+    100002: amin_r_knee01
+    100004: anim_COG01
+    100006: anim_globalMove01
+    100008: anim_head01
+    100010: anim_l_edlow01
+    100012: anim_l_pelvicLimb01
+    100014: anim_l_pelvisJiggle01
+    100016: anim_l_scapula01
+    100018: anim_l_thoracicLimb01
+    100020: anim_micVertebrae01
+    100022: anim_pelvis01
+    100024: anim_r_edlow01
+    100026: anim_r_pelvicLimb01
+    100028: anim_r_pelvisJiggle01
+    100030: anim_r_scapula01
+    100032: anim_r_thoracicLimb01
+    100034: anim_thorax01
+    100036: bDrv_l_pelvic01
+    100038: bDrv_r_pelvic01
+    100040: be_head01
+    100042: be_l_ear_c01
+    100044: Be_l_pasternBK_a01
+    100046: be_l_pasternFT_a01
+    100048: be_l_pelvcLimb01
+    100050: be_l_scapula01
+    100052: be_l_thoracicLimb01
+    100054: be_neck_e01
+    100056: be_r_ear_c01
+    100058: Be_r_pasternBK_a01
+    100060: be_r_pasternFT_a01
+    100062: be_r_pelvcLimb01
+    100064: be_r_scapula01
+    100066: be_r_thoracicLimb01
+    100068: be_vertebrae_e01
+    100070: beDrv_l_pelvic01
+    100072: beDrv_r_pelvic01
+    100074: bn_head01
+    100076: bn_l_ear_a01
+    100078: bn_l_ear_b01
+    100080: bn_l_femur01
+    100082: Bn_l_hoofBK01
+    100084: bn_l_hoofFT01
+    100086: bn_l_humerus01
+    100088: bn_l_metacarpal01
+    100090: bn_l_metatarsal01
+    100092: Bn_l_pasternBK_b01
+    100094: bn_l_pasternFT_b01
+    100096: bn_l_radius01
+    100098: "bn_l_radius01_\u0426\u0435\u043B\u044C"
+    100100: bn_l_scapula01
+    100102: bn_l_tibia01
+    100104: bn_neck_a01
+    100106: bn_neck_b01
+    100108: bn_neck_c01
+    100110: bn_neck_d01
+    100112: bn_r_ear_a01
+    100114: bn_r_ear_b01
+    100116: bn_r_femur01
+    100118: Bn_r_hoofBK01
+    100120: bn_r_hoofFT01
+    100122: bn_r_humerus01
+    100124: bn_r_metacarpal01
+    100126: bn_r_metatarsal01
+    100128: Bn_r_pasternBK_b01
+    100130: bn_r_pasternFT_b01
+    100132: bn_r_radius01
+    100134: "bn_r_radius01_\u0426\u0435\u043B\u044C"
+    100136: bn_r_scapula01
+    100138: bn_r_tibia01
+    100140: bn_vertebrae_a01
+    100142: bn_vertebrae_b01
+    100144: bn_vertebrae_c01
+    100146: bn_vertebrae_d01
+    100148: bones01
+    100150: collar
+    100152: Goal_l_pelvic01
+    100154: Goal_l_pelvicLimb01
+    100156: Goal_l_scapula01
+    100158: goal_l_thoracicLimb01
+    100160: Goal_r_pelvic01
+    100162: Goal_r_pelvicLimb01
+    100164: Goal_r_scapula01
+    100166: goal_r_thoracicLimb01
+    100168: hairBack
+    100170: hairFront
+    100172: headgear
+    100174: jDrv_vertebrae_a01
+    100176: jDrv_vertebrae_b01
+    100178: jDrv_vertebrae_c01
+    100180: jDrv_vertebrae_d01
+    100182: jDrv_vertebrae_e01
+    100184: nDrv_head01
+    100186: nDrv_l_hoofBK01
+    100188: nDrv_l_hoofBK_roll01
+    100190: nDrv_l_hoofFT01
+    100192: nDrv_l_hoofFt_roll01
+    100194: nDrv_l_pasternBK_a01
+    100196: nDrv_l_pasternBK_b01
+    100198: nDrv_l_pasternFT_a01
+    100200: nDrv_l_pasternFT_b01
+    100202: nDrv_neckAnchor01
+    100204: nDrv_neckEnd01
+    100206: nDrv_neckRoot01
+    100208: nDrv_r_hoofBK01
+    100210: nDrv_r_hoofBK_roll01
+    100212: nDrv_r_hoofFT01
+    100214: nDrv_r_hoofFt_roll01
+    100216: nDrv_r_pasternBK_a01
+    100218: nDrv_r_pasternBK_b01
+    100220: nDrv_r_pasternFT_a01
+    100222: nDrv_r_pasternFT_b01
+    100224: Plane_002_Plane_003
+    100226: Po01
+    100228: pole_l_elbow01
+    100230: pole_l_knee01
+    100232: pole_r_elbow01
+    100234: pole_r_knee01
+    100236: root_head01
+    100238: root_l_ear01
+    100240: root_l_hoofBk01
+    100242: root_l_hoofFt01
+    100244: root_l_pelvic01
+    100246: root_l_pelvicLimb01
+    100248: root_l_scapula01
+    100250: root_l_thoracicLimb01
+    100252: root_r_ear01
+    100254: root_r_hoofBk01
+    100256: root_r_hoofFt01
+    100258: root_r_pelvic01
+    100260: root_r_pelvicLimb01
+    100262: root_r_scapula01
+    100264: root_r_thoracicLimb01
+    100266: selObj_bones01
+    100268: SelObj_cotrols01
+    100270: spl_bn_vertebrae01
+    100272: spl_neck01
+    100274: spl_vertebrae01
+    100276: Subdivision_Surface
+    100278: tail
+    100280: //RootNode
+    100282: ZBrush_defualt_group
+    100284: "\u041E\u0431\u044A\u0435\u043A\u0442_\u0421\u043A\u0438\u043D"
+    100286: "\u041E\u0431\u044A\u0435\u043A\u0442_\u0421\u043A\u0438\u043D_2"
+    100288: "\u041E\u0431\u044A\u0435\u043A\u0442_\u0421\u043A\u0438\u043D_2_2"
+    100290: "\u041E\u0431\u044A\u0435\u043A\u0442_\u0421\u043A\u0438\u043D_2_2_2"
+    100292: "\u041E\u0431\u044A\u0435\u043A\u0442_\u0421\u043A\u0438\u043D_3"
+    100294: "\u041E\u0431\u044A\u0435\u043A\u0442_\u0421\u043A\u0438\u043D_3_2"
+    400000: amin_l_knee01
+    400002: amin_r_knee01
+    400004: anim_COG01
+    400006: anim_globalMove01
+    400008: anim_head01
+    400010: anim_l_edlow01
+    400012: anim_l_pelvicLimb01
+    400014: anim_l_pelvisJiggle01
+    400016: anim_l_scapula01
+    400018: anim_l_thoracicLimb01
+    400020: anim_micVertebrae01
+    400022: anim_pelvis01
+    400024: anim_r_edlow01
+    400026: anim_r_pelvicLimb01
+    400028: anim_r_pelvisJiggle01
+    400030: anim_r_scapula01
+    400032: anim_r_thoracicLimb01
+    400034: anim_thorax01
+    400036: bDrv_l_pelvic01
+    400038: bDrv_r_pelvic01
+    400040: be_head01
+    400042: be_l_ear_c01
+    400044: Be_l_pasternBK_a01
+    400046: be_l_pasternFT_a01
+    400048: be_l_pelvcLimb01
+    400050: be_l_scapula01
+    400052: be_l_thoracicLimb01
+    400054: be_neck_e01
+    400056: be_r_ear_c01
+    400058: Be_r_pasternBK_a01
+    400060: be_r_pasternFT_a01
+    400062: be_r_pelvcLimb01
+    400064: be_r_scapula01
+    400066: be_r_thoracicLimb01
+    400068: be_vertebrae_e01
+    400070: beDrv_l_pelvic01
+    400072: beDrv_r_pelvic01
+    400074: bn_head01
+    400076: bn_l_ear_a01
+    400078: bn_l_ear_b01
+    400080: bn_l_femur01
+    400082: Bn_l_hoofBK01
+    400084: bn_l_hoofFT01
+    400086: bn_l_humerus01
+    400088: bn_l_metacarpal01
+    400090: bn_l_metatarsal01
+    400092: Bn_l_pasternBK_b01
+    400094: bn_l_pasternFT_b01
+    400096: bn_l_radius01
+    400098: "bn_l_radius01_\u0426\u0435\u043B\u044C"
+    400100: bn_l_scapula01
+    400102: bn_l_tibia01
+    400104: bn_neck_a01
+    400106: bn_neck_b01
+    400108: bn_neck_c01
+    400110: bn_neck_d01
+    400112: bn_r_ear_a01
+    400114: bn_r_ear_b01
+    400116: bn_r_femur01
+    400118: Bn_r_hoofBK01
+    400120: bn_r_hoofFT01
+    400122: bn_r_humerus01
+    400124: bn_r_metacarpal01
+    400126: bn_r_metatarsal01
+    400128: Bn_r_pasternBK_b01
+    400130: bn_r_pasternFT_b01
+    400132: bn_r_radius01
+    400134: "bn_r_radius01_\u0426\u0435\u043B\u044C"
+    400136: bn_r_scapula01
+    400138: bn_r_tibia01
+    400140: bn_vertebrae_a01
+    400142: bn_vertebrae_b01
+    400144: bn_vertebrae_c01
+    400146: bn_vertebrae_d01
+    400148: bones01
+    400150: collar
+    400152: Goal_l_pelvic01
+    400154: Goal_l_pelvicLimb01
+    400156: Goal_l_scapula01
+    400158: goal_l_thoracicLimb01
+    400160: Goal_r_pelvic01
+    400162: Goal_r_pelvicLimb01
+    400164: Goal_r_scapula01
+    400166: goal_r_thoracicLimb01
+    400168: hairBack
+    400170: hairFront
+    400172: headgear
+    400174: jDrv_vertebrae_a01
+    400176: jDrv_vertebrae_b01
+    400178: jDrv_vertebrae_c01
+    400180: jDrv_vertebrae_d01
+    400182: jDrv_vertebrae_e01
+    400184: nDrv_head01
+    400186: nDrv_l_hoofBK01
+    400188: nDrv_l_hoofBK_roll01
+    400190: nDrv_l_hoofFT01
+    400192: nDrv_l_hoofFt_roll01
+    400194: nDrv_l_pasternBK_a01
+    400196: nDrv_l_pasternBK_b01
+    400198: nDrv_l_pasternFT_a01
+    400200: nDrv_l_pasternFT_b01
+    400202: nDrv_neckAnchor01
+    400204: nDrv_neckEnd01
+    400206: nDrv_neckRoot01
+    400208: nDrv_r_hoofBK01
+    400210: nDrv_r_hoofBK_roll01
+    400212: nDrv_r_hoofFT01
+    400214: nDrv_r_hoofFt_roll01
+    400216: nDrv_r_pasternBK_a01
+    400218: nDrv_r_pasternBK_b01
+    400220: nDrv_r_pasternFT_a01
+    400222: nDrv_r_pasternFT_b01
+    400224: Plane_002_Plane_003
+    400226: Po01
+    400228: pole_l_elbow01
+    400230: pole_l_knee01
+    400232: pole_r_elbow01
+    400234: pole_r_knee01
+    400236: root_head01
+    400238: root_l_ear01
+    400240: root_l_hoofBk01
+    400242: root_l_hoofFt01
+    400244: root_l_pelvic01
+    400246: root_l_pelvicLimb01
+    400248: root_l_scapula01
+    400250: root_l_thoracicLimb01
+    400252: root_r_ear01
+    400254: root_r_hoofBk01
+    400256: root_r_hoofFt01
+    400258: root_r_pelvic01
+    400260: root_r_pelvicLimb01
+    400262: root_r_scapula01
+    400264: root_r_thoracicLimb01
+    400266: selObj_bones01
+    400268: SelObj_cotrols01
+    400270: spl_bn_vertebrae01
+    400272: spl_neck01
+    400274: spl_vertebrae01
+    400276: Subdivision_Surface
+    400278: tail
+    400280: //RootNode
+    400282: ZBrush_defualt_group
+    400284: "\u041E\u0431\u044A\u0435\u043A\u0442_\u0421\u043A\u0438\u043D"
+    400286: "\u041E\u0431\u044A\u0435\u043A\u0442_\u0421\u043A\u0438\u043D_2"
+    400288: "\u041E\u0431\u044A\u0435\u043A\u0442_\u0421\u043A\u0438\u043D_2_2"
+    400290: "\u041E\u0431\u044A\u0435\u043A\u0442_\u0421\u043A\u0438\u043D_2_2_2"
+    400292: "\u041E\u0431\u044A\u0435\u043A\u0442_\u0421\u043A\u0438\u043D_3"
+    400294: "\u041E\u0431\u044A\u0435\u043A\u0442_\u0421\u043A\u0438\u043D_3_2"
+    4300000: Plane_002_Plane_003
+    4300002: ZBrush_defualt_group
+    4300004: tail
+    4300006: collar
+    4300008: hairBack
+    4300010: hairFront
+    4300012: headgear
+    7400000: Default Take
+    7400002: bones01Action
+    7400004: bones01_bones01_anim_COG01Action_bones01_anim_COG01Action
+    7400006: bones01_bones01_anim_globalMove01Action_bones01_anim_globalMove
+    7400008: bones01_bones01_anim_head01Action_bones01_anim_head01Action
+    7400010: bones01_bones01_anim_l_pelvisJiggle01_C4D_Animation_Take_Layer0
+    7400012: bones01_bones01_anim_l_scapula01_C4D_Animation_Take_Layer0_bone
+    7400014: bones01_bones01_anim_micVertebrae01_C4D_Animation_Take_Layer0_b
+    7400016: bones01_bones01_anim_pelvis01_C4D_Animation_Take_Layer0_bones01
+    7400018: bones01_bones01_anim_r_pelvisJiggle01_C4D_Animation_Take_Layer0
+    7400020: bones01_bones01_anim_r_scapula01_C4D_Animation_Take_Layer0_bone
+    7400022: bones01_bones01_anim_thorax01_C4D_Animation_Take_Layer0_bones01
+    7400024: "bones01_bones01_bn_l_radius01_\u0426\u0435\u043B\u044C_C4D_Animation_Take_Layer"
+    7400026: "bones01_bones01_bn_r_radius01_\u0426\u0435\u043B\u044C_C4D_Animation_Take_Layer"
+    7400028: bones01_bones01_bones01_C4D_Animation_Take_Layer0_bones01_bones
+    7400030: bones01_bones01_Goal_l_pelvic01_C4D_Animation_Take_Layer0_bones
+    7400032: bones01_bones01_Goal_l_scapula01_C4D_Animation_Take_Layer0_bone
+    7400034: bones01_bones01_goal_l_thoracicLimb01_C4D_Animation_Take_Layer0
+    7400036: bones01_bones01_Goal_r_pelvic01_C4D_Animation_Take_Layer0_bones
+    7400038: bones01_bones01_Goal_r_pelvicLimb01_C4D_Animation_Take_Layer0_b
+    7400040: bones01_bones01_Goal_r_scapula01_C4D_Animation_Take_Layer0_bone
+    7400042: bones01_bones01_goal_r_thoracicLimb01_C4D_Animation_Take_Layer0
+    7400044: bones01_bones01_nDrv_head01Action_bones01_nDrv_head01Action
+    7400046: bones01_bones01_nDrv_l_pasternFT_b01_C4D_Animation_Take_Layer0_
+    7400048: bones01_bones01_nDrv_neckAnchor01Action_bones01_nDrv_neckAnchor
+    7400050: bones01_bones01_nDrv_neckEnd01_C4D_Animation_Take_Layer0_bones0
+    7400052: bones01_bones01_nDrv_neckRoot01Action_bones01_nDrv_neckRoot01Ac
+    7400054: bones01_bones01_Po01Action_bones01_Po01Action
+    7400056: bones01_bones01_pony_body_polySurface1Action_bones01_pony_body_
+    7400058: bones01_bones01_root_head01Action_bones01_root_head01Action
+    7400060: bones01_bones01_spl_bn_vertebrae01Action_bones01_spl_bn_vertebr
+    7400062: bones01_bones01_spl_neck01Action_bones01_spl_neck01Action
+    7400064: bones01_bones01_spl_vertebrae01Action_bones01_spl_vertebrae01Ac
+    7400066: bones01_bones01_ZBrush_defualt_groupAction_bones01_ZBrush_defua
+    9500000: //RootNode
+    13700000: collar
+    13700002: hairBack
+    13700004: hairFront
+    13700006: headgear
+    13700008: Plane_002_Plane_003
+    13700010: tail
+    13700012: ZBrush_defualt_group
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Default Take
+      takeName: Default Take
+      firstFrame: -1
+      lastFrame: 119
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: anim_micVertebrae01
+        weight: 1
+      - path: "bn_l_radius01_\u0426\u0435\u043B\u044C"
+        weight: 1
+      - path: "bn_r_radius01_\u0426\u0435\u043B\u044C"
+        weight: 1
+      - path: collar
+        weight: 1
+      - path: hairBack
+        weight: 1
+      - path: hairFront
+        weight: 1
+      - path: headgear
+        weight: 1
+      - path: Plane_002_Plane_003
+        weight: 1
+      - path: Po01
+        weight: 1
+      - path: Po01/anim_globalMove01
+        weight: 1
+      - path: Po01/anim_globalMove01/amin_l_knee01
+        weight: 1
+      - path: Po01/anim_globalMove01/amin_l_knee01/pole_l_knee01
+        weight: 1
+      - path: Po01/anim_globalMove01/amin_r_knee01
+        weight: 1
+      - path: Po01/anim_globalMove01/amin_r_knee01/pole_r_knee01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_COG01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_COG01/anim_pelvis01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_COG01/anim_pelvis01/anim_l_pelvisJiggle01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_COG01/anim_pelvis01/anim_l_pelvisJiggle01/Goal_l_pelvic01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_COG01/anim_pelvis01/anim_r_pelvisJiggle01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_COG01/anim_pelvis01/anim_r_pelvisJiggle01/Goal_r_pelvic01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_COG01/anim_thorax01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_COG01/anim_thorax01/anim_l_scapula01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_COG01/anim_thorax01/anim_l_scapula01/Goal_l_scapula01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_COG01/anim_thorax01/anim_r_scapula01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_COG01/anim_thorax01/anim_r_scapula01/Goal_r_scapula01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_COG01/nDrv_neckAnchor01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_COG01/nDrv_neckAnchor01/anim_head01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_COG01/nDrv_neckAnchor01/anim_head01/nDrv_head01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_COG01/nDrv_neckAnchor01/anim_head01/nDrv_head01/nDrv_neckEnd01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_COG01/nDrv_neckAnchor01/anim_head01/nDrv_head01/root_head01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_COG01/nDrv_neckAnchor01/nDrv_neckRoot01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_l_edlow01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_l_edlow01/pole_l_elbow01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_l_pelvicLimb01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_l_pelvicLimb01/nDrv_l_hoofBK_roll01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_l_pelvicLimb01/nDrv_l_hoofBK_roll01/nDrv_l_hoofBK01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_l_pelvicLimb01/nDrv_l_hoofBK_roll01/nDrv_l_hoofBK01/nDrv_l_pasternBK_b01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_l_pelvicLimb01/nDrv_l_hoofBK_roll01/nDrv_l_hoofBK01/nDrv_l_pasternBK_b01/nDrv_l_pasternBK_a01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_l_pelvicLimb01/nDrv_l_hoofBK_roll01/nDrv_l_hoofBK01/nDrv_l_pasternBK_b01/nDrv_l_pasternBK_a01/Goal_l_pelvicLimb01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_l_pelvicLimb01/nDrv_l_hoofBK_roll01/root_l_hoofBk01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_l_thoracicLimb01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_l_thoracicLimb01/nDrv_l_hoofFt_roll01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_l_thoracicLimb01/nDrv_l_hoofFt_roll01/nDrv_l_hoofFT01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_l_thoracicLimb01/nDrv_l_hoofFt_roll01/nDrv_l_hoofFT01/nDrv_l_pasternFT_b01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_l_thoracicLimb01/nDrv_l_hoofFt_roll01/nDrv_l_hoofFT01/nDrv_l_pasternFT_b01/nDrv_l_pasternFT_a01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_l_thoracicLimb01/nDrv_l_hoofFt_roll01/nDrv_l_hoofFT01/nDrv_l_pasternFT_b01/nDrv_l_pasternFT_a01/goal_l_thoracicLimb01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_l_thoracicLimb01/nDrv_l_hoofFt_roll01/root_l_hoofFt01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_r_edlow01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_r_edlow01/pole_r_elbow01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_r_pelvicLimb01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_r_pelvicLimb01/nDrv_r_hoofBK_roll01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_r_pelvicLimb01/nDrv_r_hoofBK_roll01/nDrv_r_hoofBK01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_r_pelvicLimb01/nDrv_r_hoofBK_roll01/nDrv_r_hoofBK01/nDrv_r_pasternBK_b01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_r_pelvicLimb01/nDrv_r_hoofBK_roll01/nDrv_r_hoofBK01/nDrv_r_pasternBK_b01/nDrv_r_pasternBK_a01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_r_pelvicLimb01/nDrv_r_hoofBK_roll01/nDrv_r_hoofBK01/nDrv_r_pasternBK_b01/nDrv_r_pasternBK_a01/Goal_r_pelvicLimb01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_r_pelvicLimb01/nDrv_r_hoofBK_roll01/root_r_hoofBk01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_r_thoracicLimb01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_r_thoracicLimb01/nDrv_r_hoofFt_roll01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_r_thoracicLimb01/nDrv_r_hoofFt_roll01/nDrv_r_hoofFT01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_r_thoracicLimb01/nDrv_r_hoofFt_roll01/nDrv_r_hoofFT01/nDrv_r_pasternFT_b01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_r_thoracicLimb01/nDrv_r_hoofFt_roll01/nDrv_r_hoofFT01/nDrv_r_pasternFT_b01/nDrv_r_pasternFT_a01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_r_thoracicLimb01/nDrv_r_hoofFt_roll01/nDrv_r_hoofFT01/nDrv_r_pasternFT_b01/nDrv_r_pasternFT_a01/goal_r_thoracicLimb01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_r_thoracicLimb01/nDrv_r_hoofFt_roll01/root_r_hoofFt01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/bn_vertebrae_a01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/bn_vertebrae_a01/bn_vertebrae_b01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/bn_vertebrae_a01/bn_vertebrae_b01/bn_vertebrae_c01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/bn_vertebrae_a01/bn_vertebrae_b01/bn_vertebrae_c01/bn_vertebrae_d01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/bn_vertebrae_a01/bn_vertebrae_b01/bn_vertebrae_c01/bn_vertebrae_d01/be_vertebrae_e01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/bn_vertebrae_a01/bn_vertebrae_b01/bn_vertebrae_c01/bn_vertebrae_d01/bn_neck_a01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/bn_vertebrae_a01/bn_vertebrae_b01/bn_vertebrae_c01/bn_vertebrae_d01/bn_neck_a01/bn_neck_b01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/bn_vertebrae_a01/bn_vertebrae_b01/bn_vertebrae_c01/bn_vertebrae_d01/bn_neck_a01/bn_neck_b01/bn_neck_c01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/bn_vertebrae_a01/bn_vertebrae_b01/bn_vertebrae_c01/bn_vertebrae_d01/bn_neck_a01/bn_neck_b01/bn_neck_c01/bn_neck_d01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/bn_vertebrae_a01/bn_vertebrae_b01/bn_vertebrae_c01/bn_vertebrae_d01/bn_neck_a01/bn_neck_b01/bn_neck_c01/bn_neck_d01/be_neck_e01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/bn_vertebrae_a01/bn_vertebrae_b01/bn_vertebrae_c01/bn_vertebrae_d01/bn_neck_a01/bn_neck_b01/bn_neck_c01/bn_neck_d01/be_neck_e01/bn_head01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/bn_vertebrae_a01/bn_vertebrae_b01/bn_vertebrae_c01/bn_vertebrae_d01/bn_neck_a01/bn_neck_b01/bn_neck_c01/bn_neck_d01/be_neck_e01/bn_head01/be_head01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/bn_vertebrae_a01/bn_vertebrae_b01/bn_vertebrae_c01/bn_vertebrae_d01/bn_neck_a01/bn_neck_b01/bn_neck_c01/bn_neck_d01/be_neck_e01/bn_head01/root_l_ear01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/bn_vertebrae_a01/bn_vertebrae_b01/bn_vertebrae_c01/bn_vertebrae_d01/bn_neck_a01/bn_neck_b01/bn_neck_c01/bn_neck_d01/be_neck_e01/bn_head01/root_l_ear01/bn_l_ear_a01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/bn_vertebrae_a01/bn_vertebrae_b01/bn_vertebrae_c01/bn_vertebrae_d01/bn_neck_a01/bn_neck_b01/bn_neck_c01/bn_neck_d01/be_neck_e01/bn_head01/root_l_ear01/bn_l_ear_a01/bn_l_ear_b01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/bn_vertebrae_a01/bn_vertebrae_b01/bn_vertebrae_c01/bn_vertebrae_d01/bn_neck_a01/bn_neck_b01/bn_neck_c01/bn_neck_d01/be_neck_e01/bn_head01/root_l_ear01/bn_l_ear_a01/bn_l_ear_b01/be_l_ear_c01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/bn_vertebrae_a01/bn_vertebrae_b01/bn_vertebrae_c01/bn_vertebrae_d01/bn_neck_a01/bn_neck_b01/bn_neck_c01/bn_neck_d01/be_neck_e01/bn_head01/root_r_ear01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/bn_vertebrae_a01/bn_vertebrae_b01/bn_vertebrae_c01/bn_vertebrae_d01/bn_neck_a01/bn_neck_b01/bn_neck_c01/bn_neck_d01/be_neck_e01/bn_head01/root_r_ear01/bn_r_ear_a01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/bn_vertebrae_a01/bn_vertebrae_b01/bn_vertebrae_c01/bn_vertebrae_d01/bn_neck_a01/bn_neck_b01/bn_neck_c01/bn_neck_d01/be_neck_e01/bn_head01/root_r_ear01/bn_r_ear_a01/bn_r_ear_b01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/bn_vertebrae_a01/bn_vertebrae_b01/bn_vertebrae_c01/bn_vertebrae_d01/bn_neck_a01/bn_neck_b01/bn_neck_c01/bn_neck_d01/be_neck_e01/bn_head01/root_r_ear01/bn_r_ear_a01/bn_r_ear_b01/be_r_ear_c01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01/root_l_scapula01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01/root_l_scapula01/bn_l_scapula01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01/root_l_scapula01/bn_l_scapula01/be_l_scapula01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01/root_l_scapula01/bn_l_scapula01/be_l_scapula01/root_l_thoracicLimb01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01/root_l_scapula01/bn_l_scapula01/be_l_scapula01/root_l_thoracicLimb01/bn_l_humerus01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01/root_l_scapula01/bn_l_scapula01/be_l_scapula01/root_l_thoracicLimb01/bn_l_humerus01/bn_l_radius01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01/root_l_scapula01/bn_l_scapula01/be_l_scapula01/root_l_thoracicLimb01/bn_l_humerus01/bn_l_radius01/bn_l_metacarpal01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01/root_l_scapula01/bn_l_scapula01/be_l_scapula01/root_l_thoracicLimb01/bn_l_humerus01/bn_l_radius01/bn_l_metacarpal01/be_l_thoracicLimb01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01/root_l_scapula01/bn_l_scapula01/be_l_scapula01/root_l_thoracicLimb01/bn_l_humerus01/bn_l_radius01/bn_l_metacarpal01/be_l_thoracicLimb01/be_l_pasternFT_a01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01/root_l_scapula01/bn_l_scapula01/be_l_scapula01/root_l_thoracicLimb01/bn_l_humerus01/bn_l_radius01/bn_l_metacarpal01/be_l_thoracicLimb01/be_l_pasternFT_a01/bn_l_pasternFT_b01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01/root_l_scapula01/bn_l_scapula01/be_l_scapula01/root_l_thoracicLimb01/bn_l_humerus01/bn_l_radius01/bn_l_metacarpal01/be_l_thoracicLimb01/be_l_pasternFT_a01/bn_l_pasternFT_b01/bn_l_hoofFT01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01/root_r_scapula01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01/root_r_scapula01/bn_r_scapula01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01/root_r_scapula01/bn_r_scapula01/be_r_scapula01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01/root_r_scapula01/bn_r_scapula01/be_r_scapula01/root_r_thoracicLimb01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01/root_r_scapula01/bn_r_scapula01/be_r_scapula01/root_r_thoracicLimb01/bn_r_humerus01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01/root_r_scapula01/bn_r_scapula01/be_r_scapula01/root_r_thoracicLimb01/bn_r_humerus01/bn_r_radius01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01/root_r_scapula01/bn_r_scapula01/be_r_scapula01/root_r_thoracicLimb01/bn_r_humerus01/bn_r_radius01/bn_r_metacarpal01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01/root_r_scapula01/bn_r_scapula01/be_r_scapula01/root_r_thoracicLimb01/bn_r_humerus01/bn_r_radius01/bn_r_metacarpal01/be_r_thoracicLimb01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01/root_r_scapula01/bn_r_scapula01/be_r_scapula01/root_r_thoracicLimb01/bn_r_humerus01/bn_r_radius01/bn_r_metacarpal01/be_r_thoracicLimb01/be_r_pasternFT_a01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01/root_r_scapula01/bn_r_scapula01/be_r_scapula01/root_r_thoracicLimb01/bn_r_humerus01/bn_r_radius01/bn_r_metacarpal01/be_r_thoracicLimb01/be_r_pasternFT_a01/bn_r_pasternFT_b01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01/root_r_scapula01/bn_r_scapula01/be_r_scapula01/root_r_thoracicLimb01/bn_r_humerus01/bn_r_radius01/bn_r_metacarpal01/be_r_thoracicLimb01/be_r_pasternFT_a01/bn_r_pasternFT_b01/bn_r_hoofFT01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/root_l_pelvic01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/root_l_pelvic01/bDrv_l_pelvic01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/root_l_pelvic01/bDrv_l_pelvic01/beDrv_l_pelvic01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/root_l_pelvic01/bDrv_l_pelvic01/beDrv_l_pelvic01/root_l_pelvicLimb01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/root_l_pelvic01/bDrv_l_pelvic01/beDrv_l_pelvic01/root_l_pelvicLimb01/bn_l_femur01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/root_l_pelvic01/bDrv_l_pelvic01/beDrv_l_pelvic01/root_l_pelvicLimb01/bn_l_femur01/bn_l_tibia01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/root_l_pelvic01/bDrv_l_pelvic01/beDrv_l_pelvic01/root_l_pelvicLimb01/bn_l_femur01/bn_l_tibia01/bn_l_metatarsal01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/root_l_pelvic01/bDrv_l_pelvic01/beDrv_l_pelvic01/root_l_pelvicLimb01/bn_l_femur01/bn_l_tibia01/bn_l_metatarsal01/be_l_pelvcLimb01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/root_l_pelvic01/bDrv_l_pelvic01/beDrv_l_pelvic01/root_l_pelvicLimb01/bn_l_femur01/bn_l_tibia01/bn_l_metatarsal01/be_l_pelvcLimb01/Be_l_pasternBK_a01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/root_l_pelvic01/bDrv_l_pelvic01/beDrv_l_pelvic01/root_l_pelvicLimb01/bn_l_femur01/bn_l_tibia01/bn_l_metatarsal01/be_l_pelvcLimb01/Be_l_pasternBK_a01/Bn_l_pasternBK_b01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/root_l_pelvic01/bDrv_l_pelvic01/beDrv_l_pelvic01/root_l_pelvicLimb01/bn_l_femur01/bn_l_tibia01/bn_l_metatarsal01/be_l_pelvcLimb01/Be_l_pasternBK_a01/Bn_l_pasternBK_b01/Bn_l_hoofBK01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/root_r_pelvic01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/root_r_pelvic01/bDrv_r_pelvic01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/root_r_pelvic01/bDrv_r_pelvic01/beDrv_r_pelvic01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/root_r_pelvic01/bDrv_r_pelvic01/beDrv_r_pelvic01/root_r_pelvicLimb01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/root_r_pelvic01/bDrv_r_pelvic01/beDrv_r_pelvic01/root_r_pelvicLimb01/bn_r_femur01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/root_r_pelvic01/bDrv_r_pelvic01/beDrv_r_pelvic01/root_r_pelvicLimb01/bn_r_femur01/bn_r_tibia01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/root_r_pelvic01/bDrv_r_pelvic01/beDrv_r_pelvic01/root_r_pelvicLimb01/bn_r_femur01/bn_r_tibia01/bn_r_metatarsal01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/root_r_pelvic01/bDrv_r_pelvic01/beDrv_r_pelvic01/root_r_pelvicLimb01/bn_r_femur01/bn_r_tibia01/bn_r_metatarsal01/be_r_pelvcLimb01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/root_r_pelvic01/bDrv_r_pelvic01/beDrv_r_pelvic01/root_r_pelvicLimb01/bn_r_femur01/bn_r_tibia01/bn_r_metatarsal01/be_r_pelvcLimb01/Be_r_pasternBK_a01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/root_r_pelvic01/bDrv_r_pelvic01/beDrv_r_pelvic01/root_r_pelvicLimb01/bn_r_femur01/bn_r_tibia01/bn_r_metatarsal01/be_r_pelvcLimb01/Be_r_pasternBK_a01/Bn_r_pasternBK_b01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/root_r_pelvic01/bDrv_r_pelvic01/beDrv_r_pelvic01/root_r_pelvicLimb01/bn_r_femur01/bn_r_tibia01/bn_r_metatarsal01/be_r_pelvcLimb01/Be_r_pasternBK_a01/Bn_r_pasternBK_b01/Bn_r_hoofBK01
+        weight: 1
+      - path: Po01/spl_bn_vertebrae01
+        weight: 1
+      - path: Po01/spl_neck01
+        weight: 1
+      - path: Po01/spl_vertebrae01
+        weight: 1
+      - path: Po01/Subdivision_Surface
+        weight: 1
+      - path: selObj_bones01
+        weight: 1
+      - path: SelObj_cotrols01
+        weight: 1
+      - path: tail
+        weight: 1
+      - path: ZBrush_defualt_group
+        weight: 1
+      - path: "ZBrush_defualt_group/\u041E\u0431\u044A\u0435\u043A\u0442_\u0421\u043A\u0438\u043D"
+        weight: 1
+      - path: "ZBrush_defualt_group/\u041E\u0431\u044A\u0435\u043A\u0442_\u0421\u043A\u0438\u043D_2"
+        weight: 1
+      - path: "\u041E\u0431\u044A\u0435\u043A\u0442_\u0421\u043A\u0438\u043D_2_2"
+        weight: 1
+      - path: "\u041E\u0431\u044A\u0435\u043A\u0442_\u0421\u043A\u0438\u043D_2_2_2"
+        weight: 1
+      - path: "\u041E\u0431\u044A\u0435\u043A\u0442_\u0421\u043A\u0438\u043D_3"
+        weight: 1
+      - path: "\u041E\u0431\u044A\u0435\u043A\u0442_\u0421\u043A\u0438\u043D_3_2"
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: bones01Action
+      takeName: bones01Action
+      firstFrame: 1
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: anim_micVertebrae01
+        weight: 1
+      - path: "bn_l_radius01_\u0426\u0435\u043B\u044C"
+        weight: 1
+      - path: "bn_r_radius01_\u0426\u0435\u043B\u044C"
+        weight: 1
+      - path: collar
+        weight: 1
+      - path: hairBack
+        weight: 1
+      - path: hairFront
+        weight: 1
+      - path: headgear
+        weight: 1
+      - path: Plane_002_Plane_003
+        weight: 1
+      - path: Po01
+        weight: 1
+      - path: Po01/anim_globalMove01
+        weight: 1
+      - path: Po01/anim_globalMove01/amin_l_knee01
+        weight: 1
+      - path: Po01/anim_globalMove01/amin_l_knee01/pole_l_knee01
+        weight: 1
+      - path: Po01/anim_globalMove01/amin_r_knee01
+        weight: 1
+      - path: Po01/anim_globalMove01/amin_r_knee01/pole_r_knee01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_COG01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_COG01/anim_pelvis01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_COG01/anim_pelvis01/anim_l_pelvisJiggle01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_COG01/anim_pelvis01/anim_l_pelvisJiggle01/Goal_l_pelvic01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_COG01/anim_pelvis01/anim_r_pelvisJiggle01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_COG01/anim_pelvis01/anim_r_pelvisJiggle01/Goal_r_pelvic01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_COG01/anim_thorax01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_COG01/anim_thorax01/anim_l_scapula01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_COG01/anim_thorax01/anim_l_scapula01/Goal_l_scapula01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_COG01/anim_thorax01/anim_r_scapula01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_COG01/anim_thorax01/anim_r_scapula01/Goal_r_scapula01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_COG01/nDrv_neckAnchor01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_COG01/nDrv_neckAnchor01/anim_head01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_COG01/nDrv_neckAnchor01/anim_head01/nDrv_head01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_COG01/nDrv_neckAnchor01/anim_head01/nDrv_head01/nDrv_neckEnd01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_COG01/nDrv_neckAnchor01/anim_head01/nDrv_head01/root_head01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_COG01/nDrv_neckAnchor01/nDrv_neckRoot01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_l_edlow01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_l_edlow01/pole_l_elbow01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_l_pelvicLimb01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_l_pelvicLimb01/nDrv_l_hoofBK_roll01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_l_pelvicLimb01/nDrv_l_hoofBK_roll01/nDrv_l_hoofBK01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_l_pelvicLimb01/nDrv_l_hoofBK_roll01/nDrv_l_hoofBK01/nDrv_l_pasternBK_b01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_l_pelvicLimb01/nDrv_l_hoofBK_roll01/nDrv_l_hoofBK01/nDrv_l_pasternBK_b01/nDrv_l_pasternBK_a01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_l_pelvicLimb01/nDrv_l_hoofBK_roll01/nDrv_l_hoofBK01/nDrv_l_pasternBK_b01/nDrv_l_pasternBK_a01/Goal_l_pelvicLimb01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_l_pelvicLimb01/nDrv_l_hoofBK_roll01/root_l_hoofBk01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_l_thoracicLimb01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_l_thoracicLimb01/nDrv_l_hoofFt_roll01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_l_thoracicLimb01/nDrv_l_hoofFt_roll01/nDrv_l_hoofFT01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_l_thoracicLimb01/nDrv_l_hoofFt_roll01/nDrv_l_hoofFT01/nDrv_l_pasternFT_b01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_l_thoracicLimb01/nDrv_l_hoofFt_roll01/nDrv_l_hoofFT01/nDrv_l_pasternFT_b01/nDrv_l_pasternFT_a01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_l_thoracicLimb01/nDrv_l_hoofFt_roll01/nDrv_l_hoofFT01/nDrv_l_pasternFT_b01/nDrv_l_pasternFT_a01/goal_l_thoracicLimb01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_l_thoracicLimb01/nDrv_l_hoofFt_roll01/root_l_hoofFt01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_r_edlow01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_r_edlow01/pole_r_elbow01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_r_pelvicLimb01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_r_pelvicLimb01/nDrv_r_hoofBK_roll01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_r_pelvicLimb01/nDrv_r_hoofBK_roll01/nDrv_r_hoofBK01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_r_pelvicLimb01/nDrv_r_hoofBK_roll01/nDrv_r_hoofBK01/nDrv_r_pasternBK_b01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_r_pelvicLimb01/nDrv_r_hoofBK_roll01/nDrv_r_hoofBK01/nDrv_r_pasternBK_b01/nDrv_r_pasternBK_a01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_r_pelvicLimb01/nDrv_r_hoofBK_roll01/nDrv_r_hoofBK01/nDrv_r_pasternBK_b01/nDrv_r_pasternBK_a01/Goal_r_pelvicLimb01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_r_pelvicLimb01/nDrv_r_hoofBK_roll01/root_r_hoofBk01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_r_thoracicLimb01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_r_thoracicLimb01/nDrv_r_hoofFt_roll01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_r_thoracicLimb01/nDrv_r_hoofFt_roll01/nDrv_r_hoofFT01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_r_thoracicLimb01/nDrv_r_hoofFt_roll01/nDrv_r_hoofFT01/nDrv_r_pasternFT_b01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_r_thoracicLimb01/nDrv_r_hoofFt_roll01/nDrv_r_hoofFT01/nDrv_r_pasternFT_b01/nDrv_r_pasternFT_a01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_r_thoracicLimb01/nDrv_r_hoofFt_roll01/nDrv_r_hoofFT01/nDrv_r_pasternFT_b01/nDrv_r_pasternFT_a01/goal_r_thoracicLimb01
+        weight: 1
+      - path: Po01/anim_globalMove01/anim_r_thoracicLimb01/nDrv_r_hoofFt_roll01/root_r_hoofFt01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/bn_vertebrae_a01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/bn_vertebrae_a01/bn_vertebrae_b01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/bn_vertebrae_a01/bn_vertebrae_b01/bn_vertebrae_c01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/bn_vertebrae_a01/bn_vertebrae_b01/bn_vertebrae_c01/bn_vertebrae_d01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/bn_vertebrae_a01/bn_vertebrae_b01/bn_vertebrae_c01/bn_vertebrae_d01/be_vertebrae_e01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/bn_vertebrae_a01/bn_vertebrae_b01/bn_vertebrae_c01/bn_vertebrae_d01/bn_neck_a01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/bn_vertebrae_a01/bn_vertebrae_b01/bn_vertebrae_c01/bn_vertebrae_d01/bn_neck_a01/bn_neck_b01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/bn_vertebrae_a01/bn_vertebrae_b01/bn_vertebrae_c01/bn_vertebrae_d01/bn_neck_a01/bn_neck_b01/bn_neck_c01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/bn_vertebrae_a01/bn_vertebrae_b01/bn_vertebrae_c01/bn_vertebrae_d01/bn_neck_a01/bn_neck_b01/bn_neck_c01/bn_neck_d01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/bn_vertebrae_a01/bn_vertebrae_b01/bn_vertebrae_c01/bn_vertebrae_d01/bn_neck_a01/bn_neck_b01/bn_neck_c01/bn_neck_d01/be_neck_e01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/bn_vertebrae_a01/bn_vertebrae_b01/bn_vertebrae_c01/bn_vertebrae_d01/bn_neck_a01/bn_neck_b01/bn_neck_c01/bn_neck_d01/be_neck_e01/bn_head01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/bn_vertebrae_a01/bn_vertebrae_b01/bn_vertebrae_c01/bn_vertebrae_d01/bn_neck_a01/bn_neck_b01/bn_neck_c01/bn_neck_d01/be_neck_e01/bn_head01/be_head01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/bn_vertebrae_a01/bn_vertebrae_b01/bn_vertebrae_c01/bn_vertebrae_d01/bn_neck_a01/bn_neck_b01/bn_neck_c01/bn_neck_d01/be_neck_e01/bn_head01/root_l_ear01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/bn_vertebrae_a01/bn_vertebrae_b01/bn_vertebrae_c01/bn_vertebrae_d01/bn_neck_a01/bn_neck_b01/bn_neck_c01/bn_neck_d01/be_neck_e01/bn_head01/root_l_ear01/bn_l_ear_a01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/bn_vertebrae_a01/bn_vertebrae_b01/bn_vertebrae_c01/bn_vertebrae_d01/bn_neck_a01/bn_neck_b01/bn_neck_c01/bn_neck_d01/be_neck_e01/bn_head01/root_l_ear01/bn_l_ear_a01/bn_l_ear_b01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/bn_vertebrae_a01/bn_vertebrae_b01/bn_vertebrae_c01/bn_vertebrae_d01/bn_neck_a01/bn_neck_b01/bn_neck_c01/bn_neck_d01/be_neck_e01/bn_head01/root_l_ear01/bn_l_ear_a01/bn_l_ear_b01/be_l_ear_c01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/bn_vertebrae_a01/bn_vertebrae_b01/bn_vertebrae_c01/bn_vertebrae_d01/bn_neck_a01/bn_neck_b01/bn_neck_c01/bn_neck_d01/be_neck_e01/bn_head01/root_r_ear01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/bn_vertebrae_a01/bn_vertebrae_b01/bn_vertebrae_c01/bn_vertebrae_d01/bn_neck_a01/bn_neck_b01/bn_neck_c01/bn_neck_d01/be_neck_e01/bn_head01/root_r_ear01/bn_r_ear_a01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/bn_vertebrae_a01/bn_vertebrae_b01/bn_vertebrae_c01/bn_vertebrae_d01/bn_neck_a01/bn_neck_b01/bn_neck_c01/bn_neck_d01/be_neck_e01/bn_head01/root_r_ear01/bn_r_ear_a01/bn_r_ear_b01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/bn_vertebrae_a01/bn_vertebrae_b01/bn_vertebrae_c01/bn_vertebrae_d01/bn_neck_a01/bn_neck_b01/bn_neck_c01/bn_neck_d01/be_neck_e01/bn_head01/root_r_ear01/bn_r_ear_a01/bn_r_ear_b01/be_r_ear_c01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01/root_l_scapula01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01/root_l_scapula01/bn_l_scapula01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01/root_l_scapula01/bn_l_scapula01/be_l_scapula01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01/root_l_scapula01/bn_l_scapula01/be_l_scapula01/root_l_thoracicLimb01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01/root_l_scapula01/bn_l_scapula01/be_l_scapula01/root_l_thoracicLimb01/bn_l_humerus01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01/root_l_scapula01/bn_l_scapula01/be_l_scapula01/root_l_thoracicLimb01/bn_l_humerus01/bn_l_radius01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01/root_l_scapula01/bn_l_scapula01/be_l_scapula01/root_l_thoracicLimb01/bn_l_humerus01/bn_l_radius01/bn_l_metacarpal01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01/root_l_scapula01/bn_l_scapula01/be_l_scapula01/root_l_thoracicLimb01/bn_l_humerus01/bn_l_radius01/bn_l_metacarpal01/be_l_thoracicLimb01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01/root_l_scapula01/bn_l_scapula01/be_l_scapula01/root_l_thoracicLimb01/bn_l_humerus01/bn_l_radius01/bn_l_metacarpal01/be_l_thoracicLimb01/be_l_pasternFT_a01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01/root_l_scapula01/bn_l_scapula01/be_l_scapula01/root_l_thoracicLimb01/bn_l_humerus01/bn_l_radius01/bn_l_metacarpal01/be_l_thoracicLimb01/be_l_pasternFT_a01/bn_l_pasternFT_b01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01/root_l_scapula01/bn_l_scapula01/be_l_scapula01/root_l_thoracicLimb01/bn_l_humerus01/bn_l_radius01/bn_l_metacarpal01/be_l_thoracicLimb01/be_l_pasternFT_a01/bn_l_pasternFT_b01/bn_l_hoofFT01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01/root_r_scapula01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01/root_r_scapula01/bn_r_scapula01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01/root_r_scapula01/bn_r_scapula01/be_r_scapula01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01/root_r_scapula01/bn_r_scapula01/be_r_scapula01/root_r_thoracicLimb01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01/root_r_scapula01/bn_r_scapula01/be_r_scapula01/root_r_thoracicLimb01/bn_r_humerus01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01/root_r_scapula01/bn_r_scapula01/be_r_scapula01/root_r_thoracicLimb01/bn_r_humerus01/bn_r_radius01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01/root_r_scapula01/bn_r_scapula01/be_r_scapula01/root_r_thoracicLimb01/bn_r_humerus01/bn_r_radius01/bn_r_metacarpal01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01/root_r_scapula01/bn_r_scapula01/be_r_scapula01/root_r_thoracicLimb01/bn_r_humerus01/bn_r_radius01/bn_r_metacarpal01/be_r_thoracicLimb01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01/root_r_scapula01/bn_r_scapula01/be_r_scapula01/root_r_thoracicLimb01/bn_r_humerus01/bn_r_radius01/bn_r_metacarpal01/be_r_thoracicLimb01/be_r_pasternFT_a01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01/root_r_scapula01/bn_r_scapula01/be_r_scapula01/root_r_thoracicLimb01/bn_r_humerus01/bn_r_radius01/bn_r_metacarpal01/be_r_thoracicLimb01/be_r_pasternFT_a01/bn_r_pasternFT_b01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/jDrv_vertebrae_b01/jDrv_vertebrae_c01/jDrv_vertebrae_d01/jDrv_vertebrae_e01/root_r_scapula01/bn_r_scapula01/be_r_scapula01/root_r_thoracicLimb01/bn_r_humerus01/bn_r_radius01/bn_r_metacarpal01/be_r_thoracicLimb01/be_r_pasternFT_a01/bn_r_pasternFT_b01/bn_r_hoofFT01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/root_l_pelvic01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/root_l_pelvic01/bDrv_l_pelvic01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/root_l_pelvic01/bDrv_l_pelvic01/beDrv_l_pelvic01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/root_l_pelvic01/bDrv_l_pelvic01/beDrv_l_pelvic01/root_l_pelvicLimb01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/root_l_pelvic01/bDrv_l_pelvic01/beDrv_l_pelvic01/root_l_pelvicLimb01/bn_l_femur01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/root_l_pelvic01/bDrv_l_pelvic01/beDrv_l_pelvic01/root_l_pelvicLimb01/bn_l_femur01/bn_l_tibia01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/root_l_pelvic01/bDrv_l_pelvic01/beDrv_l_pelvic01/root_l_pelvicLimb01/bn_l_femur01/bn_l_tibia01/bn_l_metatarsal01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/root_l_pelvic01/bDrv_l_pelvic01/beDrv_l_pelvic01/root_l_pelvicLimb01/bn_l_femur01/bn_l_tibia01/bn_l_metatarsal01/be_l_pelvcLimb01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/root_l_pelvic01/bDrv_l_pelvic01/beDrv_l_pelvic01/root_l_pelvicLimb01/bn_l_femur01/bn_l_tibia01/bn_l_metatarsal01/be_l_pelvcLimb01/Be_l_pasternBK_a01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/root_l_pelvic01/bDrv_l_pelvic01/beDrv_l_pelvic01/root_l_pelvicLimb01/bn_l_femur01/bn_l_tibia01/bn_l_metatarsal01/be_l_pelvcLimb01/Be_l_pasternBK_a01/Bn_l_pasternBK_b01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/root_l_pelvic01/bDrv_l_pelvic01/beDrv_l_pelvic01/root_l_pelvicLimb01/bn_l_femur01/bn_l_tibia01/bn_l_metatarsal01/be_l_pelvcLimb01/Be_l_pasternBK_a01/Bn_l_pasternBK_b01/Bn_l_hoofBK01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/root_r_pelvic01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/root_r_pelvic01/bDrv_r_pelvic01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/root_r_pelvic01/bDrv_r_pelvic01/beDrv_r_pelvic01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/root_r_pelvic01/bDrv_r_pelvic01/beDrv_r_pelvic01/root_r_pelvicLimb01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/root_r_pelvic01/bDrv_r_pelvic01/beDrv_r_pelvic01/root_r_pelvicLimb01/bn_r_femur01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/root_r_pelvic01/bDrv_r_pelvic01/beDrv_r_pelvic01/root_r_pelvicLimb01/bn_r_femur01/bn_r_tibia01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/root_r_pelvic01/bDrv_r_pelvic01/beDrv_r_pelvic01/root_r_pelvicLimb01/bn_r_femur01/bn_r_tibia01/bn_r_metatarsal01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/root_r_pelvic01/bDrv_r_pelvic01/beDrv_r_pelvic01/root_r_pelvicLimb01/bn_r_femur01/bn_r_tibia01/bn_r_metatarsal01/be_r_pelvcLimb01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/root_r_pelvic01/bDrv_r_pelvic01/beDrv_r_pelvic01/root_r_pelvicLimb01/bn_r_femur01/bn_r_tibia01/bn_r_metatarsal01/be_r_pelvcLimb01/Be_r_pasternBK_a01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/root_r_pelvic01/bDrv_r_pelvic01/beDrv_r_pelvic01/root_r_pelvicLimb01/bn_r_femur01/bn_r_tibia01/bn_r_metatarsal01/be_r_pelvcLimb01/Be_r_pasternBK_a01/Bn_r_pasternBK_b01
+        weight: 1
+      - path: Po01/anim_globalMove01/bones01/jDrv_vertebrae_a01/root_r_pelvic01/bDrv_r_pelvic01/beDrv_r_pelvic01/root_r_pelvicLimb01/bn_r_femur01/bn_r_tibia01/bn_r_metatarsal01/be_r_pelvcLimb01/Be_r_pasternBK_a01/Bn_r_pasternBK_b01/Bn_r_hoofBK01
+        weight: 1
+      - path: Po01/spl_bn_vertebrae01
+        weight: 1
+      - path: Po01/spl_neck01
+        weight: 1
+      - path: Po01/spl_vertebrae01
+        weight: 1
+      - path: Po01/Subdivision_Surface
+        weight: 1
+      - path: selObj_bones01
+        weight: 1
+      - path: SelObj_cotrols01
+        weight: 1
+      - path: tail
+        weight: 1
+      - path: ZBrush_defualt_group
+        weight: 1
+      - path: "ZBrush_defualt_group/\u041E\u0431\u044A\u0435\u043A\u0442_\u0421\u043A\u0438\u043D"
+        weight: 1
+      - path: "ZBrush_defualt_group/\u041E\u0431\u044A\u0435\u043A\u0442_\u0421\u043A\u0438\u043D_2"
+        weight: 1
+      - path: "\u041E\u0431\u044A\u0435\u043A\u0442_\u0421\u043A\u0438\u043D_2_2"
+        weight: 1
+      - path: "\u041E\u0431\u044A\u0435\u043A\u0442_\u0421\u043A\u0438\u043D_2_2_2"
+        weight: 1
+      - path: "\u041E\u0431\u044A\u0435\u043A\u0442_\u0421\u043A\u0438\u043D_3"
+        weight: 1
+      - path: "\u041E\u0431\u044A\u0435\u043A\u0442_\u0421\u043A\u0438\u043D_3_2"
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
