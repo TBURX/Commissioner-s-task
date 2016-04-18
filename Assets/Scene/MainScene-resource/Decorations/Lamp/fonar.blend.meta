@@ -1,27 +1,15 @@
 fileFormatVersion: 2
-guid: 0c24e491d8439f343b94242cb5718477
-timeCreated: 1460706300
+guid: 2d9b4ab6fefe8b34dbd295cf247f4464
+timeCreated: 1460916052
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
-    100002: wood2_Lod0
-    100004: wood2_Lod1
-    100006: wood2_Lod2
     400000: //RootNode
-    400002: wood2_Lod0
-    400004: wood2_Lod1
-    400006: wood2_Lod2
-    2300000: wood2_Lod0
-    2300002: wood2_Lod1
-    2300004: wood2_Lod2
-    3300000: wood2_Lod0
-    3300002: wood2_Lod1
-    3300004: wood2_Lod2
-    4300000: wood2_Lod0
-    4300002: wood2_Lod1
-    4300004: wood2_Lod2
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Cylinder
     7400000: Default Take
     9500000: //RootNode
   materials:
