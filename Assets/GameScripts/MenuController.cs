@@ -61,7 +61,7 @@ public class MenuController : MonoBehaviour {
         float defFontSize = 47;
         GameObject header = mainMenu.transform.Find("mainMenuHeaderText").gameObject;
         header.GetComponent<RectTransform>().position = new Vector3((float)Screen.width / 2, Screen.height - defPosY / defScreenHeight * Screen.height);
-        header.GetComponent<Text>().fontSize = (int)(defFontSize / defScreenHeight * Screen.height);
+        header.GetComponent<Text>().fontSize = Math.Min(61,(int)(defFontSize / defScreenHeight * Screen.height));
 
 
 
