@@ -56,14 +56,14 @@ public class MenuController : MonoBehaviour {
         float defWidth;
         float defHeight;
 
+        #region Главное меню
+
         //заголовок главного меню
         defPosY = 55;
         float defFontSize = 47;
         GameObject header = mainMenu.transform.Find("mainMenuHeaderText").gameObject;
         header.GetComponent<RectTransform>().position = new Vector3((float)Screen.width / 2, Screen.height - defPosY / defScreenHeight * Screen.height);
         header.GetComponent<Text>().fontSize = Math.Min(61,(int)(defFontSize / defScreenHeight * Screen.height));
-
-
 
         //кнопка "продолжить"
         defPosX = 30;
@@ -82,6 +82,9 @@ public class MenuController : MonoBehaviour {
         GameObject exitButton = mainMenu.transform.Find("exitButton").gameObject;
         exitButton.GetComponent<RectTransform>().position = new Vector3(defPosX / defScreenWidth * Screen.width, Screen.height - defPosY / defScreenHeight * Screen.height);
         exitButton.GetComponent<RectTransform>().sizeDelta = new Vector2(defWidth / defScreenWidth * Screen.width, defHeight / defScreenHeight * Screen.height);
+
+        #endregion
+
     }
 
     private void ControlKeys()
