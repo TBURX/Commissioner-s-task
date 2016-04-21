@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using Assets.GameScripts.MainPerson;
 using UnityStandardAssets.ImageEffects;
+using System;
 
 public class MenuController : MonoBehaviour {
 
@@ -22,6 +23,8 @@ public class MenuController : MonoBehaviour {
 
     private Blur blur;
 
+    //main menu
+
     // Use this for initialization
     void Start ()
     {
@@ -38,6 +41,48 @@ public class MenuController : MonoBehaviour {
             setResolutionsDropdown();
         }
 	}
+
+    void Update ()
+    {
+        ResizeUI();
+    }
+
+    private void ResizeUI()
+    {
+        float defScreenWidth = 1280;
+        float defScreenHeight = 720;
+        float defPosX;
+        float defPosY;
+        float defWidth;
+        float defHeight;
+
+        //заголовок главного меню
+        defPosY = 55;
+        float defFontSize = 47;
+        GameObject header = mainMenu.transform.Find("mainMenuHeaderText").gameObject;
+        header.GetComponent<RectTransform>().position = new Vector3((float)Screen.width / 2, Screen.height - defPosY / defScreenHeight * Screen.height);
+        header.GetComponent<Text>().fontSize = (int)(defFontSize / defScreenHeight * Screen.height);
+
+
+
+        //кнопка "продолжить"
+        defPosX = 30;
+        defPosY = 130;
+        defWidth = 600;
+        defHeight = 290;
+        RectTransform continueButton = mainMenu.transform.Find("continueButton").gameObject.GetComponent<RectTransform>();
+        continueButton.position = new Vector3(defPosX/defScreenWidth*Screen.width, Screen.height-defPosY/defScreenHeight*Screen.height);
+        continueButton.sizeDelta = new Vector2(defWidth/defScreenWidth*Screen.width,defHeight/defScreenHeight*Screen.height);
+
+        //кнопка "выход"
+        defPosX = 950;
+        defPosY = 445;
+        defWidth = 300;
+        defHeight = 215;
+        RectTransform exitButton = mainMenu.transform.Find("exitButton").gameObject.GetComponent<RectTransform>();
+        exitButton.position = new Vector3(defPosX / defScreenWidth * Screen.width, Screen.height - defPosY / defScreenHeight * Screen.height);
+        exitButton.sizeDelta = new Vector2(defWidth / defScreenWidth * Screen.width, defHeight / defScreenHeight * Screen.height);
+    }
 
     private void ControlKeys()
     {
