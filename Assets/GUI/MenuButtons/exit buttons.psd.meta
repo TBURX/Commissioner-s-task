@@ -1,0 +1,196 @@
+fileFormatVersion: 2
+guid: 289dce2cd9e98814b8943555cbfa6e5d
+timeCreated: 1461189678
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: exit buttons_0
+    21300002: exit buttons_1
+    21300004: exit buttons_2
+    21300006: exit buttons_3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: exit buttons_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 220
+        width: 297
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 148.5, y: -23}
+        - {x: 147.5, y: -19}
+        - {x: 146.5, y: -10}
+        - {x: 148.5, y: 1}
+        - {x: 148.5, y: 34}
+        - {x: 146.5, y: 38}
+        - {x: 142.5, y: 44}
+        - {x: 148.5, y: 48}
+        - {x: 148.5, y: 104}
+        - {x: 147.5, y: 105}
+        - {x: 42.5, y: 105}
+        - {x: 35.5, y: 103}
+        - {x: 32.5, y: 102}
+        - {x: 26.5, y: 102}
+        - {x: 22.5, y: 103}
+        - {x: 16.5, y: 105}
+        - {x: -148.5, y: 105}
+        - {x: -148.5, y: -105}
+        - {x: -30.5, y: -105}
+        - {x: -23.5, y: -102}
+        - {x: -19.5, y: -105}
+        - {x: 148.5, y: -105}
+    - name: exit buttons_1
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 220
+        width: 297
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 147.5, y: -41}
+        - {x: 142.5, y: -16}
+        - {x: 146.5, y: -5}
+        - {x: 146.5, y: 27}
+        - {x: 134.5, y: 45}
+        - {x: 138.5, y: 47}
+        - {x: 146.5, y: 54}
+        - {x: 146.5, y: 99}
+        - {x: 143.5, y: 102}
+        - {x: 138.5, y: 103}
+        - {x: 51.5, y: 103}
+        - {x: 33.5, y: 100}
+        - {x: 30.5, y: 97}
+        - {x: -0.5, y: 104}
+        - {x: -145.5, y: 104}
+        - {x: -148.5, y: 101}
+        - {x: -148.5, y: 65}
+        - {x: -147.5, y: -35}
+        - {x: -148.5, y: -38}
+        - {x: -148.5, y: -105}
+        - {x: -43.5, y: -105}
+        - {x: -23.5, y: -97}
+        - {x: -10.5, y: -105}
+        - {x: 147.5, y: -105}
+    - name: exit buttons_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5
+        width: 297
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 147.5, y: -42}
+        - {x: 142.5, y: -16}
+        - {x: 146.5, y: -5}
+        - {x: 146.5, y: 27}
+        - {x: 134.5, y: 45}
+        - {x: 138.5, y: 47}
+        - {x: 147.5, y: 53}
+        - {x: 148.5, y: 74}
+        - {x: 148.5, y: 105}
+        - {x: -7.5, y: 105}
+        - {x: -8.5, y: 104}
+        - {x: -46.5, y: 104}
+        - {x: -47.5, y: 105}
+        - {x: -148.5, y: 105}
+        - {x: -148.5, y: 65}
+        - {x: -147.5, y: 37}
+        - {x: -147.5, y: -35}
+        - {x: -148.5, y: -39}
+        - {x: -148.5, y: -105}
+        - {x: -43.5, y: -105}
+        - {x: -23.5, y: -97}
+        - {x: -10.5, y: -105}
+        - {x: 147.5, y: -105}
+    - name: exit buttons_3
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 5
+        width: 297
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 148.5, y: -23}
+        - {x: 147.5, y: -19}
+        - {x: 146.5, y: -10}
+        - {x: 148.5, y: 1}
+        - {x: 148.5, y: 34}
+        - {x: 146.5, y: 38}
+        - {x: 142.5, y: 44}
+        - {x: 148.5, y: 48}
+        - {x: 148.5, y: 104}
+        - {x: 147.5, y: 105}
+        - {x: 42.5, y: 105}
+        - {x: 35.5, y: 103}
+        - {x: 32.5, y: 102}
+        - {x: 26.5, y: 102}
+        - {x: 22.5, y: 103}
+        - {x: 16.5, y: 105}
+        - {x: -148.5, y: 105}
+        - {x: -148.5, y: -105}
+        - {x: -30.5, y: -105}
+        - {x: -23.5, y: -102}
+        - {x: -19.5, y: -105}
+        - {x: 148.5, y: -105}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
