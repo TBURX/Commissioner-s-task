@@ -23,6 +23,8 @@ public class MenuController : MonoBehaviour {
 
     private Blur blur;
 
+    private bool quitAllowed = false;
+
     //main menu
 
     // Use this for initialization
@@ -272,6 +274,21 @@ public class MenuController : MonoBehaviour {
 
     public void Exit()
     {
+        quitAllowed = true;
         Application.Quit();
+    }
+
+    void OnApplicationQuit()
+    {
+        if (!quitAllowed)
+        {
+            Application.CancelQuit();
+            blur.enabled = true;
+            ponyController.menuIsActive = true;
+            playerGui.SetActive(false);
+            Cursor.lockState = CursorLockMode.Confined;
+            Cursor.visible = true;
+            OpenExitMenu();
+        }
     }
 }
