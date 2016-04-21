@@ -56,15 +56,17 @@ public class MenuController : MonoBehaviour {
         float defWidth;
         float defHeight;
         float newWidth;
+        float newHeight;
+        float defFontSize;
 
         #region Главное меню
 
         //заголовок главного меню
         defPosY = 55;
-        float defFontSize = 47;
+        defFontSize = 47;
         GameObject header = mainMenu.transform.Find("mainMenuHeaderText").gameObject;
         header.GetComponent<RectTransform>().position = new Vector3((float)Screen.width / 2, Screen.height - defPosY / defScreenHeight * Screen.height);
-        header.GetComponent<Text>().fontSize = Math.Min(61,(int)(defFontSize / defScreenHeight * Screen.height));
+        header.GetComponent<Text>().fontSize = Math.Min(61,(int)((float)Screen.height / defScreenHeight < (float)Screen.width / defScreenWidth ? defFontSize / defScreenHeight * Screen.height : defFontSize / defScreenWidth * Screen.width));
 
         //кнопка "продолжить"
         defPosX = 30;
@@ -74,10 +76,34 @@ public class MenuController : MonoBehaviour {
         GameObject continueButton = mainMenu.transform.Find("continueButton").gameObject;
         continueButton.GetComponent<RectTransform>().position = new Vector3(defPosX/defScreenWidth*Screen.width, Screen.height-defPosY/defScreenHeight*Screen.height);
         newWidth = defWidth / defScreenWidth * Screen.width;
-        continueButton.GetComponent<RectTransform>().sizeDelta = 
-            newWidth < defWidth 
-            ? new Vector2(newWidth, defHeight / defWidth * newWidth)
-            : new Vector2(defWidth, defHeight);
+        newHeight = defHeight / defScreenHeight * Screen.height;
+        continueButton.GetComponent<RectTransform>().sizeDelta =
+            newWidth / defWidth < newHeight / defHeight
+            ? newWidth < defWidth
+                ? new Vector2(newWidth, defHeight / defWidth * newWidth)
+                : new Vector2(defWidth, defHeight)
+            : newHeight < defHeight
+                ? new Vector2(defWidth / defHeight * newHeight, newHeight)
+                : new Vector2(defWidth, defHeight);
+
+        //текст кнопки "продолжить"
+        defFontSize = 21;
+        defPosX = 25;
+        defPosY = -140;
+        float scale = continueButton.GetComponent<RectTransform>().sizeDelta.x / defWidth;
+        GameObject continueText = mainMenu.transform.Find("continueButton").transform.Find("Text").gameObject;
+        continueText.GetComponent<RectTransform>().position = continueButton.GetComponent<RectTransform>().position + new Vector3(scale * defPosX,scale * defPosY,0);
+        continueText.GetComponent<Text>().fontSize = (int)(scale * defFontSize);
+        continueText.transform.Find("Image").gameObject.GetComponent<RectTransform>().sizeDelta = new Vector2(continueText.transform.Find("Image").gameObject.GetComponent<RectTransform>().sizeDelta.x, scale*1);
+
+        //текст задания
+        defFontSize = 21;
+        defWidth = 550;
+        defHeight = 90;
+        GameObject scroller = continueButton.transform.Find("Scroller").gameObject;
+        scroller.GetComponent<RectTransform>().position = continueText.GetComponent<RectTransform>().position + new Vector3(0, -continueText.GetComponent<RectTransform>().sizeDelta.y, 0);
+        scroller.GetComponent<RectTransform>().sizeDelta = new Vector2(defWidth*scale, defHeight*scale);
+        scroller.transform.Find("ScrollRect").transform.Find("taskText").gameObject.GetComponent<Text>().fontSize = (int)(scale * defFontSize);
 
         //кнопка "выход"
         defPosX = 950;
@@ -87,10 +113,15 @@ public class MenuController : MonoBehaviour {
         GameObject exitButton = mainMenu.transform.Find("exitButton").gameObject;
         exitButton.GetComponent<RectTransform>().position = new Vector3(defPosX / defScreenWidth * Screen.width, Screen.height - defPosY / defScreenHeight * Screen.height);
         newWidth = defWidth / defScreenWidth * Screen.width;
+        newHeight = defHeight / defScreenHeight * Screen.height;
         exitButton.GetComponent<RectTransform>().sizeDelta =
-            newWidth < defWidth
-            ? new Vector2(newWidth, defHeight / defWidth * newWidth)
-            : new Vector2(defWidth, defHeight);
+            newWidth / defWidth < newHeight / defHeight
+            ? newWidth < defWidth
+                ? new Vector2(newWidth, defHeight / defWidth * newWidth)
+                : new Vector2(defWidth, defHeight)
+            : newHeight < defHeight
+                ? new Vector2(defWidth / defHeight * newHeight, newHeight)
+                : new Vector2(defWidth, defHeight);
 
         #endregion
 
