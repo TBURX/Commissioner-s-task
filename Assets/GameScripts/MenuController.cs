@@ -55,6 +55,7 @@ public class MenuController : MonoBehaviour {
         float defPosY;
         float defWidth;
         float defHeight;
+        float newWidth;
 
         #region Главное меню
 
@@ -72,7 +73,11 @@ public class MenuController : MonoBehaviour {
         defHeight = 290;
         GameObject continueButton = mainMenu.transform.Find("continueButton").gameObject;
         continueButton.GetComponent<RectTransform>().position = new Vector3(defPosX/defScreenWidth*Screen.width, Screen.height-defPosY/defScreenHeight*Screen.height);
-        continueButton.GetComponent<RectTransform>().sizeDelta = new Vector2(defWidth/defScreenWidth*Screen.width,defHeight/defScreenHeight*Screen.height);
+        newWidth = defWidth / defScreenWidth * Screen.width;
+        continueButton.GetComponent<RectTransform>().sizeDelta = 
+            newWidth < defWidth 
+            ? new Vector2(newWidth, defHeight / defWidth * newWidth)
+            : new Vector2(defWidth, defHeight);
 
         //кнопка "выход"
         defPosX = 950;
@@ -81,7 +86,11 @@ public class MenuController : MonoBehaviour {
         defHeight = 215;
         GameObject exitButton = mainMenu.transform.Find("exitButton").gameObject;
         exitButton.GetComponent<RectTransform>().position = new Vector3(defPosX / defScreenWidth * Screen.width, Screen.height - defPosY / defScreenHeight * Screen.height);
-        exitButton.GetComponent<RectTransform>().sizeDelta = new Vector2(defWidth / defScreenWidth * Screen.width, defHeight / defScreenHeight * Screen.height);
+        newWidth = defWidth / defScreenWidth * Screen.width;
+        exitButton.GetComponent<RectTransform>().sizeDelta =
+            newWidth < defWidth
+            ? new Vector2(newWidth, defHeight / defWidth * newWidth)
+            : new Vector2(defWidth, defHeight);
 
         #endregion
 
