@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using Assets.GameScripts.MainPerson;
 using UnityStandardAssets.ImageEffects;
+using System;
 
 public class MenuController : MonoBehaviour {
 
@@ -22,6 +23,10 @@ public class MenuController : MonoBehaviour {
 
     private Blur blur;
 
+    private bool quitAllowed = false;
+
+    //main menu
+
     // Use this for initialization
     void Start ()
     {
@@ -38,6 +43,91 @@ public class MenuController : MonoBehaviour {
             setResolutionsDropdown();
         }
 	}
+
+    void Update ()
+    {
+        ResizeUI();
+    }
+
+    private void ResizeUI()
+    {
+        float defScreenWidth = 1280;
+        float defScreenHeight = 720;
+        float defPosX;
+        float defPosY;
+        float defWidth;
+        float defHeight;
+        float newWidth;
+        float newHeight;
+        float defFontSize;
+
+        #region Главное меню
+
+        //заголовок главного меню
+        defPosY = 55;
+        defFontSize = 47;
+        GameObject header = mainMenu.transform.Find("mainMenuHeaderText").gameObject;
+        header.GetComponent<RectTransform>().position = new Vector3((float)Screen.width / 2, Screen.height - defPosY / defScreenHeight * Screen.height);
+        header.GetComponent<Text>().fontSize = Math.Min(61,(int)((float)Screen.height / defScreenHeight < (float)Screen.width / defScreenWidth ? defFontSize / defScreenHeight * Screen.height : defFontSize / defScreenWidth * Screen.width));
+
+        //кнопка "продолжить"
+        defPosX = 30;
+        defPosY = 130;
+        defWidth = 600;
+        defHeight = 290;
+        GameObject continueButton = mainMenu.transform.Find("continueButton").gameObject;
+        continueButton.GetComponent<RectTransform>().position = new Vector3(defPosX/defScreenWidth*Screen.width, Screen.height-defPosY/defScreenHeight*Screen.height);
+        newWidth = defWidth / defScreenWidth * Screen.width;
+        newHeight = defHeight / defScreenHeight * Screen.height;
+        continueButton.GetComponent<RectTransform>().sizeDelta =
+            newWidth / defWidth < newHeight / defHeight
+            ? newWidth < defWidth
+                ? new Vector2(newWidth, defHeight / defWidth * newWidth)
+                : new Vector2(defWidth, defHeight)
+            : newHeight < defHeight
+                ? new Vector2(defWidth / defHeight * newHeight, newHeight)
+                : new Vector2(defWidth, defHeight);
+
+        //текст кнопки "продолжить"
+        defFontSize = 21;
+        defPosX = 25;
+        defPosY = -140;
+        float scale = continueButton.GetComponent<RectTransform>().sizeDelta.x / defWidth;
+        GameObject continueText = mainMenu.transform.Find("continueButton").transform.Find("Text").gameObject;
+        continueText.GetComponent<RectTransform>().position = continueButton.GetComponent<RectTransform>().position + new Vector3(scale * defPosX,scale * defPosY,0);
+        continueText.GetComponent<Text>().fontSize = (int)(scale * defFontSize);
+        continueText.transform.Find("Image").gameObject.GetComponent<RectTransform>().sizeDelta = new Vector2(continueText.transform.Find("Image").gameObject.GetComponent<RectTransform>().sizeDelta.x, scale*1);
+
+        //текст задания
+        defFontSize = 21;
+        defWidth = 550;
+        defHeight = 90;
+        GameObject scroller = continueButton.transform.Find("Scroller").gameObject;
+        scroller.GetComponent<RectTransform>().position = continueText.GetComponent<RectTransform>().position + new Vector3(0, -continueText.GetComponent<RectTransform>().sizeDelta.y, 0);
+        scroller.GetComponent<RectTransform>().sizeDelta = new Vector2(defWidth*scale, defHeight*scale);
+        scroller.transform.Find("ScrollRect").transform.Find("taskText").gameObject.GetComponent<Text>().fontSize = (int)(scale * defFontSize);
+
+        //кнопка "выход"
+        defPosX = 950;
+        defPosY = 445;
+        defWidth = 300;
+        defHeight = 215;
+        GameObject exitButton = mainMenu.transform.Find("exitButton").gameObject;
+        exitButton.GetComponent<RectTransform>().position = new Vector3(defPosX / defScreenWidth * Screen.width, Screen.height - defPosY / defScreenHeight * Screen.height);
+        newWidth = defWidth / defScreenWidth * Screen.width;
+        newHeight = defHeight / defScreenHeight * Screen.height;
+        exitButton.GetComponent<RectTransform>().sizeDelta =
+            newWidth / defWidth < newHeight / defHeight
+            ? newWidth < defWidth
+                ? new Vector2(newWidth, defHeight / defWidth * newWidth)
+                : new Vector2(defWidth, defHeight)
+            : newHeight < defHeight
+                ? new Vector2(defWidth / defHeight * newHeight, newHeight)
+                : new Vector2(defWidth, defHeight);
+
+        #endregion
+
+    }
 
     private void ControlKeys()
     {
@@ -184,6 +274,21 @@ public class MenuController : MonoBehaviour {
 
     public void Exit()
     {
+        quitAllowed = true;
         Application.Quit();
+    }
+
+    void OnApplicationQuit()
+    {
+        if (!quitAllowed)
+        {
+            Application.CancelQuit();
+            blur.enabled = true;
+            ponyController.menuIsActive = true;
+            playerGui.SetActive(false);
+            Cursor.lockState = CursorLockMode.Confined;
+            Cursor.visible = true;
+            OpenExitMenu();
+        }
     }
 }
