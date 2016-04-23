@@ -161,7 +161,7 @@ namespace Assets.GameScripts.MainPerson
                 {
                     toRotation = Quaternion.RotateTowards(oldRotation, Quaternion.Euler(0, 0, transform.rotation.z + 3), 0.5f);
                     oldRotation = toRotation;
-                    pl_GameObject.LookAt(leftBall);
+                    pl_GameObject.LookAt(Input.GetKey(KeyCode.S) ? rightBall : leftBall);
                     
                 }
                 else
@@ -170,7 +170,7 @@ namespace Assets.GameScripts.MainPerson
                     {
                         toRotation = Quaternion.RotateTowards(oldRotation, Quaternion.Euler(0, 0, transform.rotation.z - 3), 0.5f);
                         oldRotation = toRotation;
-                        pl_GameObject.LookAt(rightBall);
+                        pl_GameObject.LookAt(Input.GetKey(KeyCode.S) ? leftBall : rightBall);
                         
                     }
                     else
