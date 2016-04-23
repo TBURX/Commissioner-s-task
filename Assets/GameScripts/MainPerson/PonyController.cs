@@ -151,9 +151,6 @@ namespace Assets.GameScripts.MainPerson
             Transform leftBall = GameObject.Find("left").transform;
             Transform rightBall = GameObject.Find("right").transform;
 
-
-
-
             if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S))
             {                
 
@@ -252,24 +249,20 @@ namespace Assets.GameScripts.MainPerson
 
                 if (Vector3.Distance(player.transform.position, m_RayTransform.position) <= 3)
                 {
-                    if (m_RayTransform.tag == "UselesItems" || m_RayTransform.tag == "Door")
+                    if (m_RayTransform.tag == "UselesItems")
                     {
-
-                        if (m_RayTransform.tag == "UselesItems")
+                        m_TextCursor.text = m_RayTransform.name.Split('|')[0];
+                        if (Input.GetKeyDown(KeyCode.E))
                         {
-                            m_TextCursor.text = m_RayTransform.name.Split('|')[0];
-                            if (Input.GetKeyDown(KeyCode.E))
-                            {
-                                search();
-                            }
+                            search();
                         }
-                        if (m_RayTransform.tag == "Door")
+                    }
+                    if (m_RayTransform.tag == "Door")
+                    {
+                        m_TextCursor.text = m_RayTransform.name.Split('|')[1];
+                        if (Input.GetKeyDown(KeyCode.E))
                         {
-                            m_TextCursor.text = m_RayTransform.name.Split('|')[1];
-                            if (Input.GetKeyDown(KeyCode.E))
-                            {
-                                openDoor();
-                            }
+                            openDoor();
                         }
                     }
                 }
