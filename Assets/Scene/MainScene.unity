@@ -340,7 +340,7 @@ MeshRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 106176822}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 2
   m_ReceiveShadows: 1
   m_Materials:
   - {fileID: 2100000, guid: 7a10690c226fdd045b7f677bcc71d366, type: 2}
@@ -597,7 +597,7 @@ MeshRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 250494650}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 2
   m_ReceiveShadows: 1
   m_Materials:
   - {fileID: 2100000, guid: f7aba6e4081db4f46917f51b33ec5063, type: 2}
@@ -1359,6 +1359,10 @@ Prefab:
       propertyPath: m_Name
       value: Lamp_3
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 2d9b4ab6fefe8b34dbd295cf247f4464, type: 3}
+      propertyPath: m_CastShadows
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 9500000, guid: 2d9b4ab6fefe8b34dbd295cf247f4464, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 2d9b4ab6fefe8b34dbd295cf247f4464, type: 3}
@@ -1665,6 +1669,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: fc6c8d4354086624894ba81ff6d5b19f, type: 3}
+      propertyPath: m_CastShadows
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 9500000, guid: fc6c8d4354086624894ba81ff6d5b19f, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: fc6c8d4354086624894ba81ff6d5b19f, type: 3}
@@ -1862,6 +1870,10 @@ Prefab:
     - target: {fileID: 100000, guid: 2d9b4ab6fefe8b34dbd295cf247f4464, type: 3}
       propertyPath: m_Name
       value: Lamp_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 2d9b4ab6fefe8b34dbd295cf247f4464, type: 3}
+      propertyPath: m_CastShadows
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 9500000, guid: 2d9b4ab6fefe8b34dbd295cf247f4464, type: 3}
@@ -2084,6 +2096,10 @@ Prefab:
       propertyPath: m_Name
       value: Lamp_8
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 2d9b4ab6fefe8b34dbd295cf247f4464, type: 3}
+      propertyPath: m_CastShadows
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 9500000, guid: 2d9b4ab6fefe8b34dbd295cf247f4464, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 2d9b4ab6fefe8b34dbd295cf247f4464, type: 3}
@@ -2146,6 +2162,10 @@ Prefab:
     - target: {fileID: 100000, guid: 2d9b4ab6fefe8b34dbd295cf247f4464, type: 3}
       propertyPath: m_Name
       value: Lamp_5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 2d9b4ab6fefe8b34dbd295cf247f4464, type: 3}
+      propertyPath: m_CastShadows
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 9500000, guid: 2d9b4ab6fefe8b34dbd295cf247f4464, type: 3}
@@ -2442,6 +2462,10 @@ Prefab:
       propertyPath: m_Name
       value: Lamp_4
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 2d9b4ab6fefe8b34dbd295cf247f4464, type: 3}
+      propertyPath: m_CastShadows
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 9500000, guid: 2d9b4ab6fefe8b34dbd295cf247f4464, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 2d9b4ab6fefe8b34dbd295cf247f4464, type: 3}
@@ -2565,6 +2589,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: fc54eec3b32ea7c4f95c6d50f8b969a2, type: 2}
+    - target: {fileID: 2300000, guid: 40fd03db5d01dbe4081cab15de3e6151, type: 3}
+      propertyPath: m_CastShadows
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 40fd03db5d01dbe4081cab15de3e6151, type: 3}
   m_IsPrefabParent: 0
@@ -2655,6 +2683,10 @@ Prefab:
       propertyPath: m_Name
       value: Lamp_7
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 2d9b4ab6fefe8b34dbd295cf247f4464, type: 3}
+      propertyPath: m_CastShadows
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 9500000, guid: 2d9b4ab6fefe8b34dbd295cf247f4464, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 2d9b4ab6fefe8b34dbd295cf247f4464, type: 3}
@@ -2701,7 +2733,7 @@ MeshRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 868520368}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 2
   m_ReceiveShadows: 1
   m_Materials:
   - {fileID: 2100000, guid: 9e1cae7264065024681560639e43f05a, type: 2}
@@ -4087,6 +4119,10 @@ Prefab:
       propertyPath: m_Name
       value: Lamp_6
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 2d9b4ab6fefe8b34dbd295cf247f4464, type: 3}
+      propertyPath: m_CastShadows
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 9500000, guid: 2d9b4ab6fefe8b34dbd295cf247f4464, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 2d9b4ab6fefe8b34dbd295cf247f4464, type: 3}
@@ -4149,6 +4185,10 @@ Prefab:
     - target: {fileID: 100000, guid: 2d9b4ab6fefe8b34dbd295cf247f4464, type: 3}
       propertyPath: m_Name
       value: Lamp_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 2d9b4ab6fefe8b34dbd295cf247f4464, type: 3}
+      propertyPath: m_CastShadows
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 9500000, guid: 2d9b4ab6fefe8b34dbd295cf247f4464, type: 3}
@@ -4428,6 +4468,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 75a3345082c4e8045b6aaf642937a634, type: 3}
       propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 75a3345082c4e8045b6aaf642937a634, type: 3}
+      propertyPath: m_CastShadows
       value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents:
@@ -5082,6 +5126,10 @@ Prefab:
     - target: {fileID: 100000, guid: 8513880658bfbe741afa431ad563924f, type: 3}
       propertyPath: m_Name
       value: Little House
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 8513880658bfbe741afa431ad563924f, type: 3}
+      propertyPath: m_CastShadows
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 9500000, guid: 8513880658bfbe741afa431ad563924f, type: 3}
@@ -6050,10 +6098,10 @@ Light:
   m_Shadows:
     m_Type: 2
     m_Resolution: -1
-    m_Strength: 1
+    m_Strength: 0.82
     m_Bias: 0
-    m_NormalBias: 0.5
-    m_NearPlane: 0.1
+    m_NormalBias: 0.74
+    m_NearPlane: 1.5
   m_Cookie: {fileID: 0}
   m_DrawHalo: 1
   m_Flare: {fileID: 0}
@@ -6354,7 +6402,7 @@ MeshRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1771716103}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 2
   m_ReceiveShadows: 1
   m_Materials:
   - {fileID: 2100000, guid: a55151bcf99956a43b9b08949f8dcc8b, type: 2}
@@ -7158,6 +7206,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a9bdf52fad66c4a42a7412ea7a907a03, type: 2}
+    - target: {fileID: 2300000, guid: e7ce844e9349da148976ea5a6b6e34a8, type: 3}
+      propertyPath: m_CastShadows
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 9500000, guid: e7ce844e9349da148976ea5a6b6e34a8, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: e7ce844e9349da148976ea5a6b6e34a8, type: 3}
@@ -7358,6 +7410,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: 3a009d2ae9251a9448fbd80f5428d20b, type: 2}
+    - target: {fileID: 2300000, guid: 644827b227483ac4d86a4a19f0f40882, type: 3}
+      propertyPath: m_CastShadows
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 9500000, guid: 644827b227483ac4d86a4a19f0f40882, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 644827b227483ac4d86a4a19f0f40882, type: 3}
