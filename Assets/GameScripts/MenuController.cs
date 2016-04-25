@@ -57,9 +57,10 @@ public class MenuController : MonoBehaviour {
         float defPosY;
         float defWidth;
         float defHeight;
-        float newWidth;
-        float newHeight;
         float defFontSize;
+        float scale = Screen.width / defScreenWidth < Screen.height / defScreenHeight
+            ? Screen.width / defScreenWidth
+            : Screen.height / defScreenHeight;
 
         #region Главное меню
 
@@ -67,28 +68,22 @@ public class MenuController : MonoBehaviour {
         defPosY = 55;
         defFontSize = 47;
         GameObject header = mainMenu.transform.Find("mainMenuHeaderText").gameObject;
-        header.GetComponent<RectTransform>().position = new Vector3((float)Screen.width / 2, Screen.height - defPosY / defScreenHeight * Screen.height);
-        header.GetComponent<Text>().fontSize = Math.Min(61,(int)((float)Screen.height / defScreenHeight < (float)Screen.width / defScreenWidth ? defFontSize / defScreenHeight * Screen.height : defFontSize / defScreenWidth * Screen.width));
+        header.GetComponent<RectTransform>().position = new Vector3((float)Screen.width / 2, Screen.height - defPosY * scale);
+        header.GetComponent<Text>().fontSize = Math.Min(61,(int)(scale * defFontSize));
 
         //кнопка "продолжить"
         defPosX = 30;
-        defPosY = 190;
+        defPosY = 130;
         defWidth = 600;
         defHeight = 290;
         GameObject continueButton = mainMenu.transform.Find("continueButton").gameObject;
-        newWidth = defWidth / defScreenWidth * Screen.width;
-        newHeight = defHeight / defScreenHeight * Screen.height;
-        continueButton.GetComponent<RectTransform>().sizeDelta =
-            newWidth / defWidth < newHeight / defHeight
-            ? new Vector2(newWidth, defHeight / defWidth * newWidth)
-            : new Vector2(defWidth / defHeight * newHeight, newHeight);
-        continueButton.GetComponent<RectTransform>().position = new Vector3(defPosX / defScreenWidth * Screen.width, Screen.height - (defPosY - 60) / defScreenHeight * Screen.height);
+        continueButton.GetComponent<RectTransform>().position = new Vector3(defPosX * scale + (float)(Screen.width - defScreenWidth * scale)/2, Screen.height - defPosY * scale);
+        continueButton.GetComponent<RectTransform>().sizeDelta =new Vector2(defWidth * scale, defHeight * scale);
 
         //текст кнопки "продолжить"
         defFontSize = 21;
         defPosX = 25;
         defPosY = -140;
-        float scale = continueButton.GetComponent<RectTransform>().sizeDelta.x / defWidth;
         GameObject continueText = mainMenu.transform.Find("continueButton").transform.Find("Text").gameObject;
         continueText.GetComponent<RectTransform>().position = continueButton.GetComponent<RectTransform>().position + new Vector3(scale * defPosX,scale * defPosY,0);
         continueText.GetComponent<Text>().fontSize = (int)(scale * defFontSize);
@@ -109,13 +104,8 @@ public class MenuController : MonoBehaviour {
         defWidth = 300;
         defHeight = 220;
         GameObject exitButton = mainMenu.transform.Find("exitButton").gameObject;
-        exitButton.GetComponent<RectTransform>().position = new Vector3(defPosX / defScreenWidth * Screen.width, Screen.height - defPosY / defScreenHeight * Screen.height);
-        newWidth = defWidth / defScreenWidth * Screen.width;
-        newHeight = defHeight / defScreenHeight * Screen.height;
-        exitButton.GetComponent<RectTransform>().sizeDelta =
-            newWidth / defWidth < newHeight / defHeight
-            ? new Vector2(newWidth, defHeight / defWidth * newWidth)
-            : new Vector2(defWidth / defHeight * newHeight, newHeight);
+        exitButton.GetComponent<RectTransform>().position = new Vector3(defPosX * scale + (float)(Screen.width - defScreenWidth * scale) / 2, Screen.height - defPosY * scale);
+        exitButton.GetComponent<RectTransform>().sizeDelta = new Vector2(defWidth * scale, defHeight * scale);
 
         //кнопка "сохранить"
         defPosX = 25;
@@ -123,13 +113,8 @@ public class MenuController : MonoBehaviour {
         defWidth = 615;
         defHeight = 230;
         GameObject saveButton = mainMenu.transform.Find("saveButton").gameObject;
-        saveButton.GetComponent<RectTransform>().position = new Vector3(defPosX / defScreenWidth * Screen.width, Screen.height - defPosY / defScreenHeight * Screen.height);
-        newWidth = defWidth / defScreenWidth * Screen.width;
-        newHeight = defHeight / defScreenHeight * Screen.height;
-        saveButton.GetComponent<RectTransform>().sizeDelta =
-            newWidth / defWidth < newHeight / defHeight
-            ? new Vector2(newWidth, defHeight / defWidth * newWidth)
-            : new Vector2(defWidth / defHeight * newHeight, newHeight);
+        saveButton.GetComponent<RectTransform>().position = new Vector3(defPosX * scale + (float)(Screen.width - defScreenWidth * scale) / 2, Screen.height - defPosY * scale);
+        saveButton.GetComponent<RectTransform>().sizeDelta = new Vector2(defWidth * scale, defHeight * scale);
 
         //кнопка "настройки"
         defPosX = 630;
@@ -137,13 +122,8 @@ public class MenuController : MonoBehaviour {
         defWidth = 320;
         defHeight = 230;
         GameObject optionsButton = mainMenu.transform.Find("optionsButton").gameObject;
-        optionsButton.GetComponent<RectTransform>().position = new Vector3(defPosX / defScreenWidth * Screen.width, Screen.height - defPosY / defScreenHeight * Screen.height);
-        newWidth = defWidth / defScreenWidth * Screen.width;
-        newHeight = defHeight / defScreenHeight * Screen.height;
-        optionsButton.GetComponent<RectTransform>().sizeDelta =
-            newWidth / defWidth < newHeight / defHeight
-            ? new Vector2(newWidth, defHeight / defWidth * newWidth)
-            : new Vector2(defWidth / defHeight * newHeight, newHeight);
+        optionsButton.GetComponent<RectTransform>().position = new Vector3(defPosX * scale + (float)(Screen.width - defScreenWidth * scale) / 2, Screen.height - defPosY * scale);
+        optionsButton.GetComponent<RectTransform>().sizeDelta = new Vector2(defWidth * scale, defHeight * scale);
 
         //кнопка "загрузить"
         defPosX = 625;
@@ -151,13 +131,8 @@ public class MenuController : MonoBehaviour {
         defWidth = 630;
         defHeight = 250;
         GameObject loadButton = mainMenu.transform.Find("loadButton").gameObject;
-        loadButton.GetComponent<RectTransform>().position = new Vector3(defPosX / defScreenWidth * Screen.width, Screen.height - defPosY / defScreenHeight * Screen.height);
-        newWidth = defWidth / defScreenWidth * Screen.width;
-        newHeight = defHeight / defScreenHeight * Screen.height;
-        loadButton.GetComponent<RectTransform>().sizeDelta =
-            newWidth / defWidth < newHeight / defHeight
-            ? new Vector2(newWidth, defHeight / defWidth * newWidth)
-            : new Vector2(defWidth / defHeight * newHeight, newHeight);
+        loadButton.GetComponent<RectTransform>().position = new Vector3(defPosX * scale + (float)(Screen.width - defScreenWidth * scale) / 2, Screen.height - defPosY * scale);
+        loadButton.GetComponent<RectTransform>().sizeDelta = new Vector2(defWidth * scale, defHeight * scale);
 
         #endregion
 
