@@ -4972,6 +4972,34 @@ Prefab:
       propertyPath: ponyController
       value: 
       objectReference: {fileID: 1546826405}
+    - target: {fileID: 180914, guid: 2004356e7a9b66640b1dc7fb5f1347d7, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22444244, guid: 2004356e7a9b66640b1dc7fb5f1347d7, type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0.9522388
+      objectReference: {fileID: 0}
+    - target: {fileID: 22444244, guid: 2004356e7a9b66640b1dc7fb5f1347d7, type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22444244, guid: 2004356e7a9b66640b1dc7fb5f1347d7, type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22495800, guid: 2004356e7a9b66640b1dc7fb5f1347d7, type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 192
+      objectReference: {fileID: 0}
+    - target: {fileID: 22495800, guid: 2004356e7a9b66640b1dc7fb5f1347d7, type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 22482972, guid: 2004356e7a9b66640b1dc7fb5f1347d7, type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 1675
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2004356e7a9b66640b1dc7fb5f1347d7, type: 2}
   m_IsPrefabParent: 0
