@@ -125,6 +125,24 @@ public class MenuController : MonoBehaviour {
                 ? new Vector2(defWidth / defHeight * newHeight, newHeight)
                 : new Vector2(defWidth, defHeight);
 
+        //кнопка "сохранить"
+        defPosX = 25;
+        defPosY = 445;
+        defWidth = 615;
+        defHeight = 230;
+        GameObject saveButton = mainMenu.transform.Find("saveButton").gameObject;
+        saveButton.GetComponent<RectTransform>().position = new Vector3(defPosX / defScreenWidth * Screen.width, Screen.height - defPosY / defScreenHeight * Screen.height);
+        newWidth = defWidth / defScreenWidth * Screen.width;
+        newHeight = defHeight / defScreenHeight * Screen.height;
+        saveButton.GetComponent<RectTransform>().sizeDelta =
+            newWidth / defWidth < newHeight / defHeight
+            ? newWidth < defWidth
+                ? new Vector2(newWidth, defHeight / defWidth * newWidth)
+                : new Vector2(defWidth, defHeight)
+            : newHeight < defHeight
+                ? new Vector2(defWidth / defHeight * newHeight, newHeight)
+                : new Vector2(defWidth, defHeight);
+
         #endregion
 
     }
