@@ -80,13 +80,9 @@ public class MenuController : MonoBehaviour {
         newHeight = defHeight / defScreenHeight * Screen.height;
         continueButton.GetComponent<RectTransform>().sizeDelta =
             newWidth / defWidth < newHeight / defHeight
-            ? newWidth < defWidth
-                ? new Vector2(newWidth, defHeight / defWidth * newWidth)
-                : new Vector2(defWidth, defHeight)
-            : newHeight < defHeight
-                ? new Vector2(defWidth / defHeight * newHeight, newHeight)
-                : new Vector2(defWidth, defHeight);
-        continueButton.GetComponent<RectTransform>().position = new Vector3(defPosX / defScreenWidth * Screen.width, Screen.height - defPosY / defScreenHeight * Screen.height + 60 * continueButton.GetComponent<RectTransform>().sizeDelta.x / defWidth);
+            ? new Vector2(newWidth, defHeight / defWidth * newWidth)
+            : new Vector2(defWidth / defHeight * newHeight, newHeight);
+        continueButton.GetComponent<RectTransform>().position = new Vector3(defPosX / defScreenWidth * Screen.width, Screen.height - (defPosY - 60) / defScreenHeight * Screen.height);
 
         //текст кнопки "продолжить"
         defFontSize = 21;
@@ -118,12 +114,8 @@ public class MenuController : MonoBehaviour {
         newHeight = defHeight / defScreenHeight * Screen.height;
         exitButton.GetComponent<RectTransform>().sizeDelta =
             newWidth / defWidth < newHeight / defHeight
-            ? newWidth < defWidth
-                ? new Vector2(newWidth, defHeight / defWidth * newWidth)
-                : new Vector2(defWidth, defHeight)
-            : newHeight < defHeight
-                ? new Vector2(defWidth / defHeight * newHeight, newHeight)
-                : new Vector2(defWidth, defHeight);
+            ? new Vector2(newWidth, defHeight / defWidth * newWidth)
+            : new Vector2(defWidth / defHeight * newHeight, newHeight);
 
         //кнопка "сохранить"
         defPosX = 25;
@@ -136,12 +128,8 @@ public class MenuController : MonoBehaviour {
         newHeight = defHeight / defScreenHeight * Screen.height;
         saveButton.GetComponent<RectTransform>().sizeDelta =
             newWidth / defWidth < newHeight / defHeight
-            ? newWidth < defWidth
-                ? new Vector2(newWidth, defHeight / defWidth * newWidth)
-                : new Vector2(defWidth, defHeight)
-            : newHeight < defHeight
-                ? new Vector2(defWidth / defHeight * newHeight, newHeight)
-                : new Vector2(defWidth, defHeight);
+            ? new Vector2(newWidth, defHeight / defWidth * newWidth)
+            : new Vector2(defWidth / defHeight * newHeight, newHeight);
 
         //кнопка "настройки"
         defPosX = 630;
@@ -154,12 +142,8 @@ public class MenuController : MonoBehaviour {
         newHeight = defHeight / defScreenHeight * Screen.height;
         optionsButton.GetComponent<RectTransform>().sizeDelta =
             newWidth / defWidth < newHeight / defHeight
-            ? newWidth < defWidth
-                ? new Vector2(newWidth, defHeight / defWidth * newWidth)
-                : new Vector2(defWidth, defHeight)
-            : newHeight < defHeight
-                ? new Vector2(defWidth / defHeight * newHeight, newHeight)
-                : new Vector2(defWidth, defHeight);
+            ? new Vector2(newWidth, defHeight / defWidth * newWidth)
+            : new Vector2(defWidth / defHeight * newHeight, newHeight);
 
         //кнопка "загрузить"
         defPosX = 625;
@@ -172,12 +156,8 @@ public class MenuController : MonoBehaviour {
         newHeight = defHeight / defScreenHeight * Screen.height;
         loadButton.GetComponent<RectTransform>().sizeDelta =
             newWidth / defWidth < newHeight / defHeight
-            ? newWidth < defWidth
-                ? new Vector2(newWidth, defHeight / defWidth * newWidth)
-                : new Vector2(defWidth, defHeight)
-            : newHeight < defHeight
-                ? new Vector2(defWidth / defHeight * newHeight, newHeight)
-                : new Vector2(defWidth, defHeight);
+            ? new Vector2(newWidth, defHeight / defWidth * newWidth)
+            : new Vector2(defWidth / defHeight * newHeight, newHeight);
 
         #endregion
 
