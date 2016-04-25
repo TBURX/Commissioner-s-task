@@ -61,6 +61,7 @@ public class MenuController : MonoBehaviour {
         float scale = Screen.width / defScreenWidth < Screen.height / defScreenHeight
             ? Screen.width / defScreenWidth
             : Screen.height / defScreenHeight;
+        scale = Math.Min(1,scale);//антиразмылин
 
         #region Главное меню
 
