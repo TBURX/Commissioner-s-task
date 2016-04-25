@@ -72,11 +72,10 @@ public class MenuController : MonoBehaviour {
 
         //кнопка "продолжить"
         defPosX = 30;
-        defPosY = 130;
+        defPosY = 190;
         defWidth = 600;
         defHeight = 290;
         GameObject continueButton = mainMenu.transform.Find("continueButton").gameObject;
-        continueButton.GetComponent<RectTransform>().position = new Vector3(defPosX/defScreenWidth*Screen.width, Screen.height-defPosY/defScreenHeight*Screen.height);
         newWidth = defWidth / defScreenWidth * Screen.width;
         newHeight = defHeight / defScreenHeight * Screen.height;
         continueButton.GetComponent<RectTransform>().sizeDelta =
@@ -87,6 +86,7 @@ public class MenuController : MonoBehaviour {
             : newHeight < defHeight
                 ? new Vector2(defWidth / defHeight * newHeight, newHeight)
                 : new Vector2(defWidth, defHeight);
+        continueButton.GetComponent<RectTransform>().position = new Vector3(defPosX / defScreenWidth * Screen.width, Screen.height - defPosY / defScreenHeight * Screen.height + 60 * continueButton.GetComponent<RectTransform>().sizeDelta.x / defWidth);
 
         //текст кнопки "продолжить"
         defFontSize = 21;
@@ -111,12 +111,66 @@ public class MenuController : MonoBehaviour {
         defPosX = 950;
         defPosY = 445;
         defWidth = 300;
-        defHeight = 215;
+        defHeight = 220;
         GameObject exitButton = mainMenu.transform.Find("exitButton").gameObject;
         exitButton.GetComponent<RectTransform>().position = new Vector3(defPosX / defScreenWidth * Screen.width, Screen.height - defPosY / defScreenHeight * Screen.height);
         newWidth = defWidth / defScreenWidth * Screen.width;
         newHeight = defHeight / defScreenHeight * Screen.height;
         exitButton.GetComponent<RectTransform>().sizeDelta =
+            newWidth / defWidth < newHeight / defHeight
+            ? newWidth < defWidth
+                ? new Vector2(newWidth, defHeight / defWidth * newWidth)
+                : new Vector2(defWidth, defHeight)
+            : newHeight < defHeight
+                ? new Vector2(defWidth / defHeight * newHeight, newHeight)
+                : new Vector2(defWidth, defHeight);
+
+        //кнопка "сохранить"
+        defPosX = 25;
+        defPosY = 445;
+        defWidth = 615;
+        defHeight = 230;
+        GameObject saveButton = mainMenu.transform.Find("saveButton").gameObject;
+        saveButton.GetComponent<RectTransform>().position = new Vector3(defPosX / defScreenWidth * Screen.width, Screen.height - defPosY / defScreenHeight * Screen.height);
+        newWidth = defWidth / defScreenWidth * Screen.width;
+        newHeight = defHeight / defScreenHeight * Screen.height;
+        saveButton.GetComponent<RectTransform>().sizeDelta =
+            newWidth / defWidth < newHeight / defHeight
+            ? newWidth < defWidth
+                ? new Vector2(newWidth, defHeight / defWidth * newWidth)
+                : new Vector2(defWidth, defHeight)
+            : newHeight < defHeight
+                ? new Vector2(defWidth / defHeight * newHeight, newHeight)
+                : new Vector2(defWidth, defHeight);
+
+        //кнопка "настройки"
+        defPosX = 630;
+        defPosY = 445;
+        defWidth = 320;
+        defHeight = 230;
+        GameObject optionsButton = mainMenu.transform.Find("optionsButton").gameObject;
+        optionsButton.GetComponent<RectTransform>().position = new Vector3(defPosX / defScreenWidth * Screen.width, Screen.height - defPosY / defScreenHeight * Screen.height);
+        newWidth = defWidth / defScreenWidth * Screen.width;
+        newHeight = defHeight / defScreenHeight * Screen.height;
+        optionsButton.GetComponent<RectTransform>().sizeDelta =
+            newWidth / defWidth < newHeight / defHeight
+            ? newWidth < defWidth
+                ? new Vector2(newWidth, defHeight / defWidth * newWidth)
+                : new Vector2(defWidth, defHeight)
+            : newHeight < defHeight
+                ? new Vector2(defWidth / defHeight * newHeight, newHeight)
+                : new Vector2(defWidth, defHeight);
+
+        //кнопка "загрузить"
+        defPosX = 625;
+        defPosY = 180;
+        defWidth = 630;
+        defHeight = 250;
+        GameObject loadButton = mainMenu.transform.Find("loadButton").gameObject;
+        loadButton.GetComponent<RectTransform>().position = new Vector3(defPosX / defScreenWidth * Screen.width, Screen.height - defPosY / defScreenHeight * Screen.height);
+        newWidth = defWidth / defScreenWidth * Screen.width;
+        newHeight = defHeight / defScreenHeight * Screen.height;
+        loadButton.GetComponent<RectTransform>().sizeDelta =
             newWidth / defWidth < newHeight / defHeight
             ? newWidth < defWidth
                 ? new Vector2(newWidth, defHeight / defWidth * newWidth)
