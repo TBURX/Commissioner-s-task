@@ -1,9 +1,13 @@
 fileFormatVersion: 2
 guid: 027a35945eee97d4c9d0f1cade8e4947
-timeCreated: 1461236326
+timeCreated: 1461656321
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: buttons_0
+    21300002: buttons_1
+    21300004: buttons_2
+    21300006: buttons_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,26 +34,138 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
-  nPOTScale: 1
+    wrapMode: 1
+  nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
-  alphaIsTransparency: 0
-  textureType: -1
+  alphaIsTransparency: 1
+  textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: buttons_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 100
+        width: 545
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 96.5, y: -48}
+        - {x: 256.5, y: -48}
+        - {x: 269.5, y: -47}
+        - {x: 272.5, y: -45}
+        - {x: 272.5, y: 50}
+        - {x: -36.5, y: 50}
+        - {x: -82.5, y: 48}
+        - {x: -118.5, y: 50}
+        - {x: -272.5, y: 50}
+        - {x: -272.5, y: 15}
+        - {x: -270.5, y: 13}
+        - {x: -272.5, y: -20}
+        - {x: -271.5, y: -43}
+        - {x: -267.5, y: -47}
+        - {x: -264.5, y: -48}
+        - {x: 18.5, y: -48}
+        - {x: 40.5, y: -46}
+    - name: buttons_1
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 100
+        width: 545
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 133.5, y: -50}
+        - {x: 268.5, y: -50}
+        - {x: 267.5, y: -47}
+        - {x: 269.5, y: -47}
+        - {x: 272.5, y: -45}
+        - {x: 272.5, y: 47}
+        - {x: 270.5, y: 50}
+        - {x: -29.5, y: 50}
+        - {x: -82.5, y: 47}
+        - {x: -121.5, y: 50}
+        - {x: -272.5, y: 50}
+        - {x: -272.5, y: -49}
+        - {x: -271.5, y: -50}
+        - {x: -186.5, y: -50}
+        - {x: -156.5, y: -48}
+        - {x: 18.5, y: -48}
+        - {x: 76.5, y: -46}
+    - name: buttons_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 545
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 263.5, y: -35}
+        - {x: 263.5, y: 42}
+        - {x: 261.5, y: 49}
+        - {x: 2.5, y: 49}
+        - {x: -62.5, y: 43}
+        - {x: -147.5, y: 49}
+        - {x: -271.5, y: 49}
+        - {x: -271.5, y: 23}
+        - {x: -268.5, y: 19}
+        - {x: -271.5, y: -36}
+        - {x: 262.5, y: -36}
+      - - {x: 268.5, y: 49}
+        - {x: 268.5, y: 20}
+        - {x: 269.5, y: 16}
+        - {x: 272.5, y: 16}
+        - {x: 272.5, y: 50}
+        - {x: 271.5, y: 50}
+    - name: buttons_3
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 0
+        width: 545
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 96.5, y: -48}
+        - {x: 256.5, y: -48}
+        - {x: 269.5, y: -47}
+        - {x: 272.5, y: -45}
+        - {x: 272.5, y: 47}
+        - {x: 270.5, y: 50}
+        - {x: -29.5, y: 50}
+        - {x: -82.5, y: 47}
+        - {x: -121.5, y: 50}
+        - {x: -272.5, y: 50}
+        - {x: -272.5, y: 15}
+        - {x: -270.5, y: 13}
+        - {x: -272.5, y: 2}
+        - {x: -272.5, y: -39}
+        - {x: -270.5, y: -48}
+        - {x: 18.5, y: -48}
+        - {x: 40.5, y: -46}
     outline: []
   spritePackingTag: 
   userData: 
