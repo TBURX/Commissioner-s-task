@@ -7,14 +7,15 @@ using System;
 
 public class MenuController : MonoBehaviour {
 
-    public GameObject mainMenu;
-    public GameObject newGameMenu;
-    public GameObject optionsMenu;
-    public GameObject exitMenu;
-    public GameObject controlsMenu;
-    public Dropdown resolutionsDropdown;
+    private GameObject mainMenu;
+    private GameObject newGameMenu;
+    private GameObject optionsMenu;
+    private GameObject exitMenu;
+    private GameObject controlsMenu;
+    private GameObject headerText;
+    private Dropdown resolutionsDropdown;
     private bool dropdownIsSet = false;
-    public Toggle fullscreenToggle;
+    private Toggle fullscreenToggle;
     public GameObject playerGui;
 
     public GameObject camera;
@@ -30,6 +31,14 @@ public class MenuController : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
+        mainMenu = transform.Find("MainMenu").gameObject;
+        newGameMenu = transform.Find("NewGameMenu").gameObject;
+        optionsMenu = transform.Find("OptionsMenu").gameObject;
+        exitMenu = transform.Find("ExitMenu").gameObject;
+        controlsMenu = transform.Find("ControlsMenu").gameObject;
+        resolutionsDropdown = optionsMenu.transform.Find("Options group").transform.Find("resolution").transform.Find("resolutionDropdown").GetComponent<Dropdown>();
+        fullscreenToggle = optionsMenu.transform.Find("Options group").transform.Find("fullscreen").transform.Find("fullscreenToggle").GetComponent<Toggle>();
+        headerText = transform.Find("headerText").gameObject;
         fullscreenToggle.isOn = Screen.fullScreen;
         blur = camera.GetComponent<Blur>();
     }
@@ -63,78 +72,80 @@ public class MenuController : MonoBehaviour {
             : Screen.height / defScreenHeight;
         scale = Math.Min(1,scale);//антиразмылин
 
-        #region Главное меню
 
-        //заголовок главного меню
+        //заголовок
         defPosY = 55;
         defFontSize = 47;
-        GameObject header = mainMenu.transform.Find("mainMenuHeaderText").gameObject;
-        header.GetComponent<RectTransform>().position = new Vector3((float)Screen.width / 2, Screen.height - defPosY * scale);
-        header.GetComponent<Text>().fontSize = Math.Min(61,(int)(scale * defFontSize));
+        headerText.GetComponent<RectTransform>().position = new Vector3((float)Screen.width / 2, Screen.height - defPosY * scale);
+        headerText.GetComponent<Text>().fontSize = Math.Min(61, (int)(scale * defFontSize));
 
-        //кнопка "продолжить"
-        defPosX = 30;
-        defPosY = 130;
-        defWidth = 600;
-        defHeight = 290;
-        GameObject continueButton = mainMenu.transform.Find("continueButton").gameObject;
-        continueButton.GetComponent<RectTransform>().position = new Vector3(defPosX * scale + (float)(Screen.width - defScreenWidth * scale)/2, Screen.height - defPosY * scale);
-        continueButton.GetComponent<RectTransform>().sizeDelta =new Vector2(defWidth * scale, defHeight * scale);
+        #region Главное меню
 
-        //текст кнопки "продолжить"
-        defFontSize = 21;
-        defPosX = 25;
-        defPosY = -140;
-        GameObject continueText = mainMenu.transform.Find("continueButton").transform.Find("Text").gameObject;
-        continueText.GetComponent<RectTransform>().position = continueButton.GetComponent<RectTransform>().position + new Vector3(scale * defPosX,scale * defPosY,0);
-        continueText.GetComponent<Text>().fontSize = (int)(scale * defFontSize);
-        continueText.transform.Find("Image").gameObject.GetComponent<RectTransform>().sizeDelta = new Vector2(continueText.transform.Find("Image").gameObject.GetComponent<RectTransform>().sizeDelta.x, scale*1);
+        if (mainMenu.activeSelf)
+        {
+            //кнопка "продолжить"
+            defPosX = 30;
+            defPosY = 130;
+            defWidth = 600;
+            defHeight = 285;
+            GameObject continueButton = mainMenu.transform.Find("continueButton").gameObject;
+            continueButton.GetComponent<RectTransform>().position = new Vector3(defPosX * scale + (float)(Screen.width - defScreenWidth * scale) / 2, Screen.height - defPosY * scale);
+            continueButton.GetComponent<RectTransform>().sizeDelta = new Vector2(defWidth * scale, defHeight * scale);
 
-        //текст задания
-        defFontSize = 21;
-        defWidth = 550;
-        defHeight = 90;
-        GameObject scroller = continueButton.transform.Find("Scroller").gameObject;
-        scroller.GetComponent<RectTransform>().position = continueText.GetComponent<RectTransform>().position + new Vector3(0, -continueText.GetComponent<RectTransform>().sizeDelta.y, 0);
-        scroller.GetComponent<RectTransform>().sizeDelta = new Vector2(defWidth*scale, defHeight*scale);
-        scroller.transform.Find("ScrollRect").transform.Find("taskText").gameObject.GetComponent<Text>().fontSize = (int)(scale * defFontSize);
+            //текст кнопки "продолжить"
+            defFontSize = 21;
+            defPosX = 25;
+            defPosY = -140;
+            GameObject continueText = mainMenu.transform.Find("continueButton").transform.Find("Text").gameObject;
+            continueText.GetComponent<RectTransform>().position = continueButton.GetComponent<RectTransform>().position + new Vector3(scale * defPosX, scale * defPosY, 0);
+            continueText.GetComponent<Text>().fontSize = (int)(scale * defFontSize);
+            continueText.transform.Find("Image").gameObject.GetComponent<RectTransform>().sizeDelta = new Vector2(continueText.transform.Find("Image").gameObject.GetComponent<RectTransform>().sizeDelta.x, scale * 1);
 
-        //кнопка "выход"
-        defPosX = 950;
-        defPosY = 445;
-        defWidth = 300;
-        defHeight = 220;
-        GameObject exitButton = mainMenu.transform.Find("exitButton").gameObject;
-        exitButton.GetComponent<RectTransform>().position = new Vector3(defPosX * scale + (float)(Screen.width - defScreenWidth * scale) / 2, Screen.height - defPosY * scale);
-        exitButton.GetComponent<RectTransform>().sizeDelta = new Vector2(defWidth * scale, defHeight * scale);
+            //текст задания
+            defFontSize = 21;
+            defWidth = 550;
+            defHeight = 90;
+            GameObject scroller = continueButton.transform.Find("Scroller").gameObject;
+            scroller.GetComponent<RectTransform>().position = continueText.GetComponent<RectTransform>().position + new Vector3(0, -continueText.GetComponent<RectTransform>().sizeDelta.y, 0);
+            scroller.GetComponent<RectTransform>().sizeDelta = new Vector2(defWidth * scale, defHeight * scale);
+            scroller.transform.Find("ScrollRect").transform.Find("taskText").gameObject.GetComponent<Text>().fontSize = (int)(scale * defFontSize);
 
-        //кнопка "сохранить"
-        defPosX = 25;
-        defPosY = 445;
-        defWidth = 615;
-        defHeight = 230;
-        GameObject saveButton = mainMenu.transform.Find("saveButton").gameObject;
-        saveButton.GetComponent<RectTransform>().position = new Vector3(defPosX * scale + (float)(Screen.width - defScreenWidth * scale) / 2, Screen.height - defPosY * scale);
-        saveButton.GetComponent<RectTransform>().sizeDelta = new Vector2(defWidth * scale, defHeight * scale);
+            //кнопка "выход"
+            defPosX = 950;
+            defPosY = 445;
+            defWidth = 300;
+            defHeight = 230;
+            GameObject exitButton = mainMenu.transform.Find("exitButton").gameObject;
+            exitButton.GetComponent<RectTransform>().position = new Vector3(defPosX * scale + (float)(Screen.width - defScreenWidth * scale) / 2, Screen.height - defPosY * scale);
+            exitButton.GetComponent<RectTransform>().sizeDelta = new Vector2(defWidth * scale, defHeight * scale);
 
-        //кнопка "настройки"
-        defPosX = 630;
-        defPosY = 445;
-        defWidth = 320;
-        defHeight = 230;
-        GameObject optionsButton = mainMenu.transform.Find("optionsButton").gameObject;
-        optionsButton.GetComponent<RectTransform>().position = new Vector3(defPosX * scale + (float)(Screen.width - defScreenWidth * scale) / 2, Screen.height - defPosY * scale);
-        optionsButton.GetComponent<RectTransform>().sizeDelta = new Vector2(defWidth * scale, defHeight * scale);
+            //кнопка "сохранить"
+            defPosX = 25;
+            defPosY = 445;
+            defWidth = 610;
+            defHeight = 230;
+            GameObject saveButton = mainMenu.transform.Find("saveButton").gameObject;
+            saveButton.GetComponent<RectTransform>().position = new Vector3(defPosX * scale + (float)(Screen.width - defScreenWidth * scale) / 2, Screen.height - defPosY * scale);
+            saveButton.GetComponent<RectTransform>().sizeDelta = new Vector2(defWidth * scale, defHeight * scale);
 
-        //кнопка "загрузить"
-        defPosX = 625;
-        defPosY = 180;
-        defWidth = 630;
-        defHeight = 250;
-        GameObject loadButton = mainMenu.transform.Find("loadButton").gameObject;
-        loadButton.GetComponent<RectTransform>().position = new Vector3(defPosX * scale + (float)(Screen.width - defScreenWidth * scale) / 2, Screen.height - defPosY * scale);
-        loadButton.GetComponent<RectTransform>().sizeDelta = new Vector2(defWidth * scale, defHeight * scale);
+            //кнопка "настройки"
+            defPosX = 630;
+            defPosY = 445;
+            defWidth = 320;
+            defHeight = 230;
+            GameObject optionsButton = mainMenu.transform.Find("optionsButton").gameObject;
+            optionsButton.GetComponent<RectTransform>().position = new Vector3(defPosX * scale + (float)(Screen.width - defScreenWidth * scale) / 2, Screen.height - defPosY * scale);
+            optionsButton.GetComponent<RectTransform>().sizeDelta = new Vector2(defWidth * scale, defHeight * scale);
 
+            //кнопка "загрузить"
+            defPosX = 625;
+            defPosY = 180;
+            defWidth = 625;
+            defHeight = 240;
+            GameObject loadButton = mainMenu.transform.Find("loadButton").gameObject;
+            loadButton.GetComponent<RectTransform>().position = new Vector3(defPosX * scale + (float)(Screen.width - defScreenWidth * scale) / 2, Screen.height - defPosY * scale);
+            loadButton.GetComponent<RectTransform>().sizeDelta = new Vector2(defWidth * scale, defHeight * scale);
+        }
         #endregion
 
     }
@@ -146,6 +157,7 @@ public class MenuController : MonoBehaviour {
             if (mainMenu.activeInHierarchy)
             {
                 mainMenu.SetActive(false);
+                headerText.SetActive(false);
                 blur.enabled = false;
                 if( playerGui != null) playerGui.SetActive(true);
                 Cursor.lockState = CursorLockMode.Locked;
@@ -174,6 +186,7 @@ public class MenuController : MonoBehaviour {
                     controlsMenu.SetActive(false);
                 }
                 mainMenu.SetActive(true);
+                headerText.SetActive(true);
                 blur.enabled = true;
                 if (playerGui != null) playerGui.SetActive(false);
                 Cursor.lockState=CursorLockMode.Confined;
@@ -187,6 +200,7 @@ public class MenuController : MonoBehaviour {
     public void CloseMenu()
     {
         mainMenu.SetActive(false);
+        headerText.SetActive(false);
         blur.enabled = false;
         if (playerGui != null) playerGui.SetActive(true);
         newGameMenu.SetActive(false);
