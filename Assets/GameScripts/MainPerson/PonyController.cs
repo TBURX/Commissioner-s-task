@@ -7,6 +7,7 @@ namespace Assets.GameScripts.MainPerson
     {
         //для внутриигрового меню
         public bool menuIsActive = false;
+
         public Camera ScrCam;
         public GameObject player;
         public Image screenPointCenter;

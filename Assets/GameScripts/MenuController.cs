@@ -299,7 +299,7 @@ public class MenuController : MonoBehaviour {
     public void Exit()
     {
         quitAllowed = true;
-        Application.Quit();
+        SceneManager.LoadScene("MainMenu");
     }
 
     void OnApplicationQuit()
