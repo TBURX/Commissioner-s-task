@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace Assets.GameScripts.MainPerson
@@ -42,17 +43,37 @@ namespace Assets.GameScripts.MainPerson
 
         private Animator anim;
 
+        IniFile lastPosition = new IniFile("Saves/LastPosotion.dat");
+
         private void Awake()
         {
             Screen.lockCursor = true;
+            
+            string savedPosition = lastPosition.IniReadValue("MainScene", "position", "none");
+            string savedRotation = lastPosition.IniReadValue("MainScene", "rotation", "none");
+
+            if (savedPosition != "none")
+            {
+                string[] posArr = savedPosition.Split('|');
+
+                float x_pos = Convert.ToSingle(posArr[0].Replace('.', ','));
+                float y_pos = Convert.ToSingle(posArr[1].Replace('.', ','));
+                float z_pos = Convert.ToSingle(posArr[2].Replace('.', ','));
+
+                transform.position = new Vector3(x_pos, z_pos, z_pos);
+
+                if (savedRotation != "none")
+                {
+                    transform.rotation = new Quaternion();
+                }
+            }
         }
 
         private void Start()
         {
             m_OriginalRotation = transform.localRotation;
             m_Angle = transform.localRotation;
-            anim = player.GetComponent<Animator>();
-            //toolTips.enabled = false;
+            anim = player.GetComponent<Animator>();            
         }
 
         private void Update()
@@ -302,6 +323,11 @@ namespace Assets.GameScripts.MainPerson
 
         public void openDoor()
         {
+            if (m_RayTransform.name.Split('|')[0] != "MainScene")
+            {
+                lastPosition.IniWriteValue("MainScene", "position", transform.position.x + "|" + transform.position.y + "|" + transform.position.z);
+                lastPosition.IniWriteValue("MainScene", "rotation", transform.rotation.x + "|" + transform.rotation.y + "|" + transform.rotation.z + "|" + transform.rotation.w);
+            }
             Application.LoadLevel(m_RayTransform.name.Split('|')[0]);
         }
 

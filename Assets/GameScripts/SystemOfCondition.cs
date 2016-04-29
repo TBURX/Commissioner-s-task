@@ -22,7 +22,7 @@ public class SystemOfCondition : MonoBehaviour {
             arrayOfConditions[i] = conditions[i].ToString();
         }
 
-        Debug.Log(conditions);
+        //Debug.Log(conditions);
     }
 
     public string readCondition(int i)
@@ -33,11 +33,6 @@ public class SystemOfCondition : MonoBehaviour {
     public void writeCondition(int i, string str)
     {
         arrayOfConditions[i] = str;
-    }
-
-    private void onExit()
-    {
-        File.Delete("Settings/Conditions.dat");
     }
 
     public void Save()
