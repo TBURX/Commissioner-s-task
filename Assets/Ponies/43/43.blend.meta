@@ -1,0 +1,1090 @@
+fileFormatVersion: 2
+guid: dfc64718b4c28304da15f5c9155f7c69
+timeCreated: 1460288671
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Armature
+    100004: Armature_001
+    100006: Armature_002
+    100008: Body1
+    100010: Body2
+    100012: Body3
+    100014: Body4
+    100016: Body5
+    100018: Body6
+    100020: collar
+    100022: collar_001
+    100024: collar_002
+    100026: eyelashes
+    100028: eyelashes_001
+    100030: hairBack
+    100032: hairBack_001
+    100034: hairBack_002
+    100036: hairFront
+    100038: hairFront_001
+    100040: hairFront_002
+    100042: Head
+    100044: Head_0
+    100046: Head_1
+    100048: headgear
+    100050: headgear_001
+    100052: headgear_002
+    100054: leftEye
+    100056: leftEye_001
+    100058: leftEye_002
+    100060: Leg1_L
+    100062: Leg1_L_0
+    100064: Leg1_L_1
+    100066: Leg1_R
+    100068: Leg1_R_0
+    100070: Leg1_R_1
+    100072: Leg2_L
+    100074: Leg2_L_0
+    100076: Leg2_L_1
+    100078: Leg2_R
+    100080: Leg2_R_0
+    100082: Leg2_R_1
+    100084: Leg3_L
+    100086: Leg3_L_0
+    100088: Leg3_L_1
+    100090: Leg3_R
+    100092: Leg3_R_0
+    100094: Leg3_R_1
+    100096: Leg4_L
+    100098: Leg4_L_0
+    100100: Leg4_L_1
+    100102: Leg4_R
+    100104: Leg4_R_0
+    100106: Leg4_R_1
+    100108: Leg5_L
+    100110: Leg5_L_0
+    100112: Leg5_L_1
+    100114: Leg5_R
+    100116: Leg5_R_0
+    100118: Leg5_R_1
+    100120: Leg6_L
+    100122: Leg6_L_0
+    100124: Leg6_L_1
+    100126: LegR
+    100128: LegR_0
+    100130: LegR_1
+    100132: Neck
+    100134: Neck_0
+    100136: Neck_1
+    100138: Plane_002
+    100140: pony_000
+    100142: pony_001
+    100144: rightEye
+    100146: rightEye_001
+    100148: rightEye_002
+    100150: tail
+    100152: Tail1
+    100154: Tail2
+    100156: Tail3
+    100158: Tail4
+    100160: Tail5
+    100162: Tail6
+    100164: Tail7
+    100166: tail_001
+    100168: tail_002
+    400000: //RootNode
+    400002: Armature
+    400004: Armature_001
+    400006: Armature_002
+    400008: Body1
+    400010: Body2
+    400012: Body3
+    400014: Body4
+    400016: Body5
+    400018: Body6
+    400020: collar
+    400022: collar_001
+    400024: collar_002
+    400026: eyelashes
+    400028: eyelashes_001
+    400030: hairBack
+    400032: hairBack_001
+    400034: hairBack_002
+    400036: hairFront
+    400038: hairFront_001
+    400040: hairFront_002
+    400042: Head
+    400044: Head_0
+    400046: Head_1
+    400048: headgear
+    400050: headgear_001
+    400052: headgear_002
+    400054: leftEye
+    400056: leftEye_001
+    400058: leftEye_002
+    400060: Leg1_L
+    400062: Leg1_L_0
+    400064: Leg1_L_1
+    400066: Leg1_R
+    400068: Leg1_R_0
+    400070: Leg1_R_1
+    400072: Leg2_L
+    400074: Leg2_L_0
+    400076: Leg2_L_1
+    400078: Leg2_R
+    400080: Leg2_R_0
+    400082: Leg2_R_1
+    400084: Leg3_L
+    400086: Leg3_L_0
+    400088: Leg3_L_1
+    400090: Leg3_R
+    400092: Leg3_R_0
+    400094: Leg3_R_1
+    400096: Leg4_L
+    400098: Leg4_L_0
+    400100: Leg4_L_1
+    400102: Leg4_R
+    400104: Leg4_R_0
+    400106: Leg4_R_1
+    400108: Leg5_L
+    400110: Leg5_L_0
+    400112: Leg5_L_1
+    400114: Leg5_R
+    400116: Leg5_R_0
+    400118: Leg5_R_1
+    400120: Leg6_L
+    400122: Leg6_L_0
+    400124: Leg6_L_1
+    400126: LegR
+    400128: LegR_0
+    400130: LegR_1
+    400132: Neck
+    400134: Neck_0
+    400136: Neck_1
+    400138: Plane_002
+    400140: pony_000
+    400142: pony_001
+    400144: rightEye
+    400146: rightEye_001
+    400148: rightEye_002
+    400150: tail
+    400152: Tail1
+    400154: Tail2
+    400156: Tail3
+    400158: Tail4
+    400160: Tail5
+    400162: Tail6
+    400164: Tail7
+    400166: tail_001
+    400168: tail_002
+    4300000: hairBack_002
+    4300002: collar_002
+    4300004: rightEye_002
+    4300006: leftEye_002
+    4300008: headgear_002
+    4300010: tail_002
+    4300012: hairFront_002
+    4300014: eyelashes_001
+    4300016: pony_000
+    4300018: collar_001
+    4300020: hairBack_001
+    4300022: rightEye_001
+    4300024: leftEye_001
+    4300026: hairFront_001
+    4300028: headgear_001
+    4300030: Plane_002
+    4300032: tail_001
+    4300034: tail
+    4300036: pony_001
+    4300038: hairFront
+    4300040: hairBack
+    4300042: headgear
+    4300044: collar
+    4300046: leftEye
+    4300048: rightEye
+    4300050: eyelashes
+    7400000: Default Take
+    7400002: Armature_001Action
+    7400004: Armature_002Action
+    7400006: ArmatureAction
+    9500000: //RootNode
+    13700000: collar
+    13700002: collar_001
+    13700004: collar_002
+    13700006: eyelashes
+    13700008: eyelashes_001
+    13700010: hairBack
+    13700012: hairBack_001
+    13700014: hairBack_002
+    13700016: hairFront
+    13700018: hairFront_001
+    13700020: hairFront_002
+    13700022: headgear
+    13700024: headgear_001
+    13700026: headgear_002
+    13700028: leftEye
+    13700030: leftEye_001
+    13700032: leftEye_002
+    13700034: Plane_002
+    13700036: pony_000
+    13700038: pony_001
+    13700040: rightEye
+    13700042: rightEye_001
+    13700044: rightEye_002
+    13700046: tail
+    13700048: tail_001
+    13700050: tail_002
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Default Take
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 279
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Body5
+        weight: 1
+      - path: Armature/Body5/Body6
+        weight: 1
+      - path: Armature/Body5/Body6/Leg1_L_1
+        weight: 1
+      - path: Armature/Body5/Body6/Leg1_L_1/Leg2_L_1
+        weight: 1
+      - path: Armature/Body5/Body6/Leg1_L_1/Leg2_L_1/Leg3_L_1
+        weight: 1
+      - path: Armature/Body5/Body6/Leg1_R_1
+        weight: 1
+      - path: Armature/Body5/Body6/Leg1_R_1/Leg2_R_1
+        weight: 1
+      - path: Armature/Body5/Body6/Leg1_R_1/Leg2_R_1/Leg3_R_1
+        weight: 1
+      - path: Armature/Body5/Body6/Neck_1
+        weight: 1
+      - path: Armature/Body5/Body6/Neck_1/Head_1
+        weight: 1
+      - path: Armature/Body5/Leg4_L_1
+        weight: 1
+      - path: Armature/Body5/Leg4_L_1/Leg5_L_1
+        weight: 1
+      - path: Armature/Body5/Leg4_L_1/Leg5_L_1/Leg6_L_1
+        weight: 1
+      - path: Armature/Body5/Leg4_R_1
+        weight: 1
+      - path: Armature/Body5/Leg4_R_1/Leg5_R_1
+        weight: 1
+      - path: Armature/Body5/Leg4_R_1/Leg5_R_1/LegR_1
+        weight: 1
+      - path: Armature/Body5/Tail6
+        weight: 1
+      - path: Armature/Body5/Tail6/Tail7
+        weight: 1
+      - path: Armature_001
+        weight: 1
+      - path: Armature_001/Body3
+        weight: 1
+      - path: Armature_001/Body3/Body4
+        weight: 1
+      - path: Armature_001/Body3/Body4/Leg1_L_0
+        weight: 1
+      - path: Armature_001/Body3/Body4/Leg1_L_0/Leg2_L_0
+        weight: 1
+      - path: Armature_001/Body3/Body4/Leg1_L_0/Leg2_L_0/Leg3_L_0
+        weight: 1
+      - path: Armature_001/Body3/Body4/Leg1_R_0
+        weight: 1
+      - path: Armature_001/Body3/Body4/Leg1_R_0/Leg2_R_0
+        weight: 1
+      - path: Armature_001/Body3/Body4/Leg1_R_0/Leg2_R_0/Leg3_R_0
+        weight: 1
+      - path: Armature_001/Body3/Body4/Neck_0
+        weight: 1
+      - path: Armature_001/Body3/Body4/Neck_0/Head_0
+        weight: 1
+      - path: Armature_001/Body3/Leg4_L_0
+        weight: 1
+      - path: Armature_001/Body3/Leg4_L_0/Leg5_L_0
+        weight: 1
+      - path: Armature_001/Body3/Leg4_L_0/Leg5_L_0/Leg6_L_0
+        weight: 1
+      - path: Armature_001/Body3/Leg4_R_0
+        weight: 1
+      - path: Armature_001/Body3/Leg4_R_0/Leg5_R_0
+        weight: 1
+      - path: Armature_001/Body3/Leg4_R_0/Leg5_R_0/LegR_0
+        weight: 1
+      - path: Armature_001/Body3/Tail4
+        weight: 1
+      - path: Armature_001/Body3/Tail4/Tail5
+        weight: 1
+      - path: Armature_002
+        weight: 1
+      - path: Armature_002/Body1
+        weight: 1
+      - path: Armature_002/Body1/Body2
+        weight: 1
+      - path: Armature_002/Body1/Body2/Leg1_L
+        weight: 1
+      - path: Armature_002/Body1/Body2/Leg1_L/Leg2_L
+        weight: 1
+      - path: Armature_002/Body1/Body2/Leg1_L/Leg2_L/Leg3_L
+        weight: 1
+      - path: Armature_002/Body1/Body2/Leg1_R
+        weight: 1
+      - path: Armature_002/Body1/Body2/Leg1_R/Leg2_R
+        weight: 1
+      - path: Armature_002/Body1/Body2/Leg1_R/Leg2_R/Leg3_R
+        weight: 1
+      - path: Armature_002/Body1/Body2/Neck
+        weight: 1
+      - path: Armature_002/Body1/Body2/Neck/Head
+        weight: 1
+      - path: Armature_002/Body1/Leg4_L
+        weight: 1
+      - path: Armature_002/Body1/Leg4_L/Leg5_L
+        weight: 1
+      - path: Armature_002/Body1/Leg4_L/Leg5_L/Leg6_L
+        weight: 1
+      - path: Armature_002/Body1/Leg4_R
+        weight: 1
+      - path: Armature_002/Body1/Leg4_R/Leg5_R
+        weight: 1
+      - path: Armature_002/Body1/Leg4_R/Leg5_R/LegR
+        weight: 1
+      - path: Armature_002/Body1/Tail1
+        weight: 1
+      - path: Armature_002/Body1/Tail1/Tail2
+        weight: 1
+      - path: Armature_002/Body1/Tail1/Tail2/Tail3
+        weight: 1
+      - path: collar
+        weight: 1
+      - path: collar_001
+        weight: 1
+      - path: collar_002
+        weight: 1
+      - path: eyelashes
+        weight: 1
+      - path: eyelashes_001
+        weight: 1
+      - path: hairBack
+        weight: 1
+      - path: hairBack_001
+        weight: 1
+      - path: hairBack_002
+        weight: 1
+      - path: hairFront
+        weight: 1
+      - path: hairFront_001
+        weight: 1
+      - path: hairFront_002
+        weight: 1
+      - path: headgear
+        weight: 1
+      - path: headgear_001
+        weight: 1
+      - path: headgear_002
+        weight: 1
+      - path: leftEye
+        weight: 1
+      - path: leftEye_001
+        weight: 1
+      - path: leftEye_002
+        weight: 1
+      - path: Plane_002
+        weight: 1
+      - path: pony_000
+        weight: 1
+      - path: pony_001
+        weight: 1
+      - path: rightEye
+        weight: 1
+      - path: rightEye_001
+        weight: 1
+      - path: rightEye_002
+        weight: 1
+      - path: tail
+        weight: 1
+      - path: tail_001
+        weight: 1
+      - path: tail_002
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature_001Action
+      takeName: Armature_001Action
+      firstFrame: -1
+      lastFrame: 279
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Body5
+        weight: 1
+      - path: Armature/Body5/Body6
+        weight: 1
+      - path: Armature/Body5/Body6/Leg1_L_1
+        weight: 1
+      - path: Armature/Body5/Body6/Leg1_L_1/Leg2_L_1
+        weight: 1
+      - path: Armature/Body5/Body6/Leg1_L_1/Leg2_L_1/Leg3_L_1
+        weight: 1
+      - path: Armature/Body5/Body6/Leg1_R_1
+        weight: 1
+      - path: Armature/Body5/Body6/Leg1_R_1/Leg2_R_1
+        weight: 1
+      - path: Armature/Body5/Body6/Leg1_R_1/Leg2_R_1/Leg3_R_1
+        weight: 1
+      - path: Armature/Body5/Body6/Neck_1
+        weight: 1
+      - path: Armature/Body5/Body6/Neck_1/Head_1
+        weight: 1
+      - path: Armature/Body5/Leg4_L_1
+        weight: 1
+      - path: Armature/Body5/Leg4_L_1/Leg5_L_1
+        weight: 1
+      - path: Armature/Body5/Leg4_L_1/Leg5_L_1/Leg6_L_1
+        weight: 1
+      - path: Armature/Body5/Leg4_R_1
+        weight: 1
+      - path: Armature/Body5/Leg4_R_1/Leg5_R_1
+        weight: 1
+      - path: Armature/Body5/Leg4_R_1/Leg5_R_1/LegR_1
+        weight: 1
+      - path: Armature/Body5/Tail6
+        weight: 1
+      - path: Armature/Body5/Tail6/Tail7
+        weight: 1
+      - path: Armature_001
+        weight: 1
+      - path: Armature_001/Body3
+        weight: 1
+      - path: Armature_001/Body3/Body4
+        weight: 1
+      - path: Armature_001/Body3/Body4/Leg1_L_0
+        weight: 1
+      - path: Armature_001/Body3/Body4/Leg1_L_0/Leg2_L_0
+        weight: 1
+      - path: Armature_001/Body3/Body4/Leg1_L_0/Leg2_L_0/Leg3_L_0
+        weight: 1
+      - path: Armature_001/Body3/Body4/Leg1_R_0
+        weight: 1
+      - path: Armature_001/Body3/Body4/Leg1_R_0/Leg2_R_0
+        weight: 1
+      - path: Armature_001/Body3/Body4/Leg1_R_0/Leg2_R_0/Leg3_R_0
+        weight: 1
+      - path: Armature_001/Body3/Body4/Neck_0
+        weight: 1
+      - path: Armature_001/Body3/Body4/Neck_0/Head_0
+        weight: 1
+      - path: Armature_001/Body3/Leg4_L_0
+        weight: 1
+      - path: Armature_001/Body3/Leg4_L_0/Leg5_L_0
+        weight: 1
+      - path: Armature_001/Body3/Leg4_L_0/Leg5_L_0/Leg6_L_0
+        weight: 1
+      - path: Armature_001/Body3/Leg4_R_0
+        weight: 1
+      - path: Armature_001/Body3/Leg4_R_0/Leg5_R_0
+        weight: 1
+      - path: Armature_001/Body3/Leg4_R_0/Leg5_R_0/LegR_0
+        weight: 1
+      - path: Armature_001/Body3/Tail4
+        weight: 1
+      - path: Armature_001/Body3/Tail4/Tail5
+        weight: 1
+      - path: Armature_002
+        weight: 1
+      - path: Armature_002/Body1
+        weight: 1
+      - path: Armature_002/Body1/Body2
+        weight: 1
+      - path: Armature_002/Body1/Body2/Leg1_L
+        weight: 1
+      - path: Armature_002/Body1/Body2/Leg1_L/Leg2_L
+        weight: 1
+      - path: Armature_002/Body1/Body2/Leg1_L/Leg2_L/Leg3_L
+        weight: 1
+      - path: Armature_002/Body1/Body2/Leg1_R
+        weight: 1
+      - path: Armature_002/Body1/Body2/Leg1_R/Leg2_R
+        weight: 1
+      - path: Armature_002/Body1/Body2/Leg1_R/Leg2_R/Leg3_R
+        weight: 1
+      - path: Armature_002/Body1/Body2/Neck
+        weight: 1
+      - path: Armature_002/Body1/Body2/Neck/Head
+        weight: 1
+      - path: Armature_002/Body1/Leg4_L
+        weight: 1
+      - path: Armature_002/Body1/Leg4_L/Leg5_L
+        weight: 1
+      - path: Armature_002/Body1/Leg4_L/Leg5_L/Leg6_L
+        weight: 1
+      - path: Armature_002/Body1/Leg4_R
+        weight: 1
+      - path: Armature_002/Body1/Leg4_R/Leg5_R
+        weight: 1
+      - path: Armature_002/Body1/Leg4_R/Leg5_R/LegR
+        weight: 1
+      - path: Armature_002/Body1/Tail1
+        weight: 1
+      - path: Armature_002/Body1/Tail1/Tail2
+        weight: 1
+      - path: Armature_002/Body1/Tail1/Tail2/Tail3
+        weight: 1
+      - path: collar
+        weight: 1
+      - path: collar_001
+        weight: 1
+      - path: collar_002
+        weight: 1
+      - path: eyelashes
+        weight: 1
+      - path: eyelashes_001
+        weight: 1
+      - path: hairBack
+        weight: 1
+      - path: hairBack_001
+        weight: 1
+      - path: hairBack_002
+        weight: 1
+      - path: hairFront
+        weight: 1
+      - path: hairFront_001
+        weight: 1
+      - path: hairFront_002
+        weight: 1
+      - path: headgear
+        weight: 1
+      - path: headgear_001
+        weight: 1
+      - path: headgear_002
+        weight: 1
+      - path: leftEye
+        weight: 1
+      - path: leftEye_001
+        weight: 1
+      - path: leftEye_002
+        weight: 1
+      - path: Plane_002
+        weight: 1
+      - path: pony_000
+        weight: 1
+      - path: pony_001
+        weight: 1
+      - path: rightEye
+        weight: 1
+      - path: rightEye_001
+        weight: 1
+      - path: rightEye_002
+        weight: 1
+      - path: tail
+        weight: 1
+      - path: tail_001
+        weight: 1
+      - path: tail_002
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature_002Action
+      takeName: Armature_002Action
+      firstFrame: -1
+      lastFrame: 279
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Body5
+        weight: 1
+      - path: Armature/Body5/Body6
+        weight: 1
+      - path: Armature/Body5/Body6/Leg1_L_1
+        weight: 1
+      - path: Armature/Body5/Body6/Leg1_L_1/Leg2_L_1
+        weight: 1
+      - path: Armature/Body5/Body6/Leg1_L_1/Leg2_L_1/Leg3_L_1
+        weight: 1
+      - path: Armature/Body5/Body6/Leg1_R_1
+        weight: 1
+      - path: Armature/Body5/Body6/Leg1_R_1/Leg2_R_1
+        weight: 1
+      - path: Armature/Body5/Body6/Leg1_R_1/Leg2_R_1/Leg3_R_1
+        weight: 1
+      - path: Armature/Body5/Body6/Neck_1
+        weight: 1
+      - path: Armature/Body5/Body6/Neck_1/Head_1
+        weight: 1
+      - path: Armature/Body5/Leg4_L_1
+        weight: 1
+      - path: Armature/Body5/Leg4_L_1/Leg5_L_1
+        weight: 1
+      - path: Armature/Body5/Leg4_L_1/Leg5_L_1/Leg6_L_1
+        weight: 1
+      - path: Armature/Body5/Leg4_R_1
+        weight: 1
+      - path: Armature/Body5/Leg4_R_1/Leg5_R_1
+        weight: 1
+      - path: Armature/Body5/Leg4_R_1/Leg5_R_1/LegR_1
+        weight: 1
+      - path: Armature/Body5/Tail6
+        weight: 1
+      - path: Armature/Body5/Tail6/Tail7
+        weight: 1
+      - path: Armature_001
+        weight: 1
+      - path: Armature_001/Body3
+        weight: 1
+      - path: Armature_001/Body3/Body4
+        weight: 1
+      - path: Armature_001/Body3/Body4/Leg1_L_0
+        weight: 1
+      - path: Armature_001/Body3/Body4/Leg1_L_0/Leg2_L_0
+        weight: 1
+      - path: Armature_001/Body3/Body4/Leg1_L_0/Leg2_L_0/Leg3_L_0
+        weight: 1
+      - path: Armature_001/Body3/Body4/Leg1_R_0
+        weight: 1
+      - path: Armature_001/Body3/Body4/Leg1_R_0/Leg2_R_0
+        weight: 1
+      - path: Armature_001/Body3/Body4/Leg1_R_0/Leg2_R_0/Leg3_R_0
+        weight: 1
+      - path: Armature_001/Body3/Body4/Neck_0
+        weight: 1
+      - path: Armature_001/Body3/Body4/Neck_0/Head_0
+        weight: 1
+      - path: Armature_001/Body3/Leg4_L_0
+        weight: 1
+      - path: Armature_001/Body3/Leg4_L_0/Leg5_L_0
+        weight: 1
+      - path: Armature_001/Body3/Leg4_L_0/Leg5_L_0/Leg6_L_0
+        weight: 1
+      - path: Armature_001/Body3/Leg4_R_0
+        weight: 1
+      - path: Armature_001/Body3/Leg4_R_0/Leg5_R_0
+        weight: 1
+      - path: Armature_001/Body3/Leg4_R_0/Leg5_R_0/LegR_0
+        weight: 1
+      - path: Armature_001/Body3/Tail4
+        weight: 1
+      - path: Armature_001/Body3/Tail4/Tail5
+        weight: 1
+      - path: Armature_002
+        weight: 1
+      - path: Armature_002/Body1
+        weight: 1
+      - path: Armature_002/Body1/Body2
+        weight: 1
+      - path: Armature_002/Body1/Body2/Leg1_L
+        weight: 1
+      - path: Armature_002/Body1/Body2/Leg1_L/Leg2_L
+        weight: 1
+      - path: Armature_002/Body1/Body2/Leg1_L/Leg2_L/Leg3_L
+        weight: 1
+      - path: Armature_002/Body1/Body2/Leg1_R
+        weight: 1
+      - path: Armature_002/Body1/Body2/Leg1_R/Leg2_R
+        weight: 1
+      - path: Armature_002/Body1/Body2/Leg1_R/Leg2_R/Leg3_R
+        weight: 1
+      - path: Armature_002/Body1/Body2/Neck
+        weight: 1
+      - path: Armature_002/Body1/Body2/Neck/Head
+        weight: 1
+      - path: Armature_002/Body1/Leg4_L
+        weight: 1
+      - path: Armature_002/Body1/Leg4_L/Leg5_L
+        weight: 1
+      - path: Armature_002/Body1/Leg4_L/Leg5_L/Leg6_L
+        weight: 1
+      - path: Armature_002/Body1/Leg4_R
+        weight: 1
+      - path: Armature_002/Body1/Leg4_R/Leg5_R
+        weight: 1
+      - path: Armature_002/Body1/Leg4_R/Leg5_R/LegR
+        weight: 1
+      - path: Armature_002/Body1/Tail1
+        weight: 1
+      - path: Armature_002/Body1/Tail1/Tail2
+        weight: 1
+      - path: Armature_002/Body1/Tail1/Tail2/Tail3
+        weight: 1
+      - path: collar
+        weight: 1
+      - path: collar_001
+        weight: 1
+      - path: collar_002
+        weight: 1
+      - path: eyelashes
+        weight: 1
+      - path: eyelashes_001
+        weight: 1
+      - path: hairBack
+        weight: 1
+      - path: hairBack_001
+        weight: 1
+      - path: hairBack_002
+        weight: 1
+      - path: hairFront
+        weight: 1
+      - path: hairFront_001
+        weight: 1
+      - path: hairFront_002
+        weight: 1
+      - path: headgear
+        weight: 1
+      - path: headgear_001
+        weight: 1
+      - path: headgear_002
+        weight: 1
+      - path: leftEye
+        weight: 1
+      - path: leftEye_001
+        weight: 1
+      - path: leftEye_002
+        weight: 1
+      - path: Plane_002
+        weight: 1
+      - path: pony_000
+        weight: 1
+      - path: pony_001
+        weight: 1
+      - path: rightEye
+        weight: 1
+      - path: rightEye_001
+        weight: 1
+      - path: rightEye_002
+        weight: 1
+      - path: tail
+        weight: 1
+      - path: tail_001
+        weight: 1
+      - path: tail_002
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ArmatureAction
+      takeName: ArmatureAction
+      firstFrame: -1
+      lastFrame: 279
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Body5
+        weight: 1
+      - path: Armature/Body5/Body6
+        weight: 1
+      - path: Armature/Body5/Body6/Leg1_L_1
+        weight: 1
+      - path: Armature/Body5/Body6/Leg1_L_1/Leg2_L_1
+        weight: 1
+      - path: Armature/Body5/Body6/Leg1_L_1/Leg2_L_1/Leg3_L_1
+        weight: 1
+      - path: Armature/Body5/Body6/Leg1_R_1
+        weight: 1
+      - path: Armature/Body5/Body6/Leg1_R_1/Leg2_R_1
+        weight: 1
+      - path: Armature/Body5/Body6/Leg1_R_1/Leg2_R_1/Leg3_R_1
+        weight: 1
+      - path: Armature/Body5/Body6/Neck_1
+        weight: 1
+      - path: Armature/Body5/Body6/Neck_1/Head_1
+        weight: 1
+      - path: Armature/Body5/Leg4_L_1
+        weight: 1
+      - path: Armature/Body5/Leg4_L_1/Leg5_L_1
+        weight: 1
+      - path: Armature/Body5/Leg4_L_1/Leg5_L_1/Leg6_L_1
+        weight: 1
+      - path: Armature/Body5/Leg4_R_1
+        weight: 1
+      - path: Armature/Body5/Leg4_R_1/Leg5_R_1
+        weight: 1
+      - path: Armature/Body5/Leg4_R_1/Leg5_R_1/LegR_1
+        weight: 1
+      - path: Armature/Body5/Tail6
+        weight: 1
+      - path: Armature/Body5/Tail6/Tail7
+        weight: 1
+      - path: Armature_001
+        weight: 1
+      - path: Armature_001/Body3
+        weight: 1
+      - path: Armature_001/Body3/Body4
+        weight: 1
+      - path: Armature_001/Body3/Body4/Leg1_L_0
+        weight: 1
+      - path: Armature_001/Body3/Body4/Leg1_L_0/Leg2_L_0
+        weight: 1
+      - path: Armature_001/Body3/Body4/Leg1_L_0/Leg2_L_0/Leg3_L_0
+        weight: 1
+      - path: Armature_001/Body3/Body4/Leg1_R_0
+        weight: 1
+      - path: Armature_001/Body3/Body4/Leg1_R_0/Leg2_R_0
+        weight: 1
+      - path: Armature_001/Body3/Body4/Leg1_R_0/Leg2_R_0/Leg3_R_0
+        weight: 1
+      - path: Armature_001/Body3/Body4/Neck_0
+        weight: 1
+      - path: Armature_001/Body3/Body4/Neck_0/Head_0
+        weight: 1
+      - path: Armature_001/Body3/Leg4_L_0
+        weight: 1
+      - path: Armature_001/Body3/Leg4_L_0/Leg5_L_0
+        weight: 1
+      - path: Armature_001/Body3/Leg4_L_0/Leg5_L_0/Leg6_L_0
+        weight: 1
+      - path: Armature_001/Body3/Leg4_R_0
+        weight: 1
+      - path: Armature_001/Body3/Leg4_R_0/Leg5_R_0
+        weight: 1
+      - path: Armature_001/Body3/Leg4_R_0/Leg5_R_0/LegR_0
+        weight: 1
+      - path: Armature_001/Body3/Tail4
+        weight: 1
+      - path: Armature_001/Body3/Tail4/Tail5
+        weight: 1
+      - path: Armature_002
+        weight: 1
+      - path: Armature_002/Body1
+        weight: 1
+      - path: Armature_002/Body1/Body2
+        weight: 1
+      - path: Armature_002/Body1/Body2/Leg1_L
+        weight: 1
+      - path: Armature_002/Body1/Body2/Leg1_L/Leg2_L
+        weight: 1
+      - path: Armature_002/Body1/Body2/Leg1_L/Leg2_L/Leg3_L
+        weight: 1
+      - path: Armature_002/Body1/Body2/Leg1_R
+        weight: 1
+      - path: Armature_002/Body1/Body2/Leg1_R/Leg2_R
+        weight: 1
+      - path: Armature_002/Body1/Body2/Leg1_R/Leg2_R/Leg3_R
+        weight: 1
+      - path: Armature_002/Body1/Body2/Neck
+        weight: 1
+      - path: Armature_002/Body1/Body2/Neck/Head
+        weight: 1
+      - path: Armature_002/Body1/Leg4_L
+        weight: 1
+      - path: Armature_002/Body1/Leg4_L/Leg5_L
+        weight: 1
+      - path: Armature_002/Body1/Leg4_L/Leg5_L/Leg6_L
+        weight: 1
+      - path: Armature_002/Body1/Leg4_R
+        weight: 1
+      - path: Armature_002/Body1/Leg4_R/Leg5_R
+        weight: 1
+      - path: Armature_002/Body1/Leg4_R/Leg5_R/LegR
+        weight: 1
+      - path: Armature_002/Body1/Tail1
+        weight: 1
+      - path: Armature_002/Body1/Tail1/Tail2
+        weight: 1
+      - path: Armature_002/Body1/Tail1/Tail2/Tail3
+        weight: 1
+      - path: collar
+        weight: 1
+      - path: collar_001
+        weight: 1
+      - path: collar_002
+        weight: 1
+      - path: eyelashes
+        weight: 1
+      - path: eyelashes_001
+        weight: 1
+      - path: hairBack
+        weight: 1
+      - path: hairBack_001
+        weight: 1
+      - path: hairBack_002
+        weight: 1
+      - path: hairFront
+        weight: 1
+      - path: hairFront_001
+        weight: 1
+      - path: hairFront_002
+        weight: 1
+      - path: headgear
+        weight: 1
+      - path: headgear_001
+        weight: 1
+      - path: headgear_002
+        weight: 1
+      - path: leftEye
+        weight: 1
+      - path: leftEye_001
+        weight: 1
+      - path: leftEye_002
+        weight: 1
+      - path: Plane_002
+        weight: 1
+      - path: pony_000
+        weight: 1
+      - path: pony_001
+        weight: 1
+      - path: rightEye
+        weight: 1
+      - path: rightEye_001
+        weight: 1
+      - path: rightEye_002
+        weight: 1
+      - path: tail
+        weight: 1
+      - path: tail_001
+        weight: 1
+      - path: tail_002
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

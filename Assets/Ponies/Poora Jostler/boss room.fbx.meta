@@ -1,0 +1,144 @@
+fileFormatVersion: 2
+guid: e3f459da970ab3c4b8d5c698558705ca
+timeCreated: 1460286967
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature.001
+    100002: BackLeg-L-1
+    100004: BackLeg-L-2
+    100006: BackLeg-L-2.001
+    100008: BackLeg-L-2.001_end
+    100010: BackLeg-L-2_end
+    100012: BackLeg-R-1
+    100014: Body.001
+    100016: //RootNode
+    100018: FrontLeg-L-1
+    100020: FrontLeg-L-2
+    100022: FrontLeg-L-3
+    100024: FrontLeg-L-3_end
+    100026: FrontLeg-R-1
+    100028: FrontLeg-R-2
+    100030: FrontLeg-R-3
+    100032: FrontLeg-R-3_end
+    100034: hairFront
+    100036: Head.001
+    100038: Head.001_end
+    100040: horn
+    100042: leftEye
+    100044: Neck.001
+    100046: Plane.001
+    100048: pony
+    100050: rightEye
+    100052: tail
+    100054: Xeroten.001
+    400000: Armature.001
+    400002: BackLeg-L-1
+    400004: BackLeg-L-2
+    400006: BackLeg-L-2.001
+    400008: BackLeg-L-2.001_end
+    400010: BackLeg-L-2_end
+    400012: BackLeg-R-1
+    400014: Body.001
+    400016: //RootNode
+    400018: FrontLeg-L-1
+    400020: FrontLeg-L-2
+    400022: FrontLeg-L-3
+    400024: FrontLeg-L-3_end
+    400026: FrontLeg-R-1
+    400028: FrontLeg-R-2
+    400030: FrontLeg-R-3
+    400032: FrontLeg-R-3_end
+    400034: hairFront
+    400036: Head.001
+    400038: Head.001_end
+    400040: horn
+    400042: leftEye
+    400044: Neck.001
+    400046: Plane.001
+    400048: pony
+    400050: rightEye
+    400052: tail
+    400054: Xeroten.001
+    2300000: Plane.001
+    3300000: Plane.001
+    4300000: Plane.001
+    4300002: tail
+    4300004: horn
+    4300006: leftEye
+    4300008: rightEye
+    4300010: hairFront
+    4300012: pony
+    7400000: Armature.001|Armature.001Action
+    9500000: //RootNode
+    13700000: hairFront
+    13700002: horn
+    13700004: leftEye
+    13700006: pony
+    13700008: rightEye
+    13700010: tail
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

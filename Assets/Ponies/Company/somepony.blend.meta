@@ -1,0 +1,634 @@
+fileFormatVersion: 2
+guid: 8b39d3b6f499e044daf681a561a65396
+timeCreated: 1460288554
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Back
+    100004: collar
+    100006: Cube_010_Cube
+    100008: Down
+    100010: eyelashes
+    100012: Front
+    100014: Golova
+    100016: Golova_2
+    100018: Golova_3
+    100020: Gryd
+    100022: Gryd_2
+    100024: hairFront
+    100026: headgear
+    100028: Hei
+    100030: Hei_1
+    100032: Hei_2
+    100034: Hei_2_2
+    100036: Hei_2_3
+    100038: L_Bedro
+    100040: L_Bedro_Vector
+    100042: L_Kist
+    100044: L_Kist_2
+    100046: L_Kist_3
+    100048: L_Kist_4
+    100050: L_Koleno
+    100052: L_Koleno_2
+    100054: L_Koleno_3
+    100056: L_Lok
+    100058: L_Lok_2
+    100060: L_Lok_3
+    100062: L_Lok_4
+    100064: L_Lok_Vector
+    100066: L_Podkova
+    100068: L_Podkova_2
+    100070: L_Podkova_3
+    100072: L_Podkova_4
+    100074: L_Rebro
+    100076: L_Rebro_Vector
+    100078: L_Vector
+    100080: Left_Back
+    100082: Left_Front
+    100084: Left_Lok
+    100086: leftEye
+    100088: Pony
+    100090: pony
+    100092: R_Bedro
+    100094: R_Bedro_Vector
+    100096: R_Kist
+    100098: R_Kist_2
+    100100: R_Kist_3
+    100102: R_Kist_4
+    100104: R_Koleno
+    100106: R_Koleno_2
+    100108: R_Koleno_3
+    100110: R_Lok
+    100112: R_Lok_2
+    100114: R_Lok_3
+    100116: R_Lok_4
+    100118: R_Lok_Vector
+    100120: R_Podkova
+    100122: R_Podkova_2
+    100124: R_Podkova_3
+    100126: R_Podkova_4
+    100128: R_Rebro
+    100130: R_Rebro_Vector
+    100132: R_Vector
+    100134: Right_Back
+    100136: Right_Front
+    100138: Right_Lok
+    100140: rightEye
+    100142: Root_Body
+    100144: //RootNode
+    100146: Spina
+    100148: Spina_1
+    100150: Tail
+    100152: tail
+    100154: Zad_Spina
+    100156: Zad_spina
+    100158: Zad_Spina_1
+    100160: Zad_spina_2
+    400000: Armature
+    400002: Back
+    400004: collar
+    400006: Cube_010_Cube
+    400008: Down
+    400010: eyelashes
+    400012: Front
+    400014: Golova
+    400016: Golova_2
+    400018: Golova_3
+    400020: Gryd
+    400022: Gryd_2
+    400024: hairFront
+    400026: headgear
+    400028: Hei
+    400030: Hei_1
+    400032: Hei_2
+    400034: Hei_2_2
+    400036: Hei_2_3
+    400038: L_Bedro
+    400040: L_Bedro_Vector
+    400042: L_Kist
+    400044: L_Kist_2
+    400046: L_Kist_3
+    400048: L_Kist_4
+    400050: L_Koleno
+    400052: L_Koleno_2
+    400054: L_Koleno_3
+    400056: L_Lok
+    400058: L_Lok_2
+    400060: L_Lok_3
+    400062: L_Lok_4
+    400064: L_Lok_Vector
+    400066: L_Podkova
+    400068: L_Podkova_2
+    400070: L_Podkova_3
+    400072: L_Podkova_4
+    400074: L_Rebro
+    400076: L_Rebro_Vector
+    400078: L_Vector
+    400080: Left_Back
+    400082: Left_Front
+    400084: Left_Lok
+    400086: leftEye
+    400088: Pony
+    400090: pony
+    400092: R_Bedro
+    400094: R_Bedro_Vector
+    400096: R_Kist
+    400098: R_Kist_2
+    400100: R_Kist_3
+    400102: R_Kist_4
+    400104: R_Koleno
+    400106: R_Koleno_2
+    400108: R_Koleno_3
+    400110: R_Lok
+    400112: R_Lok_2
+    400114: R_Lok_3
+    400116: R_Lok_4
+    400118: R_Lok_Vector
+    400120: R_Podkova
+    400122: R_Podkova_2
+    400124: R_Podkova_3
+    400126: R_Podkova_4
+    400128: R_Rebro
+    400130: R_Rebro_Vector
+    400132: R_Vector
+    400134: Right_Back
+    400136: Right_Front
+    400138: Right_Lok
+    400140: rightEye
+    400142: Root_Body
+    400144: //RootNode
+    400146: Spina
+    400148: Spina_1
+    400150: Tail
+    400152: tail
+    400154: Zad_Spina
+    400156: Zad_spina
+    400158: Zad_Spina_1
+    400160: Zad_spina_2
+    4300000: Cube_010_Cube
+    4300002: rightEye
+    4300004: leftEye
+    4300006: headgear
+    4300008: tail
+    4300010: hairFront
+    4300012: eyelashes
+    4300014: collar
+    4300016: pony
+    7400000: Default Take
+    7400002: Armature_C4D_Animation_Take_Layer0
+    9500000: //RootNode
+    13700000: collar
+    13700002: Cube_010_Cube
+    13700004: eyelashes
+    13700006: hairFront
+    13700008: headgear
+    13700010: leftEye
+    13700012: pony
+    13700014: rightEye
+    13700016: tail
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Default Take
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 249
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: collar
+        weight: 1
+      - path: Cube_010_Cube
+        weight: 1
+      - path: eyelashes
+        weight: 1
+      - path: hairFront
+        weight: 1
+      - path: headgear
+        weight: 1
+      - path: leftEye
+        weight: 1
+      - path: pony
+        weight: 1
+      - path: Pony
+        weight: 1
+      - path: Pony/Down
+        weight: 1
+      - path: Pony/Down/Armature
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Spina_1
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Spina_1/Gryd_2
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Spina_1/Gryd_2/Hei_1
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Spina_1/Gryd_2/Hei_1/Hei_2_3
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Spina_1/Gryd_2/Hei_1/Hei_2_3/Golova_3
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Spina_1/Gryd_2/L_Rebro
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Spina_1/Gryd_2/L_Rebro/L_Lok_4
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Spina_1/Gryd_2/L_Rebro/L_Lok_4/L_Koleno_3
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Spina_1/Gryd_2/L_Rebro/L_Lok_4/L_Koleno_3/L_Kist_4
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Spina_1/Gryd_2/L_Rebro/L_Lok_4/L_Koleno_3/L_Kist_4/L_Podkova_4
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Spina_1/Gryd_2/R_Rebro
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Spina_1/Gryd_2/R_Rebro/R_Lok_4
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Spina_1/Gryd_2/R_Rebro/R_Lok_4/R_Koleno_3
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Spina_1/Gryd_2/R_Rebro/R_Lok_4/R_Koleno_3/R_Kist_4
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Spina_1/Gryd_2/R_Rebro/R_Lok_4/R_Koleno_3/R_Kist_4/R_Podkova_4
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Zad_Spina_1
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Zad_Spina_1/Zad_spina_2
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Zad_Spina_1/Zad_spina_2/L_Bedro
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Zad_Spina_1/Zad_spina_2/L_Bedro/L_Lok_3
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Zad_Spina_1/Zad_spina_2/L_Bedro/L_Lok_3/L_Koleno_2
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Zad_Spina_1/Zad_spina_2/L_Bedro/L_Lok_3/L_Koleno_2/L_Kist_3
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Zad_Spina_1/Zad_spina_2/L_Bedro/L_Lok_3/L_Koleno_2/L_Kist_3/L_Podkova_3
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Zad_Spina_1/Zad_spina_2/R_Bedro
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Zad_Spina_1/Zad_spina_2/R_Bedro/R_Lok_3
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Zad_Spina_1/Zad_spina_2/R_Bedro/R_Lok_3/R_Koleno_2
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Zad_Spina_1/Zad_spina_2/R_Bedro/R_Lok_3/R_Koleno_2/R_Kist_3
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Zad_Spina_1/Zad_spina_2/R_Bedro/R_Lok_3/R_Koleno_2/R_Kist_3/R_Podkova_3
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Zad_Spina_1/Zad_spina_2/Tail
+        weight: 1
+      - path: Pony/Down/Back
+        weight: 1
+      - path: Pony/Down/Back/Zad_spina
+        weight: 1
+      - path: Pony/Down/Front
+        weight: 1
+      - path: Pony/Down/Front/Gryd
+        weight: 1
+      - path: Pony/Down/Front/L_Lok_Vector
+        weight: 1
+      - path: Pony/Down/Front/L_Lok_Vector/L_Lok_2
+        weight: 1
+      - path: Pony/Down/Front/R_Lok_Vector
+        weight: 1
+      - path: Pony/Down/Front/R_Lok_Vector/R_Lok_2
+        weight: 1
+      - path: Pony/Down/Golova
+        weight: 1
+      - path: Pony/Down/Golova/Hei
+        weight: 1
+      - path: Pony/Down/Golova/Hei/Hei_2
+        weight: 1
+      - path: Pony/Down/Golova/Hei/Hei_2/Golova_2
+        weight: 1
+      - path: Pony/Down/Golova/Hei/Hei_2/Golova_2/Hei_2_2
+        weight: 1
+      - path: Pony/Down/Left_Back
+        weight: 1
+      - path: Pony/Down/Left_Back/L_Kist
+        weight: 1
+      - path: Pony/Down/Left_Back/L_Kist/L_Podkova
+        weight: 1
+      - path: Pony/Down/Left_Back/L_Koleno
+        weight: 1
+      - path: Pony/Down/Left_Back/L_Vector
+        weight: 1
+      - path: Pony/Down/Left_Back/L_Vector/L_Bedro_Vector
+        weight: 1
+      - path: Pony/Down/Left_Front
+        weight: 1
+      - path: Pony/Down/Left_Front/L_Kist_2
+        weight: 1
+      - path: Pony/Down/Left_Front/L_Kist_2/L_Podkova_2
+        weight: 1
+      - path: Pony/Down/Left_Lok
+        weight: 1
+      - path: Pony/Down/Left_Lok/L_Lok
+        weight: 1
+      - path: Pony/Down/Left_Lok/L_Rebro_Vector
+        weight: 1
+      - path: Pony/Down/Right_Back
+        weight: 1
+      - path: Pony/Down/Right_Back/R_Kist
+        weight: 1
+      - path: Pony/Down/Right_Back/R_Kist/R_Podkova
+        weight: 1
+      - path: Pony/Down/Right_Back/R_Koleno
+        weight: 1
+      - path: Pony/Down/Right_Back/R_Vector
+        weight: 1
+      - path: Pony/Down/Right_Back/R_Vector/R_Bedro_Vector
+        weight: 1
+      - path: Pony/Down/Right_Front
+        weight: 1
+      - path: Pony/Down/Right_Front/R_Kist_2
+        weight: 1
+      - path: Pony/Down/Right_Front/R_Kist_2/R_Podkova_2
+        weight: 1
+      - path: Pony/Down/Right_Lok
+        weight: 1
+      - path: Pony/Down/Right_Lok/R_Lok
+        weight: 1
+      - path: Pony/Down/Right_Lok/R_Rebro_Vector
+        weight: 1
+      - path: Pony/Down/Spina
+        weight: 1
+      - path: Pony/Down/Zad_Spina
+        weight: 1
+      - path: rightEye
+        weight: 1
+      - path: tail
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature_C4D_Animation_Take_Layer0
+      takeName: Armature_C4D_Animation_Take_Layer0
+      firstFrame: 0
+      lastFrame: 190
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: collar
+        weight: 1
+      - path: Cube_010_Cube
+        weight: 1
+      - path: eyelashes
+        weight: 1
+      - path: hairFront
+        weight: 1
+      - path: headgear
+        weight: 1
+      - path: leftEye
+        weight: 1
+      - path: pony
+        weight: 1
+      - path: Pony
+        weight: 1
+      - path: Pony/Down
+        weight: 1
+      - path: Pony/Down/Armature
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Spina_1
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Spina_1/Gryd_2
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Spina_1/Gryd_2/Hei_1
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Spina_1/Gryd_2/Hei_1/Hei_2_3
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Spina_1/Gryd_2/Hei_1/Hei_2_3/Golova_3
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Spina_1/Gryd_2/L_Rebro
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Spina_1/Gryd_2/L_Rebro/L_Lok_4
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Spina_1/Gryd_2/L_Rebro/L_Lok_4/L_Koleno_3
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Spina_1/Gryd_2/L_Rebro/L_Lok_4/L_Koleno_3/L_Kist_4
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Spina_1/Gryd_2/L_Rebro/L_Lok_4/L_Koleno_3/L_Kist_4/L_Podkova_4
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Spina_1/Gryd_2/R_Rebro
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Spina_1/Gryd_2/R_Rebro/R_Lok_4
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Spina_1/Gryd_2/R_Rebro/R_Lok_4/R_Koleno_3
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Spina_1/Gryd_2/R_Rebro/R_Lok_4/R_Koleno_3/R_Kist_4
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Spina_1/Gryd_2/R_Rebro/R_Lok_4/R_Koleno_3/R_Kist_4/R_Podkova_4
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Zad_Spina_1
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Zad_Spina_1/Zad_spina_2
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Zad_Spina_1/Zad_spina_2/L_Bedro
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Zad_Spina_1/Zad_spina_2/L_Bedro/L_Lok_3
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Zad_Spina_1/Zad_spina_2/L_Bedro/L_Lok_3/L_Koleno_2
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Zad_Spina_1/Zad_spina_2/L_Bedro/L_Lok_3/L_Koleno_2/L_Kist_3
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Zad_Spina_1/Zad_spina_2/L_Bedro/L_Lok_3/L_Koleno_2/L_Kist_3/L_Podkova_3
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Zad_Spina_1/Zad_spina_2/R_Bedro
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Zad_Spina_1/Zad_spina_2/R_Bedro/R_Lok_3
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Zad_Spina_1/Zad_spina_2/R_Bedro/R_Lok_3/R_Koleno_2
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Zad_Spina_1/Zad_spina_2/R_Bedro/R_Lok_3/R_Koleno_2/R_Kist_3
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Zad_Spina_1/Zad_spina_2/R_Bedro/R_Lok_3/R_Koleno_2/R_Kist_3/R_Podkova_3
+        weight: 1
+      - path: Pony/Down/Armature/Root_Body/Zad_Spina_1/Zad_spina_2/Tail
+        weight: 1
+      - path: Pony/Down/Back
+        weight: 1
+      - path: Pony/Down/Back/Zad_spina
+        weight: 1
+      - path: Pony/Down/Front
+        weight: 1
+      - path: Pony/Down/Front/Gryd
+        weight: 1
+      - path: Pony/Down/Front/L_Lok_Vector
+        weight: 1
+      - path: Pony/Down/Front/L_Lok_Vector/L_Lok_2
+        weight: 1
+      - path: Pony/Down/Front/R_Lok_Vector
+        weight: 1
+      - path: Pony/Down/Front/R_Lok_Vector/R_Lok_2
+        weight: 1
+      - path: Pony/Down/Golova
+        weight: 1
+      - path: Pony/Down/Golova/Hei
+        weight: 1
+      - path: Pony/Down/Golova/Hei/Hei_2
+        weight: 1
+      - path: Pony/Down/Golova/Hei/Hei_2/Golova_2
+        weight: 1
+      - path: Pony/Down/Golova/Hei/Hei_2/Golova_2/Hei_2_2
+        weight: 1
+      - path: Pony/Down/Left_Back
+        weight: 1
+      - path: Pony/Down/Left_Back/L_Kist
+        weight: 1
+      - path: Pony/Down/Left_Back/L_Kist/L_Podkova
+        weight: 1
+      - path: Pony/Down/Left_Back/L_Koleno
+        weight: 1
+      - path: Pony/Down/Left_Back/L_Vector
+        weight: 1
+      - path: Pony/Down/Left_Back/L_Vector/L_Bedro_Vector
+        weight: 1
+      - path: Pony/Down/Left_Front
+        weight: 1
+      - path: Pony/Down/Left_Front/L_Kist_2
+        weight: 1
+      - path: Pony/Down/Left_Front/L_Kist_2/L_Podkova_2
+        weight: 1
+      - path: Pony/Down/Left_Lok
+        weight: 1
+      - path: Pony/Down/Left_Lok/L_Lok
+        weight: 1
+      - path: Pony/Down/Left_Lok/L_Rebro_Vector
+        weight: 1
+      - path: Pony/Down/Right_Back
+        weight: 1
+      - path: Pony/Down/Right_Back/R_Kist
+        weight: 1
+      - path: Pony/Down/Right_Back/R_Kist/R_Podkova
+        weight: 1
+      - path: Pony/Down/Right_Back/R_Koleno
+        weight: 1
+      - path: Pony/Down/Right_Back/R_Vector
+        weight: 1
+      - path: Pony/Down/Right_Back/R_Vector/R_Bedro_Vector
+        weight: 1
+      - path: Pony/Down/Right_Front
+        weight: 1
+      - path: Pony/Down/Right_Front/R_Kist_2
+        weight: 1
+      - path: Pony/Down/Right_Front/R_Kist_2/R_Podkova_2
+        weight: 1
+      - path: Pony/Down/Right_Lok
+        weight: 1
+      - path: Pony/Down/Right_Lok/R_Lok
+        weight: 1
+      - path: Pony/Down/Right_Lok/R_Rebro_Vector
+        weight: 1
+      - path: Pony/Down/Spina
+        weight: 1
+      - path: Pony/Down/Zad_Spina
+        weight: 1
+      - path: rightEye
+        weight: 1
+      - path: tail
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
