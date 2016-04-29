@@ -1,0 +1,167 @@
+fileFormatVersion: 2
+guid: 2bfc9c5abcfdb09409c7eb5058c5a7d6
+timeCreated: 1460288149
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Armature
+    100004: Body1
+    100006: Body2
+    100008: collar
+    100010: eyelashes
+    100012: hairBack
+    100014: hairFront
+    100016: Head
+    100018: Head_end
+    100020: headgear
+    100022: leftEye
+    100024: Leg1.L
+    100026: Leg1.R
+    100028: Leg2.L
+    100030: Leg2.R
+    100032: Leg3.L
+    100034: Leg3.L_end
+    100036: Leg3.R
+    100038: Leg3.R_end
+    100040: Leg4.L
+    100042: Leg4.R
+    100044: Leg5.L
+    100046: Leg5.R
+    100048: Leg6.L
+    100050: Leg6.L_end
+    100052: LegR
+    100054: LegR_end
+    100056: Neck
+    100058: Point
+    100060: Point.001
+    100062: pony.001
+    100064: rightEye
+    100066: tail
+    100068: Tail1
+    100070: Tail2
+    100072: Tail3
+    100074: Tail3_end
+    400000: //RootNode
+    400002: Armature
+    400004: Body1
+    400006: Body2
+    400008: collar
+    400010: eyelashes
+    400012: hairBack
+    400014: hairFront
+    400016: Head
+    400018: Head_end
+    400020: headgear
+    400022: leftEye
+    400024: Leg1.L
+    400026: Leg1.R
+    400028: Leg2.L
+    400030: Leg2.R
+    400032: Leg3.L
+    400034: Leg3.L_end
+    400036: Leg3.R
+    400038: Leg3.R_end
+    400040: Leg4.L
+    400042: Leg4.R
+    400044: Leg5.L
+    400046: Leg5.R
+    400048: Leg6.L
+    400050: Leg6.L_end
+    400052: LegR
+    400054: LegR_end
+    400056: Neck
+    400058: Point
+    400060: Point.001
+    400062: pony.001
+    400064: rightEye
+    400066: tail
+    400068: Tail1
+    400070: Tail2
+    400072: Tail3
+    400074: Tail3_end
+    4300000: pony.001
+    4300002: tail
+    4300004: collar
+    4300006: eyelashes
+    4300008: hairFront
+    4300010: hairBack
+    4300012: headgear
+    4300014: leftEye
+    4300016: rightEye
+    7400000: Armature|Armature|Armature|ArmatureAction|Armature|ArmatureAction
+    9500000: //RootNode
+    13700000: collar
+    13700002: eyelashes
+    13700004: hairBack
+    13700006: hairFront
+    13700008: headgear
+    13700010: leftEye
+    13700012: pony.001
+    13700014: rightEye
+    13700016: tail
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
