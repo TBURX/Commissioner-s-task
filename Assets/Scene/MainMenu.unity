@@ -384,6 +384,10 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 227248315}
+--- !u!1 &298536063 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100270, guid: bc2a58efd88b0994bb00694fa2d92a2c, type: 3}
+  m_PrefabInternal: {fileID: 937189947}
 --- !u!1 &341354258
 GameObject:
   m_ObjectHideFlags: 0
@@ -1442,7 +1446,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
 --- !u!1 &923444949 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100002, guid: e9e010fcd2aa733488a14967e2b1baf5, type: 3}
@@ -2475,6 +2479,7 @@ MonoBehaviour:
   normalTable: {fileID: 2100000, guid: 2a5bcb0212fb3474f85412eccac9ccd1, type: 2}
   highlightedTable: {fileID: 2100000, guid: 7632edabefc1bc342a8462e0bfb2568d, type: 2}
   pressedTable: {fileID: 2100000, guid: da021102af84b854cbac3bbbee1fd992, type: 2}
+  sherif: {fileID: 298536063}
 --- !u!1001 &1429464544
 Prefab:
   m_ObjectHideFlags: 0
