@@ -1,0 +1,242 @@
+fileFormatVersion: 2
+guid: 70ae6fd4c164d684597228646380d6a5
+timeCreated: 1460286960
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Body
+    100004: collar
+    100006: eyelashes
+    100008: hairBack
+    100010: hairFront
+    100012: Head
+    100014: leftEye
+    100016: Leg1
+    100018: Leg2
+    100020: Leg3
+    100022: Neck
+    100024: pony_001
+    100026: //RootNode
+    100028: rightEye
+    100030: tail
+    400000: Armature
+    400002: Body
+    400004: collar
+    400006: eyelashes
+    400008: hairBack
+    400010: hairFront
+    400012: Head
+    400014: leftEye
+    400016: Leg1
+    400018: Leg2
+    400020: Leg3
+    400022: Neck
+    400024: pony_001
+    400026: //RootNode
+    400028: rightEye
+    400030: tail
+    4300000: pony_001
+    4300002: tail
+    4300004: hairFront
+    4300006: hairBack
+    4300008: eyelashes
+    4300010: collar
+    4300012: rightEye
+    4300014: leftEye
+    7400000: Default Take
+    7400002: ArmatureAction
+    9500000: //RootNode
+    13700000: collar
+    13700002: eyelashes
+    13700004: hairBack
+    13700006: hairFront
+    13700008: leftEye
+    13700010: pony_001
+    13700012: rightEye
+    13700014: tail
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Default Take
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 229
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Body
+        weight: 1
+      - path: Armature/Body/Leg1
+        weight: 1
+      - path: Armature/Body/Leg1/Leg2
+        weight: 1
+      - path: Armature/Body/Leg1/Leg2/Leg3
+        weight: 1
+      - path: Armature/Body/Neck
+        weight: 1
+      - path: Armature/Body/Neck/Head
+        weight: 1
+      - path: collar
+        weight: 1
+      - path: eyelashes
+        weight: 1
+      - path: hairBack
+        weight: 1
+      - path: hairFront
+        weight: 1
+      - path: leftEye
+        weight: 1
+      - path: pony_001
+        weight: 1
+      - path: rightEye
+        weight: 1
+      - path: tail
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ArmatureAction
+      takeName: ArmatureAction
+      firstFrame: 0
+      lastFrame: 229
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Body
+        weight: 1
+      - path: Armature/Body/Leg1
+        weight: 1
+      - path: Armature/Body/Leg1/Leg2
+        weight: 1
+      - path: Armature/Body/Leg1/Leg2/Leg3
+        weight: 1
+      - path: Armature/Body/Neck
+        weight: 1
+      - path: Armature/Body/Neck/Head
+        weight: 1
+      - path: collar
+        weight: 1
+      - path: eyelashes
+        weight: 1
+      - path: hairBack
+        weight: 1
+      - path: hairFront
+        weight: 1
+      - path: leftEye
+        weight: 1
+      - path: pony_001
+        weight: 1
+      - path: rightEye
+        weight: 1
+      - path: tail
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

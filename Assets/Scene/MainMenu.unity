@@ -148,7 +148,8 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9500000, guid: 973be0e6030069b4d98bf94fc341f858, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 973be0e6030069b4d98bf94fc341f858, type: 3}
   m_IsPrefabParent: 0
 --- !u!1 &341354258
@@ -284,7 +285,8 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9500000, guid: da0ee20b34f7cc6419af6a6355ae8406, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: da0ee20b34f7cc6419af6a6355ae8406, type: 3}
   m_IsPrefabParent: 0
 --- !u!1 &498978700
@@ -601,7 +603,8 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9500000, guid: e9e010fcd2aa733488a14967e2b1baf5, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: e9e010fcd2aa733488a14967e2b1baf5, type: 3}
   m_IsPrefabParent: 0
 --- !u!1 &1072923590
@@ -728,7 +731,8 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9500000, guid: 972b9e2696110e34d933b5b27d1d38f8, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 972b9e2696110e34d933b5b27d1d38f8, type: 3}
   m_IsPrefabParent: 0
 --- !u!1 &1259773939
@@ -907,7 +911,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1358860830}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 16.153656, y: 50.768642, z: 20.922842}
+  m_LocalPosition: {x: 18.7, y: 40.4, z: 14.9}
   m_LocalScale: {x: 1.5384436, y: 1.5384432, z: 1.5384432}
   m_Children: []
   m_Father: {fileID: 814911750}
@@ -980,7 +984,8 @@ Prefab:
       propertyPath: m_Name
       value: "\u041F\u0430\u043B\u043A\u0430"
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9500000, guid: fe3b858c0c9a37c4b87d53bda0b5d24b, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: fe3b858c0c9a37c4b87d53bda0b5d24b, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &1563334438
@@ -1112,7 +1117,8 @@ Prefab:
       propertyPath: m_UseLightProbes
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9500000, guid: b3e415fdc0c646f45ad0cda72c0c818c, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: b3e415fdc0c646f45ad0cda72c0c818c, type: 3}
   m_IsPrefabParent: 0
 --- !u!1 &1643680023 stripped

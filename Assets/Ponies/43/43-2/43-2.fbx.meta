@@ -1,0 +1,161 @@
+fileFormatVersion: 2
+guid: 07269b792c7f3174ab2783b062813d5f
+timeCreated: 1460288131
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Armature
+    100004: Body1
+    100006: Body2
+    100008: collar
+    100010: hairBack
+    100012: hairFront
+    100014: Head
+    100016: Head_end
+    100018: headgear
+    100020: leftEye
+    100022: Leg1.L
+    100024: Leg1.R
+    100026: Leg2.L
+    100028: Leg2.R
+    100030: Leg3.L
+    100032: Leg3.L_end
+    100034: Leg3.R
+    100036: Leg3.R_end
+    100038: Leg4.L
+    100040: Leg4.R
+    100042: Leg5.L
+    100044: Leg5.R
+    100046: Leg6.L
+    100048: Leg6.L_end
+    100050: LegR
+    100052: LegR_end
+    100054: Neck
+    100056: Plane.002
+    100058: Point
+    100060: Point.001
+    100062: rightEye
+    100064: tail
+    100066: Tail1
+    100068: Tail2
+    100070: Tail2_end
+    400000: //RootNode
+    400002: Armature
+    400004: Body1
+    400006: Body2
+    400008: collar
+    400010: hairBack
+    400012: hairFront
+    400014: Head
+    400016: Head_end
+    400018: headgear
+    400020: leftEye
+    400022: Leg1.L
+    400024: Leg1.R
+    400026: Leg2.L
+    400028: Leg2.R
+    400030: Leg3.L
+    400032: Leg3.L_end
+    400034: Leg3.R
+    400036: Leg3.R_end
+    400038: Leg4.L
+    400040: Leg4.R
+    400042: Leg5.L
+    400044: Leg5.R
+    400046: Leg6.L
+    400048: Leg6.L_end
+    400050: LegR
+    400052: LegR_end
+    400054: Neck
+    400056: Plane.002
+    400058: Point
+    400060: Point.001
+    400062: rightEye
+    400064: tail
+    400066: Tail1
+    400068: Tail2
+    400070: Tail2_end
+    4300000: Plane.002
+    4300002: collar
+    4300004: tail
+    4300006: hairBack
+    4300008: headgear
+    4300010: hairFront
+    4300012: leftEye
+    4300014: rightEye
+    7400000: Armature|Armature|Armature|ArmatureAction|Armature|ArmatureAction
+    9500000: //RootNode
+    13700000: collar
+    13700002: hairBack
+    13700004: hairFront
+    13700006: headgear
+    13700008: leftEye
+    13700010: Plane.002
+    13700012: rightEye
+    13700014: tail
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
