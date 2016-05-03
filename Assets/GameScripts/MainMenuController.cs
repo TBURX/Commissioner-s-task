@@ -18,6 +18,9 @@ public class MainMenuController : MonoBehaviour {
 
     public Material normalTable, highlightedTable, pressedTable;
 
+    public GameObject sherif;
+    private Animator anim;
+
 
     private Dropdown resolutionsDropdown;
     private bool dropdownIsSet = false;
@@ -38,6 +41,9 @@ public class MainMenuController : MonoBehaviour {
         resolutionsDropdown = optionsMenu.transform.Find("resolution").transform.Find("resolutionDropdown").GetComponent<Dropdown>();
         fullscreenToggle = optionsMenu.transform.Find("fullscreen").transform.Find("fullscreenToggle").GetComponent<Toggle>();
         fullscreenToggle.isOn = Screen.fullScreen;
+
+        anim = sherif.GetComponent<Animator>();
+        anim.SetFloat("speed",0.7f);
     }
 
     void FixedUpdate()
