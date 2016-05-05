@@ -13,3 +13,13 @@ EditorBuildSettings:
     path: Assets/Scene/Tyre.unity
   - enabled: 1
     path: Assets/Scene/Burner's home.unity
+  - enabled: 1
+    path: Assets/Scene/saloon.unity
+  - enabled: 1
+    path: "Assets/Scene/\u041A\u043E\u043C\u043D\u0430\u0442\u0430 \u043F\u0440\u0435\u0441\u0442\u0443\u043F\u043D\u0438\u043A\u0430.unity"
+  - enabled: 1
+    path: Assets/Scene/Mayor Office.unity
+  - enabled: 1
+    path: Assets/Scene/Commissioner.unity
+  - enabled: 1
+    path: Assets/Scene/BackRock.unity
