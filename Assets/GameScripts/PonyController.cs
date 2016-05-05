@@ -42,31 +42,12 @@ namespace Assets.GameScripts.MainPerson
         Quaternion oldRotation = Quaternion.Euler(0,0,0);
 
         private Animator anim;
-
         IniFile lastPosition = new IniFile("Saves/LastPosotion.dat");
 
         private void Awake()
         {
             Screen.lockCursor = true;
             
-            string savedPosition = lastPosition.IniReadValue("MainScene", "position", "none");
-            string savedRotation = lastPosition.IniReadValue("MainScene", "rotation", "none");
-
-            if (savedPosition != "none")
-            {
-                string[] posArr = savedPosition.Split('|');
-
-                float x_pos = Convert.ToSingle(posArr[0].Replace('.', ','));
-                float y_pos = Convert.ToSingle(posArr[1].Replace('.', ','));
-                float z_pos = Convert.ToSingle(posArr[2].Replace('.', ','));
-
-                transform.position = new Vector3(x_pos, z_pos, z_pos);
-
-                if (savedRotation != "none")
-                {
-                    transform.rotation = new Quaternion();
-                }
-            }
         }
 
         private void Start()
@@ -325,8 +306,9 @@ namespace Assets.GameScripts.MainPerson
         {
             if (m_RayTransform.name.Split('|')[0] != "MainScene")
             {
-                lastPosition.IniWriteValue("MainScene", "position", transform.position.x + "|" + transform.position.y + "|" + transform.position.z);
-                lastPosition.IniWriteValue("MainScene", "rotation", transform.rotation.x + "|" + transform.rotation.y + "|" + transform.rotation.z + "|" + transform.rotation.w);
+                lastPosition.IniWriteValue("MainScene", "position", player.transform.position.x + "|" + player.transform.position.y + "|" + player.transform.position.z);
+                lastPosition.IniWriteValue("MainScene", "rotation", player.transform.rotation.x + "|" + player.transform.rotation.y + "|" + player.transform.rotation.z + "|" + player.transform.rotation.w);
+                lastPosition.IniWriteValue("MainScene", "camRotation", transform.rotation.x + "|" + transform.rotation.y + "|" + transform.rotation.z + "|" + transform.rotation.w);
             }
             Application.LoadLevel(m_RayTransform.name.Split('|')[0]);
         }
