@@ -23,3 +23,9 @@ EditorBuildSettings:
     path: Assets/Scene/Commissioner.unity
   - enabled: 1
     path: Assets/Scene/BackRock.unity
+  - enabled: 1
+    path: Assets/Scene/Boss.unity
+  - enabled: 1
+    path: Assets/Scene/BigMine.unity
+  - enabled: 1
+    path: Assets/Scene/Gold.unity
