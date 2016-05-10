@@ -1,0 +1,243 @@
+fileFormatVersion: 2
+guid: d40be7e6de667fb4ebdedb297477a31c
+timeCreated: 1453032225
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Armature_011
+    100004: Body1
+    100006: Body2
+    100008: hairBack_006
+    100010: hairFront_011
+    100012: Head
+    100014: leftEye_011
+    100016: leftWing_002
+    100018: Leg1_L
+    100020: Leg1_R
+    100022: Leg2_L
+    100024: Leg2_R
+    100026: Leg3_L
+    100028: Leg3_R
+    100030: Leg4_L
+    100032: Leg4_R
+    100034: Leg5_L
+    100036: Leg5_R
+    100038: Leg6_L
+    100040: LegR
+    100042: Neck
+    100044: Plane_009
+    100046: pony_003
+    100048: rightEye_010
+    100050: rightWing_002
+    100052: Tail1
+    100054: Tail2
+    100056: Tail3
+    100058: tail_010
+    400000: //RootNode
+    400002: Armature_011
+    400004: Body1
+    400006: Body2
+    400008: hairBack_006
+    400010: hairFront_011
+    400012: Head
+    400014: leftEye_011
+    400016: leftWing_002
+    400018: Leg1_L
+    400020: Leg1_R
+    400022: Leg2_L
+    400024: Leg2_R
+    400026: Leg3_L
+    400028: Leg3_R
+    400030: Leg4_L
+    400032: Leg4_R
+    400034: Leg5_L
+    400036: Leg5_R
+    400038: Leg6_L
+    400040: LegR
+    400042: Neck
+    400044: Plane_009
+    400046: pony_003
+    400048: rightEye_010
+    400050: rightWing_002
+    400052: Tail1
+    400054: Tail2
+    400056: Tail3
+    400058: tail_010
+    2300000: Plane_009
+    3300000: Plane_009
+    4300000: Plane_009
+    4300002: hairBack_006
+    4300004: hairFront_011
+    4300006: leftEye_011
+    4300008: tail_010
+    4300010: rightWing_002
+    4300012: pony_003
+    4300014: leftWing_002
+    4300016: rightEye_010
+    7400000: Default Take
+    7400002: Armature_001_Armature_Armature_Armature_ArmatureAction_Armature
+    7400004: Armature_008_Armature_Armature_Armature_ArmatureAction_Armature
+    7400006: Armature_011Action
+    9500000: //RootNode
+    13700000: hairBack_006
+    13700002: hairFront_011
+    13700004: leftEye_011
+    13700006: leftWing_002
+    13700008: pony_003
+    13700010: rightEye_010
+    13700012: rightWing_002
+    13700014: tail_010
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Default Take
+      takeName: Default Take
+      firstFrame: -1
+      lastFrame: 198
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature_011
+        weight: 1
+      - path: Armature_011/Body1
+        weight: 1
+      - path: Armature_011/Body1/Body2
+        weight: 1
+      - path: Armature_011/Body1/Body2/Leg1_L
+        weight: 1
+      - path: Armature_011/Body1/Body2/Leg1_L/Leg2_L
+        weight: 1
+      - path: Armature_011/Body1/Body2/Leg1_L/Leg2_L/Leg3_L
+        weight: 1
+      - path: Armature_011/Body1/Body2/Leg1_R
+        weight: 1
+      - path: Armature_011/Body1/Body2/Leg1_R/Leg2_R
+        weight: 1
+      - path: Armature_011/Body1/Body2/Leg1_R/Leg2_R/Leg3_R
+        weight: 1
+      - path: Armature_011/Body1/Body2/Neck
+        weight: 1
+      - path: Armature_011/Body1/Body2/Neck/Head
+        weight: 1
+      - path: Armature_011/Body1/Leg4_L
+        weight: 1
+      - path: Armature_011/Body1/Leg4_L/Leg5_L
+        weight: 1
+      - path: Armature_011/Body1/Leg4_L/Leg5_L/Leg6_L
+        weight: 1
+      - path: Armature_011/Body1/Leg4_R
+        weight: 1
+      - path: Armature_011/Body1/Leg4_R/Leg5_R
+        weight: 1
+      - path: Armature_011/Body1/Leg4_R/Leg5_R/LegR
+        weight: 1
+      - path: Armature_011/Body1/Tail1
+        weight: 1
+      - path: Armature_011/Body1/Tail1/Tail2
+        weight: 1
+      - path: Armature_011/Body1/Tail1/Tail2/Tail3
+        weight: 1
+      - path: hairBack_006
+        weight: 1
+      - path: hairFront_011
+        weight: 1
+      - path: leftEye_011
+        weight: 1
+      - path: leftWing_002
+        weight: 1
+      - path: Plane_009
+        weight: 1
+      - path: pony_003
+        weight: 1
+      - path: rightEye_010
+        weight: 1
+      - path: rightWing_002
+        weight: 1
+      - path: tail_010
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
