@@ -15,6 +15,7 @@ public class MainMenuController : MonoBehaviour {
     private GameObject headerText;
     private GameObject optionsMenu;
     private GameObject authors;
+    private GameObject closeButton;
 
     public Material normalTable, highlightedTable, pressedTable;
 
@@ -38,6 +39,7 @@ public class MainMenuController : MonoBehaviour {
         headerText = UILayer.transform.Find("headerText").gameObject;
         optionsMenu = UILayer.transform.Find("OptionsMenu").gameObject;
         authors = UILayer.transform.Find("Authors").gameObject;
+        closeButton = UILayer.transform.Find("CloseButton").gameObject;
         resolutionsDropdown = optionsMenu.transform.Find("resolution").transform.Find("resolutionDropdown").GetComponent<Dropdown>();
         fullscreenToggle = optionsMenu.transform.Find("fullscreen").transform.Find("fullscreenToggle").GetComponent<Toggle>();
         fullscreenToggle.isOn = Screen.fullScreen;
@@ -121,8 +123,8 @@ public class MainMenuController : MonoBehaviour {
                 switch (go.name)
                 {
                     case "Играть": SceneManager.LoadScene("MainScene"); break;
-                    case "Настройки": optionsMenu.SetActive(true); authors.SetActive(false); break;
-                    case "Авторы": optionsMenu.SetActive(false); authors.SetActive(true); break;
+                    case "Настройки": optionsMenu.SetActive(true); authors.SetActive(false); closeButton.SetActive(true); break;
+                    case "Авторы": optionsMenu.SetActive(false); authors.SetActive(true); closeButton.SetActive(true); break;
                     case "Выход": Application.Quit(); break;
                 }
             }
@@ -247,6 +249,22 @@ public class MainMenuController : MonoBehaviour {
 
         #endregion
 
+        #region крестик
+        defPosX = 80;
+        defPosY = 200;
+        defWidth = 70;
+        defHeight = 70;
+        defFontSize = 70;
+        closeButton.GetComponent<RectTransform>().position = new Vector3(Screen.width-defPosX*scale, Screen.height - defPosY*scale,0);
+        closeButton.GetComponent<RectTransform>().sizeDelta = new Vector2(defWidth * scale, defHeight * scale);
+        closeButton.transform.Find("CloseButtonText").GetComponent<Text>().fontSize = (int)(defFontSize * scale);
+        #endregion
     }
 
+    public void CloseMenu()
+    {
+        optionsMenu.SetActive(false);
+        authors.SetActive(false);
+        closeButton.SetActive(false);
+    }
 }
