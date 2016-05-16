@@ -11,6 +11,7 @@ namespace Assets.GameScripts.MainPerson
 
         public Camera ScrCam;
         public GameObject player;
+        public GameObject gun;
         public Image screenPointCenter;
         public Text m_TextCursor;
 
@@ -24,6 +25,7 @@ namespace Assets.GameScripts.MainPerson
         public float scrollMinDistance = 1;//Минимальная дистанция скроллинга    
         public float scrollMaxDistance = 10;//Максимальная дистанция скроллинга
         public float distance = 60;//Дистанция
+        public float tmpDistance;
 
         //Debug public
         public float acceleration = 0.1f;
@@ -54,13 +56,35 @@ namespace Assets.GameScripts.MainPerson
         {
             m_OriginalRotation = transform.localRotation;
             m_Angle = transform.localRotation;
-            anim = player.GetComponent<Animator>();            
+            anim = player.GetComponent<Animator>();
+            tmpDistance = distance;        
         }
 
         private void Update()
         {
             if (!menuIsActive)
             {
+
+                #region прицеливание
+                if (Input.GetMouseButtonDown(1))
+                {
+                    tmpDistance = distance;
+                    distance = scrollMinDistance;
+                }
+                if (Input.GetMouseButtonUp(1))
+                {
+                    distance = tmpDistance;
+                }
+                if (Input.GetMouseButton(1))
+                {
+                    gun.SetActive(true);
+                }
+                else
+                {
+                    gun.SetActive(false);
+                }
+                #endregion
+
                 transform.position = player.transform.position + new Vector3(0, 0.5f, 0);
                 ControlCursor();
                 ScrCam.fieldOfView = Mathf.Lerp(ScrCam.fieldOfView, distance, Time.deltaTime * 2);
@@ -278,20 +302,12 @@ namespace Assets.GameScripts.MainPerson
 
         private void scroll()
         {
-            //приблизить
-            if ((Input.GetAxis("Mouse ScrollWheel")) > 0)
+            if (Input.GetAxis("Mouse ScrollWheel") != 0)
             {
-                if (distance >= scrollMinDistance)
+                float d = Input.GetAxis("Mouse ScrollWheel") * scrollSpeed;
+                if (distance - d >= scrollMinDistance && distance - d <= scrollMaxDistance)
                 {
-                    distance += -(Input.GetAxis("Mouse ScrollWheel")) * scrollSpeed;
-                }
-            }
-            //отдалить
-            if ((Input.GetAxis("Mouse ScrollWheel")) < 0)
-            {
-                if (distance <= scrollMaxDistance)
-                {
-                    distance += -(Input.GetAxis("Mouse ScrollWheel")) * scrollSpeed;
+                    distance -= d;
                 }
             }
         }
