@@ -25,7 +25,8 @@ namespace Assets.GameScripts.MainPerson
         public float scrollMinDistance = 1;//Минимальная дистанция скроллинга    
         public float scrollMaxDistance = 10;//Максимальная дистанция скроллинга
         public float distance = 60;//Дистанция
-        public float tmpDistance;
+        public float zoomDistance = 40;//Дистанция для прицеливания
+        private float tmpDistance;
 
         //Debug public
         public float acceleration = 0.1f;
@@ -69,7 +70,7 @@ namespace Assets.GameScripts.MainPerson
                 if (Input.GetMouseButtonDown(1))
                 {
                     tmpDistance = distance;
-                    distance = scrollMinDistance;
+                    distance = zoomDistance;
                 }
                 if (Input.GetMouseButtonUp(1))
                 {
