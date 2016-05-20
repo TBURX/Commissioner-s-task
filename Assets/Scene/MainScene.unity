@@ -1814,7 +1814,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1.2137033, z: 1}
   m_Children: []
   m_Father: {fileID: 1471260339}
-  m_RootOrder: 17
+  m_RootOrder: 3
 --- !u!136 &300065939
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1878,6 +1878,10 @@ Prefab:
     - target: {fileID: 400000, guid: faca903d49e99624ea0628aac97eff60, type: 3}
       propertyPath: m_LocalScale.y
       value: -0.42278332
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: faca903d49e99624ea0628aac97eff60, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: faca903d49e99624ea0628aac97eff60, type: 3}
@@ -2963,19 +2967,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400164, guid: bc2a58efd88b0994bb00694fa2d92a2c, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.7070776
+      value: 0.7070777
       objectReference: {fileID: 0}
     - target: {fileID: 400164, guid: bc2a58efd88b0994bb00694fa2d92a2c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.0064274403
+      value: 0.006427441
       objectReference: {fileID: 0}
     - target: {fileID: 400164, guid: bc2a58efd88b0994bb00694fa2d92a2c, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.7070775
+      value: 0.70707756
       objectReference: {fileID: 0}
     - target: {fileID: 400164, guid: bc2a58efd88b0994bb00694fa2d92a2c, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.006427441
+      value: -0.0064274413
       objectReference: {fileID: 0}
     - target: {fileID: 100270, guid: bc2a58efd88b0994bb00694fa2d92a2c, type: 3}
       propertyPath: m_Name
@@ -3047,7 +3051,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400134, guid: bc2a58efd88b0994bb00694fa2d92a2c, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400098, guid: bc2a58efd88b0994bb00694fa2d92a2c, type: 3}
       propertyPath: m_RootOrder
@@ -7660,6 +7664,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 78832d9cbbd422f4ca4485714081656d, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &1265299001 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: faca903d49e99624ea0628aac97eff60, type: 3}
+  m_PrefabInternal: {fileID: 302398662}
 --- !u!1 &1273757797 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: d34f08ba72115ad428bf91a4685117fb, type: 3}
@@ -9454,6 +9462,7 @@ MonoBehaviour:
   menuIsActive: 0
   ScrCam: {fileID: 919921860}
   player: {fileID: 1471260338}
+  gun: {fileID: 1265299001}
   screenPointCenter: {fileID: 1620178090}
   m_TextCursor: {fileID: 451245643}
   rotationRange: {x: 45, y: 361}
@@ -9461,9 +9470,10 @@ MonoBehaviour:
   dampingTime: 0.2
   playerSpeed: 2
   scrollSpeed: 5
-  scrollMinDistance: 50
+  scrollMinDistance: 35
   scrollMaxDistance: 80
   distance: 60
+  tmpDistance: 0
   acceleration: 0.1
 --- !u!1 &1551010201
 GameObject:
