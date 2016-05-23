@@ -11,7 +11,6 @@ namespace Assets.GameScripts.MainPerson
 
         public Camera ScrCam;
         public GameObject player;
-        public GameObject gun;
         public Image screenPointCenter;
         public Text m_TextCursor;
 
@@ -25,8 +24,6 @@ namespace Assets.GameScripts.MainPerson
         public float scrollMinDistance = 1;//Минимальная дистанция скроллинга    
         public float scrollMaxDistance = 10;//Максимальная дистанция скроллинга
         public float distance = 60;//Дистанция
-        public float zoomDistance = 40;//Дистанция для прицеливания
-        private float tmpDistance;
 
         //Debug public
         public float acceleration = 0.1f;
@@ -57,34 +54,13 @@ namespace Assets.GameScripts.MainPerson
         {
             m_OriginalRotation = transform.localRotation;
             m_Angle = transform.localRotation;
-            anim = player.GetComponent<Animator>();
-            tmpDistance = distance;        
+            anim = player.GetComponent<Animator>();      
         }
 
         private void Update()
         {
             if (!menuIsActive)
             {
-
-                #region прицеливание
-                if (Input.GetMouseButtonDown(1))
-                {
-                    tmpDistance = distance;
-                    distance = zoomDistance;
-                }
-                if (Input.GetMouseButtonUp(1))
-                {
-                    distance = tmpDistance;
-                }
-                if (Input.GetMouseButton(1))
-                {
-                    gun.SetActive(true);
-                }
-                else
-                {
-                    gun.SetActive(false);
-                }
-                #endregion
 
                 transform.position = player.transform.position + new Vector3(0, 0.5f, 0);
                 ControlCursor();

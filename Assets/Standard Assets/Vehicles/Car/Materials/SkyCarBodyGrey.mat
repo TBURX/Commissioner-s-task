@@ -2,15 +2,17 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 4
+  serializedVersion: 6
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: SkyCarBodyGrey
-  m_Shader: {fileID: 45, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _DETAIL_MUL _LIGHTMAPPING_STATIC_LIGHTMAPS _NORMALMAP _UVPRIM_UV1
     _UVSEC_UV1
-  m_CustomRenderQueue: -1
+  m_LightmapFlags: 0
+  m_CustomRenderQueue: 2000
+  stringTagMap: {}
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
@@ -18,7 +20,7 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 2800000, guid: 9ba7fba9d6ffa3f41bf3ed18e434762f, type: 3}
+          m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -37,13 +39,6 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _EmissionMap
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
           name: _ParallaxMap
         second:
           m_Texture: {fileID: 0}
@@ -51,14 +46,14 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _Occlusion
+          name: _OcclusionMap
         second:
           m_Texture: {fileID: 2800000, guid: bd0d469704e7c934ebddc45ece4c1868, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _SpecGlossMap
+          name: _EmissionMap
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
@@ -79,31 +74,33 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
+          name: _MetallicGlossMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _SpecGlossMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Occlusion
+        second:
+          m_Texture: {fileID: 2800000, guid: bd0d469704e7c934ebddc45ece4c1868, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
           name: _Cube
         second:
           m_Texture: {fileID: 8900000, guid: d42f3408b3c63734aa9f43fbbf3c9854, type: 2}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _OcclusionMap
-        second:
-          m_Texture: {fileID: 2800000, guid: bd0d469704e7c934ebddc45ece4c1868, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
     m_Floats:
-      data:
-        first:
-          name: _Shininess
-        second: .489425927
-      data:
-        first:
-          name: _AlphaTestRef
-        second: .5
-      data:
-        first:
-          name: _Lightmapping
-        second: 0
       data:
         first:
           name: _SrcBlend
@@ -114,8 +111,20 @@ Material:
         second: 0
       data:
         first:
+          name: _Cutoff
+        second: 0.5
+      data:
+        first:
+          name: _AlphaTestRef
+        second: 0.5
+      data:
+        first:
+          name: _Shininess
+        second: 0.48942593
+      data:
+        first:
           name: _Parallax
-        second: .0199999996
+        second: 0.02
       data:
         first:
           name: _ZWrite
@@ -123,7 +132,7 @@ Material:
       data:
         first:
           name: _Glossiness
-        second: .150000006
+        second: 0.15
       data:
         first:
           name: _BumpScale
@@ -146,7 +155,15 @@ Material:
         second: 0
       data:
         first:
+          name: _Metallic
+        second: 0
+      data:
+        first:
           name: _EmissionScaleUI
+        second: 0
+      data:
+        first:
+          name: _Lightmapping
         second: 0
       data:
         first:
@@ -155,7 +172,7 @@ Material:
       data:
         first:
           name: _DetailAlbedoMultiplier
-        second: 4.5947938
+        second: 4.594794
       data:
         first:
           name: _UVPrim
@@ -172,11 +189,11 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: .498039216, g: .498039216, b: .498039216, a: .286274523}
+        second: {r: 0.49803922, g: 0.49803922, b: 0.49803922, a: 0.28627452}
       data:
         first:
-          name: _SpecularColor
-        second: {r: .345588207, g: .345588207, b: .345588207, a: 1}
+          name: _SpecColor
+        second: {r: 0.09803922, g: 0.09803922, b: 0.09803922, a: 1}
       data:
         first:
           name: _EmissionColorUI
@@ -187,9 +204,9 @@ Material:
         second: {r: 0, g: 0, b: 0, a: 1}
       data:
         first:
-          name: _SpecColor
-        second: {r: .0980392173, g: .0980392173, b: .0980392173, a: 1}
+          name: _SpecularColor
+        second: {r: 0.3455882, g: 0.3455882, b: 0.3455882, a: 1}
       data:
         first:
           name: _ReflectColor
-        second: {r: .220588207, g: .220588207, b: .220588207, a: .501960814}
+        second: {r: 0.2205882, g: 0.2205882, b: 0.2205882, a: 0.5019608}
