@@ -2387,6 +2387,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gun: {fileID: 407122437}
+  vertebrae: {fileID: 1931503387}
+  head: {fileID: 1728076671}
 --- !u!1 &295418165
 GameObject:
   m_ObjectHideFlags: 0
@@ -3311,8 +3313,8 @@ Transform:
   m_PrefabParentObject: {fileID: 427098, guid: a3ec19449b38d1a408fa00dc470b3eae, type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 407122437}
-  m_LocalRotation: {x: 0.14770141, y: 0.03845683, z: 0.68387413, w: 0.71345747}
-  m_LocalPosition: {x: -4, y: -14.75, z: 1.2}
+  m_LocalRotation: {x: 0.083828546, y: 0.030936332, z: 0.6945204, w: 0.7139028}
+  m_LocalPosition: {x: -4, y: -15.7, z: 4.3}
   m_LocalScale: {x: 11.4095335, y: 11.409529, z: 11.40953}
   m_Children: []
   m_Father: {fileID: 972407805}
@@ -8204,7 +8206,7 @@ Transform:
   m_PrefabParentObject: {fileID: 466472, guid: a3ec19449b38d1a408fa00dc470b3eae, type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 937545481}
-  m_LocalRotation: {x: 0.7070777, y: 0.006427439, z: 0.70707756, w: -0.0064274394}
+  m_LocalRotation: {x: 0.7070776, y: 0.0064274343, z: 0.7070775, w: -0.0064274347}
   m_LocalPosition: {x: 1.019158, y: -0.065122634, z: -0.17636025}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -10984,6 +10986,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gun: {fileID: 407122437}
+  vertebrae: {fileID: 0}
+  head: {fileID: 0}
 --- !u!95 &1260993133
 Animator:
   serializedVersion: 3
@@ -14759,6 +14763,10 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: a74cab07afbf56a4385663afd589cb99, type: 3}
+--- !u!1 &1728076671 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100074, guid: bc2a58efd88b0994bb00694fa2d92a2c, type: 3}
+  m_PrefabInternal: {fileID: 771661110}
 --- !u!1 &1736074969 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: b8354cc71cf356b4599971e97b5c770b, type: 3}
@@ -16169,6 +16177,10 @@ Transform:
   - {fileID: 249809351}
   m_Father: {fileID: 0}
   m_RootOrder: 12
+--- !u!1 &1931503387 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100178, guid: bc2a58efd88b0994bb00694fa2d92a2c, type: 3}
+  m_PrefabInternal: {fileID: 771661110}
 --- !u!1 &1937067235 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 49b3d99a45a40bd43b886f037a9fae8f, type: 3}
