@@ -153,6 +153,7 @@ ModelImporter:
     100290: "\u041E\u0431\u044A\u0435\u043A\u0442_\u0421\u043A\u0438\u043D_2_2_2"
     100292: "\u041E\u0431\u044A\u0435\u043A\u0442_\u0421\u043A\u0438\u043D_3"
     100294: "\u041E\u0431\u044A\u0435\u043A\u0442_\u0421\u043A\u0438\u043D_3_2"
+    100296: Cylinder_002
     400000: amin_l_knee01
     400002: amin_r_knee01
     400004: anim_COG01
@@ -301,6 +302,9 @@ ModelImporter:
     400290: "\u041E\u0431\u044A\u0435\u043A\u0442_\u0421\u043A\u0438\u043D_2_2_2"
     400292: "\u041E\u0431\u044A\u0435\u043A\u0442_\u0421\u043A\u0438\u043D_3"
     400294: "\u041E\u0431\u044A\u0435\u043A\u0442_\u0421\u043A\u0438\u043D_3_2"
+    400296: Cylinder_002
+    2300000: Cylinder_002
+    3300000: Cylinder_002
     4300000: Plane_002_Plane_003
     4300002: ZBrush_defualt_group
     4300004: tail
@@ -308,7 +312,8 @@ ModelImporter:
     4300008: hairBack
     4300010: hairFront
     4300012: headgear
-    7400000: Default Take
+    4300014: Cylinder_002
+    7400000: TurnHead
     7400002: bones01Action
     7400004: bones01_bones01_anim_COG01Action_bones01_anim_COG01Action
     7400006: bones01_bones01_anim_globalMove01Action_bones01_anim_globalMove
@@ -372,10 +377,10 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: Default Take
+      name: TurnHead
       takeName: Default Take
-      firstFrame: -1
-      lastFrame: 119
+      firstFrame: 0
+      lastFrame: 60
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

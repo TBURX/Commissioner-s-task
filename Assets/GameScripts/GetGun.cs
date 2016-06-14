@@ -9,7 +9,7 @@ public class GetGun : MonoBehaviour {
     // Use this for initialization
     void Start () {
         m_Anim = GetComponent<Animator>();
-        m_Anim2 = GameObject.FindGameObjectWithTag("Gun").GetComponent<Animator>();
+        //m_Anim2 = GameObject.FindGameObjectWithTag("Gun").GetComponent<Animator>();
     }
 	
 	// Update is called once per frame
@@ -25,14 +25,14 @@ public class GetGun : MonoBehaviour {
             {
                 m_Anim.SetBool("gun", true);
                 m_Anim.SetFloat("HideGun", 0);
-                m_Anim2.SetFloat("HideGun", 0);
+               // m_Anim2.SetFloat("HideGun", 0);
                 gunIsHide = !gunIsHide;
             }
             else
             {
                 m_Anim.SetBool("gun", true);
                 m_Anim.SetFloat("HideGun", 1);
-                m_Anim2.SetFloat("HideGun", 1);
+                //m_Anim2.SetFloat("HideGun", 1);
                 gunIsHide = !gunIsHide;
             }
         }
