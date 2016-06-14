@@ -1,0 +1,418 @@
+fileFormatVersion: 2
+guid: 2e2411e0f8ef4244bb7b550ef458bd75
+timeCreated: 1456330664
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature_001
+    100002: BackLeg-L-1
+    100004: BackLeg-L-2
+    100006: BackLeg-L-2_001
+    100008: BackLeg-R-1
+    100010: Body_001
+    100012: //RootNode
+    100014: Cube
+    100016: Cube_001
+    100018: Cube_002
+    100020: Cube_003
+    100022: Cube_004
+    100024: Cube_005
+    100026: Cube_006
+    100028: Cube_007
+    100030: Cube_008
+    100032: Cube_009
+    100034: Cube_010
+    100036: Cube_011
+    100038: Cylinder
+    100040: Cylinder_001
+    100042: FrontLeg-L-1
+    100044: FrontLeg-L-2
+    100046: FrontLeg-L-3
+    100048: FrontLeg-R-1
+    100050: FrontLeg-R-2
+    100052: FrontLeg-R-3
+    100054: hairFront
+    100056: Head_001
+    100058: horn
+    100060: leftEye
+    100062: Neck_001
+    100064: Plane
+    100066: Plane_001
+    100068: pony
+    100070: rightEye
+    100072: tail
+    100074: Xeroten_001
+    400000: Armature_001
+    400002: BackLeg-L-1
+    400004: BackLeg-L-2
+    400006: BackLeg-L-2_001
+    400008: BackLeg-R-1
+    400010: Body_001
+    400012: //RootNode
+    400014: Cube
+    400016: Cube_001
+    400018: Cube_002
+    400020: Cube_003
+    400022: Cube_004
+    400024: Cube_005
+    400026: Cube_006
+    400028: Cube_007
+    400030: Cube_008
+    400032: Cube_009
+    400034: Cube_010
+    400036: Cube_011
+    400038: Cylinder
+    400040: Cylinder_001
+    400042: FrontLeg-L-1
+    400044: FrontLeg-L-2
+    400046: FrontLeg-L-3
+    400048: FrontLeg-R-1
+    400050: FrontLeg-R-2
+    400052: FrontLeg-R-3
+    400054: hairFront
+    400056: Head_001
+    400058: horn
+    400060: leftEye
+    400062: Neck_001
+    400064: Plane
+    400066: Plane_001
+    400068: pony
+    400070: rightEye
+    400072: tail
+    400074: Xeroten_001
+    2300000: Cube
+    2300002: Cube_001
+    2300004: Cube_002
+    2300006: Cube_003
+    2300008: Cube_004
+    2300010: Cube_005
+    2300012: Cube_006
+    2300014: Cube_007
+    2300016: Cube_008
+    2300018: Cube_009
+    2300020: Cube_010
+    2300022: Cube_011
+    2300024: Cylinder
+    2300026: Cylinder_001
+    2300028: Plane
+    2300030: Plane_001
+    3300000: Cube
+    3300002: Cube_001
+    3300004: Cube_002
+    3300006: Cube_003
+    3300008: Cube_004
+    3300010: Cube_005
+    3300012: Cube_006
+    3300014: Cube_007
+    3300016: Cube_008
+    3300018: Cube_009
+    3300020: Cube_010
+    3300022: Cube_011
+    3300024: Cylinder
+    3300026: Cylinder_001
+    3300028: Plane
+    3300030: Plane_001
+    4300000: Cube_011
+    4300002: Cube_010
+    4300004: Cylinder_001
+    4300006: Plane
+    4300008: Plane_001
+    4300010: Cube_009
+    4300012: Cube_008
+    4300014: Cube_007
+    4300016: Cube_006
+    4300018: Cube_005
+    4300020: Cylinder
+    4300022: Cube_004
+    4300024: Cube_001
+    4300026: Cube_002
+    4300028: Cube_003
+    4300030: Cube
+    4300032: tail
+    4300034: horn
+    4300036: leftEye
+    4300038: rightEye
+    4300040: hairFront
+    4300042: pony
+    7400000: Default Take
+    7400002: Armature_001Action
+    9500000: //RootNode
+    13700000: hairFront
+    13700002: horn
+    13700004: leftEye
+    13700006: pony
+    13700008: rightEye
+    13700010: tail
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Default Take
+      takeName: Default Take
+      firstFrame: -1
+      lastFrame: 209
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature_001
+        weight: 1
+      - path: Armature_001/Xeroten_001
+        weight: 1
+      - path: Armature_001/Xeroten_001/BackLeg-L-1
+        weight: 1
+      - path: Armature_001/Xeroten_001/BackLeg-L-1/BackLeg-L-2
+        weight: 1
+      - path: Armature_001/Xeroten_001/BackLeg-R-1
+        weight: 1
+      - path: Armature_001/Xeroten_001/BackLeg-R-1/BackLeg-L-2_001
+        weight: 1
+      - path: Armature_001/Xeroten_001/Body_001
+        weight: 1
+      - path: Armature_001/Xeroten_001/Body_001/FrontLeg-L-1
+        weight: 1
+      - path: Armature_001/Xeroten_001/Body_001/FrontLeg-L-1/FrontLeg-L-2
+        weight: 1
+      - path: Armature_001/Xeroten_001/Body_001/FrontLeg-L-1/FrontLeg-L-2/FrontLeg-L-3
+        weight: 1
+      - path: Armature_001/Xeroten_001/Body_001/FrontLeg-R-1
+        weight: 1
+      - path: Armature_001/Xeroten_001/Body_001/FrontLeg-R-1/FrontLeg-R-2
+        weight: 1
+      - path: Armature_001/Xeroten_001/Body_001/FrontLeg-R-1/FrontLeg-R-2/FrontLeg-R-3
+        weight: 1
+      - path: Armature_001/Xeroten_001/Body_001/Neck_001
+        weight: 1
+      - path: Armature_001/Xeroten_001/Body_001/Neck_001/Head_001
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Cube_001
+        weight: 1
+      - path: Cube_002
+        weight: 1
+      - path: Cube_003
+        weight: 1
+      - path: Cube_004
+        weight: 1
+      - path: Cube_005
+        weight: 1
+      - path: Cube_006
+        weight: 1
+      - path: Cube_007
+        weight: 1
+      - path: Cube_008
+        weight: 1
+      - path: Cube_009
+        weight: 1
+      - path: Cube_010
+        weight: 1
+      - path: Cube_011
+        weight: 1
+      - path: Cylinder
+        weight: 1
+      - path: Cylinder_001
+        weight: 1
+      - path: hairFront
+        weight: 1
+      - path: horn
+        weight: 1
+      - path: leftEye
+        weight: 1
+      - path: Plane
+        weight: 1
+      - path: Plane_001
+        weight: 1
+      - path: pony
+        weight: 1
+      - path: rightEye
+        weight: 1
+      - path: tail
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature_001Action
+      takeName: Armature_001Action
+      firstFrame: -1
+      lastFrame: 209
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature_001
+        weight: 1
+      - path: Armature_001/Xeroten_001
+        weight: 1
+      - path: Armature_001/Xeroten_001/BackLeg-L-1
+        weight: 1
+      - path: Armature_001/Xeroten_001/BackLeg-L-1/BackLeg-L-2
+        weight: 1
+      - path: Armature_001/Xeroten_001/BackLeg-R-1
+        weight: 1
+      - path: Armature_001/Xeroten_001/BackLeg-R-1/BackLeg-L-2_001
+        weight: 1
+      - path: Armature_001/Xeroten_001/Body_001
+        weight: 1
+      - path: Armature_001/Xeroten_001/Body_001/FrontLeg-L-1
+        weight: 1
+      - path: Armature_001/Xeroten_001/Body_001/FrontLeg-L-1/FrontLeg-L-2
+        weight: 1
+      - path: Armature_001/Xeroten_001/Body_001/FrontLeg-L-1/FrontLeg-L-2/FrontLeg-L-3
+        weight: 1
+      - path: Armature_001/Xeroten_001/Body_001/FrontLeg-R-1
+        weight: 1
+      - path: Armature_001/Xeroten_001/Body_001/FrontLeg-R-1/FrontLeg-R-2
+        weight: 1
+      - path: Armature_001/Xeroten_001/Body_001/FrontLeg-R-1/FrontLeg-R-2/FrontLeg-R-3
+        weight: 1
+      - path: Armature_001/Xeroten_001/Body_001/Neck_001
+        weight: 1
+      - path: Armature_001/Xeroten_001/Body_001/Neck_001/Head_001
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Cube_001
+        weight: 1
+      - path: Cube_002
+        weight: 1
+      - path: Cube_003
+        weight: 1
+      - path: Cube_004
+        weight: 1
+      - path: Cube_005
+        weight: 1
+      - path: Cube_006
+        weight: 1
+      - path: Cube_007
+        weight: 1
+      - path: Cube_008
+        weight: 1
+      - path: Cube_009
+        weight: 1
+      - path: Cube_010
+        weight: 1
+      - path: Cube_011
+        weight: 1
+      - path: Cylinder
+        weight: 1
+      - path: Cylinder_001
+        weight: 1
+      - path: hairFront
+        weight: 1
+      - path: horn
+        weight: 1
+      - path: leftEye
+        weight: 1
+      - path: Plane
+        weight: 1
+      - path: Plane_001
+        weight: 1
+      - path: pony
+        weight: 1
+      - path: rightEye
+        weight: 1
+      - path: tail
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
