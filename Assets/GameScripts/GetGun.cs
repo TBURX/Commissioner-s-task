@@ -8,6 +8,12 @@ public class GetGun : MonoBehaviour {
     public GameObject gun;
     public GameObject vertebrae;
     public GameObject head;
+
+
+    Coroutine hideAfterTime = null;
+    Coroutine onHold = null;
+    Coroutine onShoot = null;
+
     // Use this for initialization
     void Start () {
         m_Anim = GetComponent<Animator>();
@@ -42,7 +48,7 @@ public class GetGun : MonoBehaviour {
 
     IEnumerator HideIfNotShooting()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(7);
         if (!gunIsHide)
         {
             StartCoroutine(OnHold());
@@ -51,17 +57,20 @@ public class GetGun : MonoBehaviour {
 
     void FixedUpdate()
     {
-        Coroutine hideAfterTime = null;
         if (Input.GetKeyDown(KeyCode.F))
         {
             if (gunIsHide)
             {
-                StartCoroutine(OnShoot());
+                if(onHold != null)
+                    StopCoroutine(onHold);
+                onShoot = StartCoroutine(OnShoot());
                 hideAfterTime = StartCoroutine(HideIfNotShooting());
             }
             else
-            {                
-                StartCoroutine(OnHold());
+            {
+                if (onShoot != null)
+                    StopCoroutine(onShoot);
+                onHold = StartCoroutine(OnHold());
                 StopCoroutine(hideAfterTime);
             }
         }
