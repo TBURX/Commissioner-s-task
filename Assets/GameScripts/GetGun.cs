@@ -21,29 +21,54 @@ public class GetGun : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
-	}
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            if (gunIsHide)
+            {
+                if (onHold != null)
+                    StopCoroutine(onHold);
+                onShoot = StartCoroutine(OnShoot());
+                hideAfterTime = StartCoroutine(HideIfNotShooting());
+            }
+            else
+            {
+                if (onShoot != null)
+                    StopCoroutine(onShoot);
+                StopCoroutine(hideAfterTime);
+                onHold = StartCoroutine(OnHold());
+            }
+        }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (hideAfterTime != null)
+            {
+                StopCoroutine(hideAfterTime);
+                hideAfterTime = StartCoroutine(HideIfNotShooting());
+            }
+        }
+    }
 
     IEnumerator OnHold()
     {
+        gunIsHide = !gunIsHide;
         m_Anim.SetBool("gun", true);
         m_Anim.SetFloat("HideGun", 1);
         yield return new WaitForSeconds(0.5f);
         gun.transform.parent = vertebrae.transform;
         gun.transform.localPosition = new Vector3(-4f, -15.7f, 4.3f);
         gun.transform.localEulerAngles = new Vector3(4.4f, 9.27f, 88.78f);
-        gunIsHide = !gunIsHide;
     }
 
     IEnumerator OnShoot()
     {
+        gunIsHide = !gunIsHide;
         m_Anim.SetBool("gun", true);
         m_Anim.SetFloat("HideGun", 0);
         yield return new WaitForSeconds(0.5f);
         gun.transform.parent = head.transform;
         gun.transform.localPosition = new Vector3(-49.18f, -0.46f, -13.14f);
         gun.transform.localEulerAngles = new Vector3(360.88f, -95.24f, -267.99f);
-        gunIsHide = !gunIsHide;
     }
 
     IEnumerator HideIfNotShooting()
@@ -57,31 +82,7 @@ public class GetGun : MonoBehaviour {
 
     void FixedUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            if (gunIsHide)
-            {
-                if(onHold != null)
-                    StopCoroutine(onHold);
-                onShoot = StartCoroutine(OnShoot());
-                hideAfterTime = StartCoroutine(HideIfNotShooting());
-            }
-            else
-            {
-                if (onShoot != null)
-                    StopCoroutine(onShoot);
-                onHold = StartCoroutine(OnHold());
-                StopCoroutine(hideAfterTime);
-            }
-        }
-        if (Input.GetMouseButtonUp(0))
-        {
-            if (hideAfterTime != null)
-            {
-                StopCoroutine(hideAfterTime);
-                hideAfterTime = StartCoroutine(HideIfNotShooting());
-            }
-        }
+        
 
 
         //Debug.Log(m_Anim.GetCurrentAnimatorStateInfo(0).length);
