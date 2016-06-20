@@ -5,9 +5,12 @@ public class GetGun : MonoBehaviour {
 
     private bool gunIsHide = true;
     private Animator m_Anim;
+
     public GameObject gun;
+    private AudioSource gunShot;
     public GameObject vertebrae;
     public GameObject head;
+    public Camera camera;
 
 
     Coroutine hideAfterTime = null;
@@ -17,6 +20,7 @@ public class GetGun : MonoBehaviour {
     // Use this for initialization
     void Start () {
         m_Anim = GetComponent<Animator>();
+        gunShot = gun.transform.Find("Audio Source").GetComponent<AudioSource>();
     }
 	
 	// Update is called once per frame
@@ -41,11 +45,17 @@ public class GetGun : MonoBehaviour {
 
         if (Input.GetMouseButtonDown(0))
         {
-            if (hideAfterTime != null)
+            if (hideAfterTime != null && !gunIsHide)
             {
+                gunShot.Play();
                 StopCoroutine(hideAfterTime);
                 hideAfterTime = StartCoroutine(HideIfNotShooting());
             }
+        }
+
+        if (Input.GetMouseButton(1) && !gunIsHide)
+        {
+            camera.fieldOfView = Mathf.Lerp(camera.fieldOfView, 20, 0.1f);
         }
     }
 
