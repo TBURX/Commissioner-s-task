@@ -48,6 +48,7 @@ public class GetGun : MonoBehaviour {
             if (hideAfterTime != null && !gunIsHide)
             {
                 gunShot.Play();
+                m_Anim.SetBool("shot",true);
                 StopCoroutine(hideAfterTime);
                 hideAfterTime = StartCoroutine(HideIfNotShooting());
             }
@@ -92,9 +93,5 @@ public class GetGun : MonoBehaviour {
 
     void FixedUpdate()
     {
-        
-
-
-        //Debug.Log(m_Anim.GetCurrentAnimatorStateInfo(0).length);
     }
 }
