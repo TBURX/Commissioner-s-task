@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Assets.GameScripts.MainPerson;
+using System.Collections;
 using UnityEngine;
 
 public class GetGun : MonoBehaviour {
@@ -11,6 +12,8 @@ public class GetGun : MonoBehaviour {
     public GameObject vertebrae;
     public GameObject head;
     public Camera camera;
+
+    public PonyController ponyController;
 
 
     Coroutine hideAfterTime = null;
@@ -48,7 +51,7 @@ public class GetGun : MonoBehaviour {
             if (hideAfterTime != null && !gunIsHide)
             {
                 gunShot.Play();
-                m_Anim.SetBool("shot",true);
+                m_Anim.SetBool("shot", true);
                 StopCoroutine(hideAfterTime);
                 hideAfterTime = StartCoroutine(HideIfNotShooting());
             }
@@ -56,7 +59,12 @@ public class GetGun : MonoBehaviour {
 
         if (Input.GetMouseButton(1) && !gunIsHide)
         {
-            camera.fieldOfView = Mathf.Lerp(camera.fieldOfView, 20, 0.1f);
+            camera.fieldOfView = Mathf.Lerp(camera.fieldOfView, 30, 0.1f);
+            ponyController.isShotZoom = true;
+        }
+        else
+        {
+            ponyController.isShotZoom = false;
         }
     }
 

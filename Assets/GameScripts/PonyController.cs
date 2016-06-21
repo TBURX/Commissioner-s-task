@@ -9,6 +9,9 @@ namespace Assets.GameScripts.MainPerson
         //для внутриигрового меню
         public bool menuIsActive = false;
 
+        //для прицеливания
+        public bool isShotZoom = false;
+
         public Camera ScrCam;
         public GameObject player;
         public Image screenPointCenter;
@@ -64,7 +67,10 @@ namespace Assets.GameScripts.MainPerson
 
                 transform.position = player.transform.position + new Vector3(0, 0.5f, 0);
                 ControlCursor();
-                ScrCam.fieldOfView = Mathf.Lerp(ScrCam.fieldOfView, distance, Time.deltaTime * 2);
+                if (!isShotZoom)
+                {
+                    ScrCam.fieldOfView = Mathf.Lerp(ScrCam.fieldOfView, distance, Time.deltaTime * 2);
+                }
                 // we make initial calculations from the original local rotation
                 transform.localRotation = m_OriginalRotation;
 
