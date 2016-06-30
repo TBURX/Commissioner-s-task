@@ -66,6 +66,19 @@ public class GetGun : MonoBehaviour {
         {
             ponyController.isShotZoom = false;
         }
+
+        /*
+        //не совсем удачная попытка в поворот головы
+        if(!gunIsHide)
+        {
+            m_Anim.enabled = false;
+            head.transform.eulerAngles = new Vector3(90, 180, 90) + new Vector3(-camera.transform.eulerAngles.x, camera.transform.eulerAngles.y, camera.transform.eulerAngles.z);
+            head.transform.localEulerAngles = new Vector3(head.transform.localEulerAngles.x, head.transform.localEulerAngles.y, Mathf.Clamp(head.transform.localEulerAngles.z, 110, 250));
+        }
+        else
+        {
+            m_Anim.enabled = true;
+        }*/
     }
 
     IEnumerator OnHold()
@@ -75,7 +88,7 @@ public class GetGun : MonoBehaviour {
         m_Anim.SetFloat("HideGun", 1);
         yield return new WaitForSeconds(0.5f);
         gun.transform.parent = vertebrae.transform;
-        gun.transform.localPosition = new Vector3(-4f, -15.7f, 4.3f);
+        gun.transform.localPosition = new Vector3(-4f, -13.5f, 4.3f);
         gun.transform.localEulerAngles = new Vector3(4.4f, 9.27f, 88.78f);
     }
 
