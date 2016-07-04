@@ -28,35 +28,26 @@ public class GetGun : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown(KeyCode.F))
+
+        //выстрел
+        if (Input.GetMouseButtonDown(0) && hideAfterTime != null && !gunIsHide)
         {
-            if (gunIsHide)
-            {
-                if (onHold != null)
-                    StopCoroutine(onHold);
-                onShoot = StartCoroutine(OnShoot());
-                hideAfterTime = StartCoroutine(HideIfNotShooting());
-            }
-            else
-            {
-                if (onShoot != null)
-                    StopCoroutine(onShoot);
-                StopCoroutine(hideAfterTime);
-                onHold = StartCoroutine(OnHold());
-            }
+            gunShot.Play();
+            m_Anim.SetBool("shot", true);
+            StopCoroutine(hideAfterTime);
+            hideAfterTime = StartCoroutine(HideIfNotShooting());
         }
 
-        if (Input.GetMouseButtonDown(0))
+        //выхват
+        if ((Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1)) && gunIsHide)
         {
-            if (hideAfterTime != null && !gunIsHide)
-            {
-                gunShot.Play();
-                m_Anim.SetBool("shot", true);
-                StopCoroutine(hideAfterTime);
-                hideAfterTime = StartCoroutine(HideIfNotShooting());
-            }
-        }
+            if (onHold != null)
+                StopCoroutine(onHold);
+            onShoot = StartCoroutine(OnShoot());
+            hideAfterTime = StartCoroutine(HideIfNotShooting());
+        }              
 
+        //прицеливание
         if (Input.GetMouseButton(1) && !gunIsHide)
         {
             camera.fieldOfView = Mathf.Lerp(camera.fieldOfView, 30, 0.1f);
@@ -67,18 +58,18 @@ public class GetGun : MonoBehaviour {
             ponyController.isShotZoom = false;
         }
 
-        /*
-        //не совсем удачная попытка в поворот головы
-        if(!gunIsHide)
+        
+        //поворот головы
+        if(!gunIsHide && ponyController.isShotZoom)
         {
             m_Anim.enabled = false;
             head.transform.eulerAngles = new Vector3(90, 180, 90) + new Vector3(-camera.transform.eulerAngles.x, camera.transform.eulerAngles.y, camera.transform.eulerAngles.z);
-            head.transform.localEulerAngles = new Vector3(head.transform.localEulerAngles.x, head.transform.localEulerAngles.y, Mathf.Clamp(head.transform.localEulerAngles.z, 110, 250));
+            head.transform.localEulerAngles = new Vector3(head.transform.localEulerAngles.x, head.transform.localEulerAngles.y, Mathf.Clamp(head.transform.localEulerAngles.z, 90, 270));
         }
         else
         {
             m_Anim.enabled = true;
-        }*/
+        }
     }
 
     IEnumerator OnHold()
