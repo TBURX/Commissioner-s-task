@@ -43,7 +43,7 @@ public class PathFollower : MonoBehaviour {
             }
 
             transform.position += dir * Time.deltaTime * speed;
-            transform.eulerAngles = new Vector3(0,Mathf.Acos(-dir.z)*Mathf.Sign(-dir.x)/Mathf.PI*180,0);
+            transform.eulerAngles = new Vector3(0,Mathf.LerpAngle(transform.eulerAngles.y, Mathf.Acos(-dir.z)*Mathf.Sign(-dir.x)/Mathf.PI*180,0.1f),0);
         }
         else if(!wait)
         {
