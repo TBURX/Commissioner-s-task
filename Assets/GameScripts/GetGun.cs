@@ -1,6 +1,9 @@
 ﻿using Assets.GameScripts.MainPerson;
 using System.Collections;
+using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GetGun : MonoBehaviour {
 
@@ -12,9 +15,12 @@ public class GetGun : MonoBehaviour {
     public GameObject vertebrae;
     public GameObject head;
     public Camera camera;
+    private float cameraYDif;
 
     public PonyController ponyController;
 
+    public bool isDogFight = false;
+    public bool isAfterMeetArmourer = false;
 
     Coroutine hideAfterTime = null;
     Coroutine onHold = null;
@@ -24,52 +30,57 @@ public class GetGun : MonoBehaviour {
     void Start () {
         m_Anim = GetComponent<Animator>();
         gunShot = gun.transform.Find("Audio Source").GetComponent<AudioSource>();
+        cameraYDif = camera.transform.position.y - gameObject.transform.position.y;
     }
 	
 	// Update is called once per frame
 	void Update () {
+        List<string> scenesWhereUseGun = new List<string>() { "MainScene", "Tyre", "BigMine", "Gold" };
+        if((scenesWhereUseGun.FindIndex(scene => scene == SceneManager.GetActiveScene().name) >= 0 || isDogFight)/*&& isAfterMeetArmourer раскомментировать, когда будет сюжет*/)
+        {
+            //выстрел
+            if (Input.GetMouseButtonDown(0) && hideAfterTime != null && !gunIsHide)
+            {
+                gunShot.Play();
+                m_Anim.SetBool("shot", true);
+                StopCoroutine(hideAfterTime);
+                hideAfterTime = StartCoroutine(HideIfNotShooting());
+            }
 
-        //выстрел
-        if (Input.GetMouseButtonDown(0) && hideAfterTime != null && !gunIsHide)
-        {
-            gunShot.Play();
-            m_Anim.SetBool("shot", true);
-            StopCoroutine(hideAfterTime);
-            hideAfterTime = StartCoroutine(HideIfNotShooting());
-        }
+            //выхват
+            if (Input.GetMouseButtonDown(0) && gunIsHide)
+            {
+                if (onHold != null)
+                    StopCoroutine(onHold);
+                onShoot = StartCoroutine(OnShoot());
+                hideAfterTime = StartCoroutine(HideIfNotShooting());
+            }
 
-        //выхват
-        if (Input.GetMouseButtonDown(0) && gunIsHide)
-        {
-            if (onHold != null)
-                StopCoroutine(onHold);
-            onShoot = StartCoroutine(OnShoot());
-            hideAfterTime = StartCoroutine(HideIfNotShooting());
-        }              
+            //прицеливание
+            if (Input.GetMouseButton(1) && !gunIsHide)
+            {
+                camera.fieldOfView = Mathf.Lerp(camera.fieldOfView, 40, 0.1f);
+                ponyController.isShotZoom = true;
+            }
+            else
+            {
+                ponyController.isShotZoom = false;
+            }
 
-        //прицеливание
-        if (Input.GetMouseButton(1) && !gunIsHide)
-        {
-            camera.fieldOfView = Mathf.Lerp(camera.fieldOfView, 40, 0.1f);
-            ponyController.isShotZoom = true;
-        }
-        else
-        {
-            ponyController.isShotZoom = false;
-        }
 
-        
-        //поворот головы
-        if(!gunIsHide && ponyController.isShotZoom)
-        {
-            m_Anim.enabled = false;
-            head.transform.eulerAngles = new Vector3(90 + (Input.GetKey(KeyCode.LeftShift)?Mathf.Sin(Time.realtimeSinceStartup * 3) * 5:0), 180, 90) + new Vector3(-camera.transform.eulerAngles.x, camera.transform.eulerAngles.y, camera.transform.eulerAngles.z);
-            head.transform.localEulerAngles = new Vector3(head.transform.localEulerAngles.x, head.transform.localEulerAngles.y, Mathf.Clamp(head.transform.localEulerAngles.z, 90, 270));
-        }
-        else
-        {
-            m_Anim.enabled = true;
-        }
+            //поворот головы
+            if (!gunIsHide && ponyController.isShotZoom)
+            {
+                m_Anim.enabled = false;
+                camera.transform.position = new Vector3(camera.transform.position.x,gameObject.transform.position.y + cameraYDif + (Input.GetKey(KeyCode.LeftShift) ? Mathf.Sin(Time.realtimeSinceStartup * 8) / 40 : Mathf.Sin(Time.realtimeSinceStartup*4)/80), camera.transform.position.z);
+                head.transform.eulerAngles = new Vector3(90 + (Input.GetKey(KeyCode.LeftShift) ? Mathf.Sin(Time.realtimeSinceStartup * 8) * 5 : 0), 180, 90) + new Vector3(-camera.transform.eulerAngles.x, camera.transform.eulerAngles.y, camera.transform.eulerAngles.z);
+                head.transform.localEulerAngles = new Vector3(head.transform.localEulerAngles.x, head.transform.localEulerAngles.y, Mathf.Clamp(head.transform.localEulerAngles.z, 90, 270));
+            }
+            else
+            {
+                m_Anim.enabled = true;
+            }
+        }               
     }
 
     IEnumerator OnHold()
