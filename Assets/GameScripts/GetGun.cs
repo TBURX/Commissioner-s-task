@@ -39,7 +39,7 @@ public class GetGun : MonoBehaviour {
         }
 
         //выхват
-        if ((Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1)) && gunIsHide)
+        if (Input.GetMouseButtonDown(0) && gunIsHide)
         {
             if (onHold != null)
                 StopCoroutine(onHold);
@@ -50,7 +50,7 @@ public class GetGun : MonoBehaviour {
         //прицеливание
         if (Input.GetMouseButton(1) && !gunIsHide)
         {
-            camera.fieldOfView = Mathf.Lerp(camera.fieldOfView, 30, 0.1f);
+            camera.fieldOfView = Mathf.Lerp(camera.fieldOfView, 40, 0.1f);
             ponyController.isShotZoom = true;
         }
         else
@@ -63,7 +63,7 @@ public class GetGun : MonoBehaviour {
         if(!gunIsHide && ponyController.isShotZoom)
         {
             m_Anim.enabled = false;
-            head.transform.eulerAngles = new Vector3(90, 180, 90) + new Vector3(-camera.transform.eulerAngles.x, camera.transform.eulerAngles.y, camera.transform.eulerAngles.z);
+            head.transform.eulerAngles = new Vector3(90 + (Input.GetKey(KeyCode.LeftShift)?Mathf.Sin(Time.realtimeSinceStartup * 3) * 5:0), 180, 90) + new Vector3(-camera.transform.eulerAngles.x, camera.transform.eulerAngles.y, camera.transform.eulerAngles.z);
             head.transform.localEulerAngles = new Vector3(head.transform.localEulerAngles.x, head.transform.localEulerAngles.y, Mathf.Clamp(head.transform.localEulerAngles.z, 90, 270));
         }
         else
