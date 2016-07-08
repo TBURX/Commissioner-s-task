@@ -8,23 +8,27 @@ public class PathFollower : MonoBehaviour {
     public Transform[] path ;
     public float speed = 1.0f;
     public float waitTimeInSeconds = 10;
+    private AudioSource audioSource;
 
     private float reachDist = 1.0F;
     private int currentPoint = 0;
 
     // Use this for initialization
     void Start () {
-	}
+        audioSource = transform.Find("Audio Source").GetComponent<AudioSource>();
+    }
 
     private bool wait = false;
     IEnumerator Coro()
     {
         Debug.Log("end");
+        audioSource.Stop();
         wait = true;
         yield return new WaitForSeconds(waitTimeInSeconds);
         transform.position = path[0].position;
         currentPoint = 0;
         wait = false;
+        audioSource.Play();
         Debug.Log("start");
     }
 

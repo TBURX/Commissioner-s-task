@@ -71,13 +71,15 @@ public class GetGun : MonoBehaviour {
             if (!gunIsHide && ponyController.isShotZoom)
             {
                 m_Anim.enabled = false;
-                camera.transform.position = new Vector3(camera.transform.position.x,gameObject.transform.position.y + cameraYDif + (Input.GetKey(KeyCode.LeftShift) ? Mathf.Sin(Time.realtimeSinceStartup * 8) / 40 : Mathf.Sin(Time.realtimeSinceStartup*4)/80), camera.transform.position.z);
+                if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+                    camera.transform.position = new Vector3(camera.transform.position.x,gameObject.transform.position.y + cameraYDif + (Input.GetKey(KeyCode.LeftShift) ? Mathf.Sin(Time.realtimeSinceStartup * 8) / 40 : Mathf.Sin(Time.realtimeSinceStartup*4)/80), camera.transform.position.z);
                 head.transform.eulerAngles = new Vector3(90 + (Input.GetKey(KeyCode.LeftShift) ? Mathf.Sin(Time.realtimeSinceStartup * 8) * 5 : 0), 180, 90) + new Vector3(-camera.transform.eulerAngles.x, camera.transform.eulerAngles.y, camera.transform.eulerAngles.z);
                 head.transform.localEulerAngles = new Vector3(head.transform.localEulerAngles.x, head.transform.localEulerAngles.y, Mathf.Clamp(head.transform.localEulerAngles.z, 90, 270));
             }
             else
             {
                 m_Anim.enabled = true;
+                camera.transform.position = new Vector3(camera.transform.position.x, gameObject.transform.position.y + cameraYDif, camera.transform.position.z);
             }
         }               
     }
