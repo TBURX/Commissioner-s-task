@@ -1,91 +1,97 @@
 fileFormatVersion: 2
-guid: d6fc2ca598e6a6449b876d4c2d15fddd
-timeCreated: 1460288609
+guid: 30d749abe656b1842836ff959e97086f
+timeCreated: 1468223864
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: Armature
-    100002: Body1
-    100004: Body2
-    100006: Cylinder
-    100008: hairBack
-    100010: hairFront
-    100012: Head
-    100014: leftEye
-    100016: Leg1_L
-    100018: Leg1_R
-    100020: Leg2_L
-    100022: Leg2_R
-    100024: Leg3_L
-    100026: Leg3_R
-    100028: Leg4_L
-    100030: Leg4_R
-    100032: Leg5_L
-    100034: Leg5_R
-    100036: Leg6_L
-    100038: LegR
-    100040: Neck
-    100042: Plane
-    100044: Plane_001
-    100046: Plane_002
-    100048: rightEye
-    100050: tail
-    100052: Tail1
-    100054: Tail2
-    100056: //RootNode
+    100002: Armature_001
+    100004: Body1
+    100006: Body2
+    100008: Bone
+    100010: Bone_001
+    100012: Cylinder
+    100014: Cylinder_001
+    100016: hairBack
+    100018: hairFront
+    100020: Head
+    100022: leftEye
+    100024: Leg1_L
+    100026: Leg1_R
+    100028: Leg2_L
+    100030: Leg2_R
+    100032: Leg3_L
+    100034: Leg3_R
+    100036: Leg4_L
+    100038: Leg4_R
+    100040: Leg5_L
+    100042: Leg5_R
+    100044: Leg6_L
+    100046: LegR
+    100048: Neck
+    100050: Plane
+    100052: Plane_002
+    100054: rightEye
+    100056: tail
+    100058: Tail1
+    100060: Tail2
+    100062: //RootNode
     400000: Armature
-    400002: Body1
-    400004: Body2
-    400006: Cylinder
-    400008: hairBack
-    400010: hairFront
-    400012: Head
-    400014: leftEye
-    400016: Leg1_L
-    400018: Leg1_R
-    400020: Leg2_L
-    400022: Leg2_R
-    400024: Leg3_L
-    400026: Leg3_R
-    400028: Leg4_L
-    400030: Leg4_R
-    400032: Leg5_L
-    400034: Leg5_R
-    400036: Leg6_L
-    400038: LegR
-    400040: Neck
-    400042: Plane
-    400044: Plane_001
-    400046: Plane_002
-    400048: rightEye
-    400050: tail
-    400052: Tail1
-    400054: Tail2
-    400056: //RootNode
+    400002: Armature_001
+    400004: Body1
+    400006: Body2
+    400008: Bone
+    400010: Bone_001
+    400012: Cylinder
+    400014: Cylinder_001
+    400016: hairBack
+    400018: hairFront
+    400020: Head
+    400022: leftEye
+    400024: Leg1_L
+    400026: Leg1_R
+    400028: Leg2_L
+    400030: Leg2_R
+    400032: Leg3_L
+    400034: Leg3_R
+    400036: Leg4_L
+    400038: Leg4_R
+    400040: Leg5_L
+    400042: Leg5_R
+    400044: Leg6_L
+    400046: LegR
+    400048: Neck
+    400050: Plane
+    400052: Plane_002
+    400054: rightEye
+    400056: tail
+    400058: Tail1
+    400060: Tail2
+    400062: //RootNode
     2300000: Cylinder
-    2300002: Plane_001
     3300000: Cylinder
-    3300002: Plane_001
-    4300000: Plane_002
-    4300002: Plane
-    4300004: leftEye
-    4300006: rightEye
-    4300008: hairFront
-    4300010: hairBack
-    4300012: tail
-    4300014: Cylinder
-    4300016: Plane_001
+    4300000: Cylinder_001
+    4300002: Plane_002
+    4300004: Plane
+    4300006: leftEye
+    4300008: rightEye
+    4300010: hairFront
+    4300012: hairBack
+    4300014: tail
+    4300016: Cylinder
     7400000: Default Take
-    7400002: ArmatureAction
+    7400002: Armature_001Action
+    7400004: ArmatureAction
     9500000: //RootNode
-    13700000: hairBack
-    13700002: hairFront
-    13700004: leftEye
-    13700006: Plane
-    13700008: Plane_002
-    13700010: rightEye
-    13700012: tail
+    13700000: Cylinder_001
+    13700002: hairBack
+    13700004: hairFront
+    13700006: leftEye
+    13700008: Plane
+    13700010: Plane_002
+    13700012: rightEye
+    13700014: tail
   materials:
     importMaterials: 1
     materialName: 0
@@ -174,7 +180,13 @@ ModelImporter:
         weight: 1
       - path: Armature/Cylinder
         weight: 1
-      - path: Armature/Cylinder/Plane_001
+      - path: Armature_001
+        weight: 1
+      - path: Armature_001/Bone
+        weight: 1
+      - path: Armature_001/Bone/Bone_001
+        weight: 1
+      - path: Cylinder_001
         weight: 1
       - path: hairBack
         weight: 1
@@ -194,8 +206,8 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: ArmatureAction
-      takeName: ArmatureAction
+      name: Armature_001Action
+      takeName: Armature_001Action
       firstFrame: -1
       lastFrame: 118
       wrapMode: 0
@@ -204,8 +216,8 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 1
+      loopTime: 0
+      loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -260,7 +272,105 @@ ModelImporter:
         weight: 1
       - path: Armature/Cylinder
         weight: 1
-      - path: Armature/Cylinder/Plane_001
+      - path: Armature_001
+        weight: 1
+      - path: Armature_001/Bone
+        weight: 1
+      - path: Armature_001/Bone/Bone_001
+        weight: 1
+      - path: Cylinder_001
+        weight: 1
+      - path: hairBack
+        weight: 1
+      - path: hairFront
+        weight: 1
+      - path: leftEye
+        weight: 1
+      - path: Plane
+        weight: 1
+      - path: Plane_002
+        weight: 1
+      - path: rightEye
+        weight: 1
+      - path: tail
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ArmatureAction
+      takeName: ArmatureAction
+      firstFrame: -1
+      lastFrame: 118
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Body1
+        weight: 1
+      - path: Armature/Body1/Body2
+        weight: 1
+      - path: Armature/Body1/Body2/Leg1_L
+        weight: 1
+      - path: Armature/Body1/Body2/Leg1_L/Leg2_L
+        weight: 1
+      - path: Armature/Body1/Body2/Leg1_L/Leg2_L/Leg3_L
+        weight: 1
+      - path: Armature/Body1/Body2/Leg1_R
+        weight: 1
+      - path: Armature/Body1/Body2/Leg1_R/Leg2_R
+        weight: 1
+      - path: Armature/Body1/Body2/Leg1_R/Leg2_R/Leg3_R
+        weight: 1
+      - path: Armature/Body1/Body2/Neck
+        weight: 1
+      - path: Armature/Body1/Body2/Neck/Head
+        weight: 1
+      - path: Armature/Body1/Leg4_L
+        weight: 1
+      - path: Armature/Body1/Leg4_L/Leg5_L
+        weight: 1
+      - path: Armature/Body1/Leg4_L/Leg5_L/Leg6_L
+        weight: 1
+      - path: Armature/Body1/Leg4_R
+        weight: 1
+      - path: Armature/Body1/Leg4_R/Leg5_R
+        weight: 1
+      - path: Armature/Body1/Leg4_R/Leg5_R/LegR
+        weight: 1
+      - path: Armature/Body1/Tail1
+        weight: 1
+      - path: Armature/Body1/Tail1/Tail2
+        weight: 1
+      - path: Armature/Cylinder
+        weight: 1
+      - path: Armature_001
+        weight: 1
+      - path: Armature_001/Bone
+        weight: 1
+      - path: Armature_001/Bone/Bone_001
+        weight: 1
+      - path: Cylinder_001
         weight: 1
       - path: hairBack
         weight: 1
