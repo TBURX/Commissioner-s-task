@@ -3274,25 +3274,13 @@ GameObject:
   m_Component:
   - 4: {fileID: 735795510}
   - 65: {fileID: 735795509}
-  - 114: {fileID: 735795508}
   m_Layer: 0
-  m_Name: Door
-  m_TagString: Untagged
+  m_Name: "MainScene|\u041D\u0430\u0440\u0443\u0436\u0443"
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &735795508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 735795507}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f4f8f75b79e22347ada5eafbacfacda, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &735795509
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3303,7 +3291,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1.33, y: 1.15, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &735795510
 Transform:
@@ -3312,7 +3300,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 735795507}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.18415, y: 3.288002, z: 11.81}
+  m_LocalPosition: {x: 0.18415, y: 4.25, z: 13}
   m_LocalScale: {x: 4.4002075, y: 7.3576245, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -7557,6 +7545,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8bc94ec6ed537e743b481638bdcd503d, type: 3}
   m_JumpSound: {fileID: 8300000, guid: 5897aeed9b676024fbb8c694b421a861, type: 3}
   m_LandSound: {fileID: 8300000, guid: 3b09d59f4499d45428baa7a21e954296, type: 3}
+  ScrCam: {fileID: 724467163}
+  m_TextCursor: {fileID: 1328877794}
+  player: {fileID: 1693741749}
 --- !u!143 &1693741753
 CharacterController:
   m_ObjectHideFlags: 0

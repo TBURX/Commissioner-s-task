@@ -256,8 +256,7 @@ namespace Assets.GameScripts.MainPerson
 
             if (m_RayTransform != null)
             {
-
-                if (Vector3.Distance(player.transform.position, m_RayTransform.position) <= 3)
+                if (Vector3.Distance(player.transform.position, m_RayTransform.position) <= 5)
                 {
                     if (m_RayTransform.tag == "UselesItems")
                     {
@@ -267,7 +266,7 @@ namespace Assets.GameScripts.MainPerson
                             search();
                         }
                     }
-                    if (m_RayTransform.tag == "Door")
+                    else if (m_RayTransform.tag == "Door")
                     {
                         m_TextCursor.text = m_RayTransform.name.Split('|')[1];
                         if (Input.GetKeyDown(KeyCode.E))
@@ -275,11 +274,19 @@ namespace Assets.GameScripts.MainPerson
                             openDoor();
                         }
                     }
+                    else
+                    {
+                        m_TextCursor.text = "";
+                    }
                 }
                 else
                 {
                     m_TextCursor.text = "";
                 }
+            }
+            else
+            {
+                m_TextCursor.text = "";
             }
         }
 
@@ -303,11 +310,13 @@ namespace Assets.GameScripts.MainPerson
 
         public void openDoor()
         {
+            Debug.Log("saved " + ScrCam.transform.position);
             if (m_RayTransform.name.Split('|')[0] != "MainScene")
             {
                 lastPosition.IniWriteValue("MainScene", "position", player.transform.position.x + "|" + player.transform.position.y + "|" + player.transform.position.z);
                 lastPosition.IniWriteValue("MainScene", "rotation", player.transform.rotation.x + "|" + player.transform.rotation.y + "|" + player.transform.rotation.z + "|" + player.transform.rotation.w);
-                lastPosition.IniWriteValue("MainScene", "camRotation", transform.rotation.x + "|" + transform.rotation.y + "|" + transform.rotation.z + "|" + transform.rotation.w);
+                lastPosition.IniWriteValue("MainScene", "camPosition", ScrCam.transform.localPosition.x + "|" + ScrCam.transform.localPosition.y + "|" + ScrCam.transform.localPosition.z);
+                //lastPosition.IniWriteValue("MainScene", "camRotation", ScrCam.transform.localRotation.x + "|" + ScrCam.transform.localRotation.y + "|" + ScrCam.transform.localRotation.z + "|" + ScrCam.transform.localRotation.w);
             }
             Application.LoadLevel(m_RayTransform.name.Split('|')[0]);
         }

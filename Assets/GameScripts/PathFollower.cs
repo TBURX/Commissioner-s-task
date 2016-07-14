@@ -21,7 +21,6 @@ public class PathFollower : MonoBehaviour {
     private bool wait = false;
     IEnumerator Coro()
     {
-        Debug.Log("end");
         audioSource.Stop();
         wait = true;
         yield return new WaitForSeconds(waitTimeInSeconds);
@@ -29,7 +28,6 @@ public class PathFollower : MonoBehaviour {
         currentPoint = 0;
         wait = false;
         audioSource.Play();
-        Debug.Log("start");
     }
 
 	// Update is called once per frame
@@ -42,7 +40,6 @@ public class PathFollower : MonoBehaviour {
 
             if (dist <= reachDist)
             {
-                Debug.Log("меньше");
                 currentPoint++;
             }
 

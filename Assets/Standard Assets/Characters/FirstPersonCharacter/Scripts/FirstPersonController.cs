@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityStandardAssets.CrossPlatformInput;
 using UnityStandardAssets.Utility;
 using Random = UnityEngine.Random;
@@ -27,6 +28,10 @@ namespace UnityStandardAssets.Characters.FirstPerson
         [SerializeField] private AudioClip[] m_FootstepSounds;    // an array of footstep sounds that will be randomly selected from.
         [SerializeField] private AudioClip m_JumpSound;           // the sound played when character leaves the ground.
         [SerializeField] private AudioClip m_LandSound;           // the sound played when character touches back on ground.
+
+        public Camera ScrCam;
+        public Text m_TextCursor;
+        public GameObject player;
 
         private Camera m_Camera;
         private bool m_Jump;
@@ -57,10 +62,15 @@ namespace UnityStandardAssets.Characters.FirstPerson
 			m_MouseLook.Init(transform , m_Camera.transform);
         }
 
+        private void Awake()
+        {
+            Screen.lockCursor = true;
+        }
 
         // Update is called once per frame
         private void Update()
         {
+            ControlCursor();
             RotateView();
             // the jump state needs to read here to make sure it is not missed
             if (!m_Jump)
@@ -252,6 +262,76 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 return;
             }
             body.AddForceAtPosition(m_CharacterController.velocity*0.1f, hit.point, ForceMode.Impulse);
+        }
+
+
+        private Transform m_RayTransform;
+        private void ControlCursor()
+        {
+
+            if (Input.GetKey(KeyCode.LeftControl))
+            {
+                Screen.lockCursor = false;
+            }
+            else
+            {
+                Screen.lockCursor = true;
+            }
+
+            //О мой чай!!!!! Оно работает! Оно живет!!!!! Не трогать! Понял?!
+
+            m_RayTransform = getTransformFromCamRay();
+
+            if (m_RayTransform != null)
+            {
+
+                if (Vector3.Distance(player.transform.position, m_RayTransform.position) <= 3)
+                {
+                    if (m_RayTransform.tag == "Door")
+                    {
+                        m_TextCursor.text = m_RayTransform.name.Split('|')[1];
+                        if (Input.GetKeyDown(KeyCode.E))
+                        {
+                            openDoor();
+                        }
+                    }
+                }
+                else
+                {
+                    m_TextCursor.text = "";
+                }
+            }
+            else
+            {
+                m_TextCursor.text = "";
+            }
+        }
+
+        Transform getTransformFromCamRay()
+        {
+            Ray ray = ScrCam.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit))
+            {
+                return hit.transform;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public void openDoor()
+        {
+            /*
+            if (m_RayTransform.name.Split('|')[0] != "MainScene")
+            {
+                lastPosition.IniWriteValue("MainScene", "position", player.transform.position.x + "|" + player.transform.position.y + "|" + player.transform.position.z);
+                lastPosition.IniWriteValue("MainScene", "rotation", player.transform.rotation.x + "|" + player.transform.rotation.y + "|" + player.transform.rotation.z + "|" + player.transform.rotation.w);
+                lastPosition.IniWriteValue("MainScene", "camRotation", transform.rotation.x + "|" + transform.rotation.y + "|" + transform.rotation.z + "|" + transform.rotation.w);
+            }*/
+            Application.LoadLevel(m_RayTransform.name.Split('|')[0]);
         }
     }
 }

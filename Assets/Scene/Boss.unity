@@ -307,25 +307,13 @@ GameObject:
   - 4: {fileID: 361479181}
   - 33: {fileID: 361479180}
   - 65: {fileID: 361479179}
-  - 114: {fileID: 361479178}
   m_Layer: 0
-  m_Name: Cube (1)
-  m_TagString: Untagged
+  m_Name: "MainScene|\u041D\u0430\u0440\u0443\u0436\u0443"
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &361479178
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 361479177}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f4f8f75b79e22347ada5eafbacfacda, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &361479179
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -336,7 +324,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1.91, y: 1.48, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &361479180
 MeshFilter:
@@ -352,7 +340,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 361479177}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 114.7, y: 8.996, z: 178.6}
+  m_LocalPosition: {x: 114.63, y: 8.68, z: 178.6}
   m_LocalScale: {x: 1, y: 2.2193944, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -1444,6 +1432,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8bc94ec6ed537e743b481638bdcd503d, type: 3}
   m_JumpSound: {fileID: 8300000, guid: 5897aeed9b676024fbb8c694b421a861, type: 3}
   m_LandSound: {fileID: 8300000, guid: 3b09d59f4499d45428baa7a21e954296, type: 3}
+  ScrCam: {fileID: 1521495014}
+  m_TextCursor: {fileID: 563603347}
+  player: {fileID: 1652231273}
 --- !u!143 &1652231277
 CharacterController:
   m_ObjectHideFlags: 0
