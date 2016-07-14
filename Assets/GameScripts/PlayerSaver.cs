@@ -43,6 +43,7 @@ public class PlayerSaver : MonoBehaviour {
             */
             player.transform.position = new Vector3(x_pos, y_pos, z_pos);
             player.transform.rotation = new Quaternion(x_rot, y_rot, z_rot, w_rot);
+            player.transform.localEulerAngles = new Vector3(player.transform.localEulerAngles.x, player.transform.localEulerAngles.y + 180, player.transform.localEulerAngles.z);
             PlCamera.transform.localPosition = new Vector3(x_Cpos,y_Cpos,z_Cpos);
             Debug.Log("loaded " + PlCamera.transform.position);
             //PlCamera.transform.localRotation = new Quaternion(x_Crot, y_Crot, z_Crot, w_Crot);
