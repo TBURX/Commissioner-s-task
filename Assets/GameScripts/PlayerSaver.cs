@@ -35,14 +35,15 @@ public class PlayerSaver : MonoBehaviour {
             float x_Cpos = Convert.ToSingle(camPosArr[0]);
             float y_Cpos = Convert.ToSingle(camPosArr[1]);
             float z_Cpos = Convert.ToSingle(camPosArr[2]);
-
+            /*
             float x_Crot = Convert.ToSingle(camRotArr[0]);
             float y_Crot = Convert.ToSingle(camRotArr[1]);
             float z_Crot = Convert.ToSingle(camRotArr[2]);
             float w_Crot = Convert.ToSingle(camRotArr[3]);
-
+            */
             player.transform.position = new Vector3(x_pos, y_pos, z_pos);
             player.transform.rotation = new Quaternion(x_rot, y_rot, z_rot, w_rot);
+            player.transform.localEulerAngles = new Vector3(player.transform.localEulerAngles.x, player.transform.localEulerAngles.y + 180, player.transform.localEulerAngles.z);
             PlCamera.transform.localPosition = new Vector3(x_Cpos,y_Cpos,z_Cpos);
             Debug.Log("loaded " + PlCamera.transform.position);
             //PlCamera.transform.localRotation = new Quaternion(x_Crot, y_Crot, z_Crot, w_Crot);

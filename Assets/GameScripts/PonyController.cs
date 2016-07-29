@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace Assets.GameScripts.MainPerson
@@ -311,14 +312,14 @@ namespace Assets.GameScripts.MainPerson
         public void openDoor()
         {
             Debug.Log("saved " + ScrCam.transform.position);
-            if (m_RayTransform.name.Split('|')[0] != "MainScene")
-            {
-                lastPosition.IniWriteValue("MainScene", "position", player.transform.position.x + "|" + player.transform.position.y + "|" + player.transform.position.z);
-                lastPosition.IniWriteValue("MainScene", "rotation", player.transform.rotation.x + "|" + player.transform.rotation.y + "|" + player.transform.rotation.z + "|" + player.transform.rotation.w);
-                lastPosition.IniWriteValue("MainScene", "camPosition", ScrCam.transform.localPosition.x + "|" + ScrCam.transform.localPosition.y + "|" + ScrCam.transform.localPosition.z);
-                //lastPosition.IniWriteValue("MainScene", "camRotation", ScrCam.transform.localRotation.x + "|" + ScrCam.transform.localRotation.y + "|" + ScrCam.transform.localRotation.z + "|" + ScrCam.transform.localRotation.w);
-            }
-            Application.LoadLevel(m_RayTransform.name.Split('|')[0]);
+             
+            
+            lastPosition.IniWriteValue(SceneManager.GetActiveScene().name, "position", player.transform.position.x + "|" + player.transform.position.y + "|" + player.transform.position.z);
+            lastPosition.IniWriteValue(SceneManager.GetActiveScene().name, "rotation", player.transform.rotation.x + "|" + player.transform.rotation.y + "|" + player.transform.rotation.z + "|" + player.transform.rotation.w);
+            lastPosition.IniWriteValue(SceneManager.GetActiveScene().name, "camPosition", ScrCam.transform.localPosition.x + "|" + ScrCam.transform.localPosition.y + "|" + ScrCam.transform.localPosition.z);
+            //lastPosition.IniWriteValue("MainScene", "camRotation", ScrCam.transform.localRotation.x + "|" + ScrCam.transform.localRotation.y + "|" + ScrCam.transform.localRotation.z + "|" + ScrCam.transform.localRotation.w);
+
+            SceneManager.LoadScene(m_RayTransform.name.Split('|')[0]);
         }
 
         Transform getTransformFromCamRay()
