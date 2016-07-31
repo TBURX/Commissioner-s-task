@@ -17,6 +17,7 @@ public class MenuController : MonoBehaviour {
     private bool dropdownIsSet = false;
     private Toggle fullscreenToggle;
     public GameObject playerGui;
+    public PlayerSaver ps;
 
     public GameObject camera;
 
@@ -299,6 +300,7 @@ public class MenuController : MonoBehaviour {
     public void Exit()
     {
         quitAllowed = true;
+        ps.Exit();
         SceneManager.LoadScene("MainMenu");
     }
 

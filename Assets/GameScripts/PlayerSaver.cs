@@ -1,19 +1,27 @@
 ﻿using UnityEngine;
 using System;
+using UnityEngine.SceneManagement;
 
-public class PlayerSaver : MonoBehaviour {
+public class PlayerSaver : MonoBehaviour
+{
 
     public GameObject player;
     public GameObject PlCamera;
-    public string sceneName = "MainScene";
-    IniFile lastPosition = new IniFile("Saves/LastPosotion.dat");
+    //public string sceneName = "MainScene";
+    public IniFile lastPosition = new IniFile("Saves/LastPosotion.dat");
 
     private void Awake()
     {
+        string sceneName = lastPosition.IniReadValue("LastScene", "scene name", "MainScene");
+        bool isGoToAnotherScene = bool.Parse(lastPosition.IniReadValue("LastScene", "isGoToAnotherScene", "false"));
+        if (SceneManager.GetActiveScene().name != sceneName && !isGoToAnotherScene)
+        {
+            SceneManager.LoadScene(sceneName);
+        }
         string savedPosition = lastPosition.IniReadValue(sceneName, "position", "none");
         string savedRotation = lastPosition.IniReadValue(sceneName, "rotation", "none");
         string savedCamPosition = lastPosition.IniReadValue(sceneName, "camPosition", "none");
-        Debug.Log("loaded "+savedCamPosition);
+        Debug.Log("loaded " + savedCamPosition);
         string savedCamRotation = lastPosition.IniReadValue(sceneName, "camRotation", "none");
 
         if (savedPosition != "none")
@@ -43,10 +51,32 @@ public class PlayerSaver : MonoBehaviour {
             */
             player.transform.position = new Vector3(x_pos, y_pos, z_pos);
             player.transform.rotation = new Quaternion(x_rot, y_rot, z_rot, w_rot);
-            player.transform.localEulerAngles = new Vector3(player.transform.localEulerAngles.x, player.transform.localEulerAngles.y + 180, player.transform.localEulerAngles.z);
-            PlCamera.transform.localPosition = new Vector3(x_Cpos,y_Cpos,z_Cpos);
+            if (isGoToAnotherScene)
+            {
+                player.transform.localEulerAngles = new Vector3(player.transform.localEulerAngles.x, player.transform.localEulerAngles.y + 180, player.transform.localEulerAngles.z);
+            }
+            PlCamera.transform.localPosition = new Vector3(x_Cpos, y_Cpos, z_Cpos);
             Debug.Log("loaded " + PlCamera.transform.position);
             //PlCamera.transform.localRotation = new Quaternion(x_Crot, y_Crot, z_Crot, w_Crot);
         }
+    }
+
+    public void GoToAnotherScene(string sceneName)
+    {
+        lastPosition.IniWriteValue("LastScene", "scene name", sceneName);
+        lastPosition.IniWriteValue(SceneManager.GetActiveScene().name, "position", player.transform.position.x + "|" + player.transform.position.y + "|" + player.transform.position.z);
+        lastPosition.IniWriteValue(SceneManager.GetActiveScene().name, "rotation", player.transform.rotation.x + "|" + player.transform.rotation.y + "|" + player.transform.rotation.z + "|" + player.transform.rotation.w);
+        lastPosition.IniWriteValue(SceneManager.GetActiveScene().name, "camPosition", PlCamera.transform.localPosition.x + "|" + PlCamera.transform.localPosition.y + "|" + PlCamera.transform.localPosition.z);
+        lastPosition.IniWriteValue("LastScene", "isGoToAnotherScene", "true");
+        SceneManager.LoadScene(sceneName);
+    }
+
+    public void Exit()
+    {
+        lastPosition.IniWriteValue("LastScene", "scene name", SceneManager.GetActiveScene().name);
+        lastPosition.IniWriteValue(SceneManager.GetActiveScene().name, "position", player.transform.position.x + "|" + player.transform.position.y + "|" + player.transform.position.z);
+        lastPosition.IniWriteValue(SceneManager.GetActiveScene().name, "rotation", player.transform.rotation.x + "|" + player.transform.rotation.y + "|" + player.transform.rotation.z + "|" + player.transform.rotation.w);
+        lastPosition.IniWriteValue(SceneManager.GetActiveScene().name, "camPosition", PlCamera.transform.localPosition.x + "|" + PlCamera.transform.localPosition.y + "|" + PlCamera.transform.localPosition.z);
+        lastPosition.IniWriteValue("LastScene", "isGoToAnotherScene", "false");
     }
 }

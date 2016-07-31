@@ -776,6 +776,10 @@ Prefab:
       propertyPath: ponyController
       value: 
       objectReference: {fileID: 1546826405}
+    - target: {fileID: 11467152, guid: 2004356e7a9b66640b1dc7fb5f1347d7, type: 2}
+      propertyPath: ps
+      value: 
+      objectReference: {fileID: 981486370}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2004356e7a9b66640b1dc7fb5f1347d7, type: 2}
   m_IsPrefabParent: 0
@@ -1435,6 +1439,10 @@ Prefab:
       propertyPath: m_Name
       value: TDS Controller
       objectReference: {fileID: 0}
+    - target: {fileID: 11432496, guid: dab4a8f95f30bb14abc590c46e90d7fa, type: 2}
+      propertyPath: playerSaver
+      value: 
+      objectReference: {fileID: 981486370}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dab4a8f95f30bb14abc590c46e90d7fa, type: 2}
   m_IsPrefabParent: 0
@@ -1952,10 +1960,6 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 78832d9cbbd422f4ca4485714081656d, type: 3}
   m_PrefabInternal: {fileID: 348274368}
---- !u!1 &327466332 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 181776, guid: dab4a8f95f30bb14abc590c46e90d7fa, type: 2}
-  m_PrefabInternal: {fileID: 165369239}
 --- !u!1 &329488863
 GameObject:
   m_ObjectHideFlags: 0
@@ -6040,8 +6044,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2106332383}
-  PlCamera: {fileID: 327466332}
-  sceneName: MainScene
+  PlCamera: {fileID: 919921855}
 --- !u!1001 &991015932
 Prefab:
   m_ObjectHideFlags: 0
