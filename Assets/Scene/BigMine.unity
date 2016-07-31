@@ -700,7 +700,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 2126613095}
   PlCamera: {fileID: 166501522}
-  sceneName: BigMine
 --- !u!1 &672917285
 GameObject:
   m_ObjectHideFlags: 0
@@ -1127,7 +1126,7 @@ Transform:
   m_Children:
   - {fileID: 655425357}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!1 &1285572601 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100088, guid: feefdea4465335341b80b1d76899f10a, type: 3}
@@ -1578,6 +1577,10 @@ Prefab:
       propertyPath: ponyController
       value: 
       objectReference: {fileID: 1952044158}
+    - target: {fileID: 11467152, guid: 2004356e7a9b66640b1dc7fb5f1347d7, type: 2}
+      propertyPath: ps
+      value: 
+      objectReference: {fileID: 655425358}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2004356e7a9b66640b1dc7fb5f1347d7, type: 2}
   m_IsPrefabParent: 0
@@ -1872,6 +1875,10 @@ Prefab:
       propertyPath: m_TextCursor
       value: 
       objectReference: {fileID: 371326024}
+    - target: {fileID: 11432496, guid: dab4a8f95f30bb14abc590c46e90d7fa, type: 2}
+      propertyPath: playerSaver
+      value: 
+      objectReference: {fileID: 655425358}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dab4a8f95f30bb14abc590c46e90d7fa, type: 2}
   m_IsPrefabParent: 0

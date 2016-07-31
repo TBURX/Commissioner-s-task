@@ -46,7 +46,9 @@ namespace Assets.GameScripts.MainPerson
         Quaternion oldRotation = Quaternion.Euler(0,0,0);
 
         private Animator anim;
-        IniFile lastPosition = new IniFile("Saves/LastPosotion.dat");
+
+        public PlayerSaver playerSaver;
+        //IniFile lastPosition = new IniFile("Saves/LastPosotion.dat");
 
         private void Awake()
         {
@@ -312,14 +314,7 @@ namespace Assets.GameScripts.MainPerson
         public void openDoor()
         {
             Debug.Log("saved " + ScrCam.transform.position);
-             
-            
-            lastPosition.IniWriteValue(SceneManager.GetActiveScene().name, "position", player.transform.position.x + "|" + player.transform.position.y + "|" + player.transform.position.z);
-            lastPosition.IniWriteValue(SceneManager.GetActiveScene().name, "rotation", player.transform.rotation.x + "|" + player.transform.rotation.y + "|" + player.transform.rotation.z + "|" + player.transform.rotation.w);
-            lastPosition.IniWriteValue(SceneManager.GetActiveScene().name, "camPosition", ScrCam.transform.localPosition.x + "|" + ScrCam.transform.localPosition.y + "|" + ScrCam.transform.localPosition.z);
-            //lastPosition.IniWriteValue("MainScene", "camRotation", ScrCam.transform.localRotation.x + "|" + ScrCam.transform.localRotation.y + "|" + ScrCam.transform.localRotation.z + "|" + ScrCam.transform.localRotation.w);
-
-            SceneManager.LoadScene(m_RayTransform.name.Split('|')[0]);
+            playerSaver.GoToAnotherScene(m_RayTransform.name.Split('|')[0]);
         }
 
         Transform getTransformFromCamRay()

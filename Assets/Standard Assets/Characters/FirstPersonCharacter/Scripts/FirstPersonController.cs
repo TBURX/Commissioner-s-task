@@ -265,7 +265,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         }
 
 
-        private Transform m_RayTransform;
+        protected Transform m_RayTransform;
         private void ControlCursor()
         {
 
@@ -322,7 +322,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
         }
 
-        public void openDoor()
+        public virtual void openDoor()
         {
             /*
             if (m_RayTransform.name.Split('|')[0] != "MainScene")
@@ -332,6 +332,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 lastPosition.IniWriteValue("MainScene", "camRotation", transform.rotation.x + "|" + transform.rotation.y + "|" + transform.rotation.z + "|" + transform.rotation.w);
             }*/
             Application.LoadLevel(m_RayTransform.name.Split('|')[0]);
+            //playerSaver.GoToAnotherScene(m_RayTransform.name.Split('|')[0]);
         }
     }
 }

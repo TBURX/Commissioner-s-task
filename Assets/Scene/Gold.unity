@@ -173,7 +173,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 785278550}
   PlCamera: {fileID: 1476784918}
-  sceneName: Gold
 --- !u!114 &285787771 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11432496, guid: dab4a8f95f30bb14abc590c46e90d7fa,
@@ -323,7 +322,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
 --- !u!1 &581584578
 GameObject:
   m_ObjectHideFlags: 0
@@ -430,6 +429,10 @@ Prefab:
       propertyPath: m_TextCursor
       value: 
       objectReference: {fileID: 1151100089}
+    - target: {fileID: 11432496, guid: dab4a8f95f30bb14abc590c46e90d7fa, type: 2}
+      propertyPath: playerSaver
+      value: 
+      objectReference: {fileID: 220519401}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dab4a8f95f30bb14abc590c46e90d7fa, type: 2}
   m_IsPrefabParent: 0
@@ -741,6 +744,10 @@ Prefab:
       propertyPath: ponyController
       value: 
       objectReference: {fileID: 285787771}
+    - target: {fileID: 11467152, guid: 2004356e7a9b66640b1dc7fb5f1347d7, type: 2}
+      propertyPath: ps
+      value: 
+      objectReference: {fileID: 220519401}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2004356e7a9b66640b1dc7fb5f1347d7, type: 2}
   m_IsPrefabParent: 0
